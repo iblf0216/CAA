@@ -1,5 +1,6 @@
 package com.pmt.caa.web.webapp.action;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -34,54 +35,56 @@ public class ServiceAction extends CaaAbstractAction {
 
 	@Autowired
 	SubjectFacade subjectFacade;
-	
-	private String nextPage;
 
+	private String nextPage;
+	private static List<String> reactionTimeList = null;
+	
 	public String exLogin() {
 		System.out.println("come into exLogin!!");
-		
+
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String userid = request.getParameter("userid");
 		String password = request.getParameter("password");
-		
+
 		System.out.println("@@@ userid = " + userid + " ; password = " + password);
-		
+
 		removeUserSessionVO();
-		
+
 		boolean process = false;
 		boolean loginStatus = examinerFacade.checkLoginStatus(userid, password);
-		
+
 		String message = "帳密錯誤";
-		
-		if(loginStatus) {
-//			String accountId = MapUtils.getString(resultMp, "ACCOUNT_ID");
-//			String accountName = MapUtils.getString(resultMp, "ACCOUNT_NAME");
-			
+
+		if (loginStatus) {
+			// String accountId = MapUtils.getString(resultMp, "ACCOUNT_ID");
+			// String accountName = MapUtils.getString(resultMp,
+			// "ACCOUNT_NAME");
+
 			// 如果為admin
-			if("admin".equals(userid)) {
+			if ("admin".equals(userid)) {
 				setUserSessionVO(new UserSessionVO(userid, true));
 			}
-			
+
 			setUserSessionVO(new UserSessionVO(userid));
 			process = true;
 			message = "登入成功";
 		}
-		
+
 		Map<String, Object> dataMp = new HashMap<String, Object>();
 		dataMp.put(Context.R_RESULT_PROCESS_KEY, process);
 		dataMp.put(Context.R_RESULT_MESSAGE_KEY, message);
 		setDataMap(dataMp);
-		
+
 		return CaaActionResult.SUCCESS;
 	}
-	
+
 	public String exLogout() {
-		
+
 		removeUserSessionVO();
 
 		return CaaActionResult.SUCCESS;
 	}
-	
+
 	// ================ 單位管理 begin ================
 	/**
 	 * 導頁至 單位管理 主頁
@@ -165,10 +168,10 @@ public class ServiceAction extends CaaAbstractAction {
 
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
-//		reqMp.put(Context.REQ_PARAM_NAME, JsonUtil.toJson(companyData));
+		// reqMp.put(Context.REQ_PARAM_NAME, JsonUtil.toJson(companyData));
 		reqMp.put(Context.R_RESULT_TARGET, companyData);
 
-//		System.out.println("json = " + JsonUtil.toJson(companyData));
+		// System.out.println("json = " + JsonUtil.toJson(companyData));
 		System.out.println("companyData = " + companyData);
 
 		return CaaActionResult.SUCCESS;
@@ -188,8 +191,7 @@ public class ServiceAction extends CaaAbstractAction {
 		String companyid = getReqestParameter(request, "companyid");
 		String titleid = getReqestParameter(request, "titleid");
 
-		boolean excuteResult = examinerFacade.addExaminer(userid, password,
-				name, companyid, titleid);
+		boolean excuteResult = examinerFacade.addExaminer(userid, password, name, companyid, titleid);
 
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -264,8 +266,7 @@ public class ServiceAction extends CaaAbstractAction {
 		String companyid = getReqestParameter(request, "companyid");
 		String titleid = getReqestParameter(request, "titleid");
 
-		boolean excuteResult = examinerFacade.editExaminer(id, userid,
-				password, name, companyid, titleid);
+		boolean excuteResult = examinerFacade.editExaminer(id, userid, password, name, companyid, titleid);
 
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -291,8 +292,7 @@ public class ServiceAction extends CaaAbstractAction {
 
 			ExaminerVo examinerVo = examinerFacade.getExaminerById(id);
 
-			Map<String, Object> reqMp = ScopeUtil
-					.getScopeAttribute(Scope.REQUEST);
+			Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
 			reqMp.put(Context.R_RESULT_TARGET, examinerVo);
 		}
@@ -314,8 +314,7 @@ public class ServiceAction extends CaaAbstractAction {
 		System.out.println("@@@進入 受試者管理");
 
 		// 查詢每筆受試紀錄
-		List<Map<String, Object>> subjectRecordData = subjectFacade
-				.getSubjectRecord();
+		List<Map<String, Object>> subjectRecordData = subjectFacade.getSubjectRecord();
 
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -378,8 +377,7 @@ public class ServiceAction extends CaaAbstractAction {
 
 		String gender = getReqestParameter(request, "gender");
 
-		boolean excuteResult = subjectFacade.editSubject(medical_no,
-				gender, name, birthday);
+		boolean excuteResult = subjectFacade.editSubject(medical_no, gender, name, birthday);
 
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -407,8 +405,7 @@ public class ServiceAction extends CaaAbstractAction {
 
 		String gender = getReqestParameter(request, "gender");
 
-		boolean excuteResult = subjectFacade.addSubject(medical_no, gender,
-				name, birthday);
+		boolean excuteResult = subjectFacade.addSubject(medical_no, gender, name, birthday);
 
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -457,7 +454,7 @@ public class ServiceAction extends CaaAbstractAction {
 	}
 
 	// ================ 受試者管理 end ================
-	
+
 	public String getNextPage() {
 		return nextPage;
 	}
@@ -465,51 +462,131 @@ public class ServiceAction extends CaaAbstractAction {
 	public void setNextPage(String nextPage) {
 		this.nextPage = nextPage;
 	}
-	
-	
-	
-	
+
 	// ================ 以下為測試 ================
-	
+
 	public String test() {
 		System.out.println("測驗開始!!");
-		
+
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String id = getReqestParameter(request, "id");
-		
+
 		System.out.println("@@ id = " + id);
-		
+
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
-
 		reqMp.put("nextPage", "02_intro");
-		
+
 		return CaaActionResult.SUCCESS;
 	}
 
 	public String test2() {
 		System.out.println("!!!!!!!");
+
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String response = getReqestParameter(request, "response");
+
+		// 取得埋在前張JSP的下一頁訊息
+		nextPage = getReqestParameter(request, "next");
+
+		System.out.println("time : " + new Date() + " ;response = " + response + " ; nextPage = " + nextPage);
+
+		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
+
+		reqMp.put("nextPage", nextPage);
+
+		return CaaActionResult.SUCCESS;
+	}
+
+	public String test3() {
+
+		return CaaActionResult.SUCCESS;
+	}
+
+	/* new 導頁 參考 */
+	public String showTest01Main() {
+		return CaaActionResult.SUCCESS;
+	}
+
+	public String showTest02Main() {
+		System.out.println("測驗2開始!!");
+		reactionTimeList = new ArrayList<String>();
 		
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String id = getReqestParameter(request, "id");
+
+		System.out.println("id = " + id);
+
+		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
+
+		reqMp.put("nextPage", "main/02_intro");
+
+		return CaaActionResult.SUCCESS;
+	}
+
+	public String showTest02Process() {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String response = getReqestParameter(request, "response");
 		
 		// 取得埋在前張JSP的下一頁訊息
 		nextPage = getReqestParameter(request, "next");
-		
+		String durationTime = getReqestParameter(request, "durationTime");
+		String reactionTime = getReqestParameter(request, "reactionTime");
 		System.out.println("time : " + new Date() + " ;response = " + response + " ; nextPage = " + nextPage);
-		
+
+		if (null != durationTime) {
+			System.out.println("durationTime:" + durationTime);
+		}
+
+		// 紀錄作答時間
+		if (null != reactionTime && !"0".equals(reactionTime)) {
+			reactionTimeList.add(reactionTime);
+			System.out.println("reactionTime:" + reactionTime);
+			System.out.println("reactionTimeList:" + reactionTimeList);
+		} else if ("0".equals(reactionTime)) {
+
+		}
+
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
-
 		reqMp.put("nextPage", nextPage);
-		
+		reqMp.put("durationTime", durationTime);
+
 		return CaaActionResult.SUCCESS;
 	}
-	
-	public String test3() {
-		
 
-		
+	public String showTest03Main() {
+		return CaaActionResult.SUCCESS;
+	}
+
+	public String showFocus() {
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String response = getReqestParameter(request, "response");
+
+		// 取得埋在前張JSP的下一頁訊息
+		nextPage = getReqestParameter(request, "next");
+		String durationTime = getReqestParameter(request, "durationTime");
+		String reactionTime = getReqestParameter(request, "reactionTime");
+		System.out.println("time : " + new Date() + " ;response = " + response + " ; nextPage = " + nextPage);
+
+		if (null != durationTime) {
+			System.out.println("durationTime:" + durationTime);
+		}
+
+		// 紀錄作答時間
+		if (null != reactionTime && !"0".equals(reactionTime)) {
+			reactionTimeList.add(reactionTime);
+			System.out.println("reactionTime:" + reactionTime);
+			System.out.println("reactionTimeList:" + reactionTimeList);
+		} else if ("0".equals(reactionTime)) {
+
+		}
+
+		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
+
+		reqMp.put("nextPage", nextPage);
+		reqMp.put("durationTime", durationTime);
+
 		return CaaActionResult.SUCCESS;
 	}
 

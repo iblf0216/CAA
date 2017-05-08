@@ -32,13 +32,16 @@
 	<!-- 該屬性指定整合spring時，是否對bean進行緩存，值為true or false,默認為true <cosntant name="struts.objectFactory.spring.useClassCache" 
 		/> -->
 
-	<package name="struts-extension" extends="json-default" abstract="true">
+	<package name="struts-extension" extends="json-default"
+		abstract="true">
 
 		<!-- 共同Action設定 -->
 		<global-results>
-			<result name="timeout">/WEB-INF/views/caa/jsp/common/timeout.jsp</result>
+			<result name="timeout">/WEB-INF/views/caa/jsp/common/timeout.jsp
+			</result>
 			<result name="error">/WEB-INF/views/caa/jsp/common/error.jsp</result>
-			<result name="RESTful">/WEB-INF/views/caa/jsp/wrapper/result.jsp</result>
+			<result name="RESTful">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
 		</global-results>
 	</package>
 
@@ -53,130 +56,195 @@
 
 	<package name="service" namespace="/" extends="struts-extension">
 
-		<action name="exLogin" method="exLogin" class="com.pmt.caa.web.webapp.action.ServiceAction">
+		<action name="exLogin" method="exLogin"
+			class="com.pmt.caa.web.webapp.action.ServiceAction">
 			<result type="json">
 				<param name="root">dataMap</param>
 			</result>
 		</action>
-		
-<!-- 		<action name="showLogin" method="showLogin" class="com.pmt.caa.web.webapp.action.ServiceAction"> -->
-<!-- 			<result name="success">/reLogin.jsp</result> -->
-<!-- 		</action> -->
-		
-<!-- 		<action name="exLogout" class="com.pmt.caa.web.webapp.action.ServiceAction" method="exLogout"> -->
-<!-- 			<result name="success">/index.html</result> -->
-<!-- 		</action> -->
+
+		<!-- <action name="showLogin" method="showLogin" class="com.pmt.caa.web.webapp.action.ServiceAction"> -->
+		<!-- <result name="success">/reLogin.jsp</result> -->
+		<!-- </action> -->
+
+		<!-- <action name="exLogout" class="com.pmt.caa.web.webapp.action.ServiceAction" 
+			method="exLogout"> -->
+		<!-- <result name="success">/index.html</result> -->
+		<!-- </action> -->
 
 
-<!-- ===============  單位 begin ===============  -->
-    	<!-- 導頁至「單位管理」頁面 --> 
-		<action name="showCompanyManagementView" class="com.pmt.caa.web.webapp.action.ServiceAction" method="showCompanyManagementView">
-			<result name="success">/WEB-INF/views/caa/jsp/function/company/companyManagement.jsp</result>
+		<!-- =============== 單位 begin =============== -->
+		<!-- 導頁至「單位管理」頁面 -->
+		<action name="showCompanyManagementView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showCompanyManagementView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/company/companyManagement.jsp
+			</result>
 		</action>
 
-    	<!-- 刪除單位 --> 
-		<action name="deleteCompany" class="com.pmt.caa.web.webapp.action.ServiceAction" method="deleteCompany">
-			<result name="success" type="chain">showCompanyManagementView</result> 
-<!-- 			<result name="success">/WEB-INF/views/caa/jsp/function/company/companyManagement.jsp</result> -->
-		</action>		
-
-    	<!-- 新增單位 --> 
-		<action name="addCompany" class="com.pmt.caa.web.webapp.action.ServiceAction" method="addCompany">
-			<result name="success" type="chain">showCompanyManagementView</result> 
-		</action>	
-<!-- ===============  單位 end   ===============  -->		
-
-
-<!-- ===============  訪員 begin ===============  -->
-		
-    	<!-- 導頁至「訪員管理」頁面 --> 
-		<action name="showExaminerManagementView" class="com.pmt.caa.web.webapp.action.ServiceAction" method="showExaminerManagementView">
-			<result name="success">/WEB-INF/views/caa/jsp/function/examiner/examinerManagement.jsp</result>
+		<!-- 刪除單位 -->
+		<action name="deleteCompany" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="deleteCompany">
+			<result name="success" type="chain">showCompanyManagementView</result>
+			<!-- <result name="success">/WEB-INF/views/caa/jsp/function/company/companyManagement.jsp</result> -->
 		</action>
 
-    	<!-- 導頁至「新增訪員」頁面 --> 
-		<action name="showAddExaminerView" class="com.pmt.caa.web.webapp.action.ServiceAction" method="showAddExaminerView">
-			<result name="success">/WEB-INF/views/caa/jsp/function/examiner/addExaminer.jsp</result>
+		<!-- 新增單位 -->
+		<action name="addCompany" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="addCompany">
+			<result name="success" type="chain">showCompanyManagementView</result>
+		</action>
+		<!-- =============== 單位 end =============== -->
+
+
+		<!-- =============== 訪員 begin =============== -->
+
+		<!-- 導頁至「訪員管理」頁面 -->
+		<action name="showExaminerManagementView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showExaminerManagementView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/examiner/examinerManagement.jsp
+			</result>
 		</action>
 
-    	<!-- 新增訪員 --> 
-		<action name="addExaminer" class="com.pmt.caa.web.webapp.action.ServiceAction" method="addExaminer">
-			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp</result>
-		</action>	
-
-    	<!-- 刪除訪員 --> 
-		<action name="deleteExaminer" class="com.pmt.caa.web.webapp.action.ServiceAction" method="deleteExaminer">
-			<result name="success" type="chain">showExaminerManagementView</result> 
-		</action>	
-
-    	<!-- 導頁至「編輯訪員」頁面 --> 
-		<action name="showEditExaminerView" class="com.pmt.caa.web.webapp.action.ServiceAction" method="showEditExaminerView">
-			<result name="success">/WEB-INF/views/caa/jsp/function/examiner/editExaminer.jsp</result>
+		<!-- 導頁至「新增訪員」頁面 -->
+		<action name="showAddExaminerView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showAddExaminerView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/examiner/addExaminer.jsp
+			</result>
 		</action>
 
-    	<!-- 編輯訪員 --> 
-		<action name="editExaminer" class="com.pmt.caa.web.webapp.action.ServiceAction" method="editExaminer">
-			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp</result>
-		</action>	
-<!-- ===============  訪員 end   ===============  -->
-
-
-<!-- ===============  受試者 begin ===============  -->
-		
-    	<!-- 導頁至「受試者管理」頁面 --> 
-		<action name="showSubjectManagementView" class="com.pmt.caa.web.webapp.action.ServiceAction" method="showSubjectManagementView">
-			<result name="success">/WEB-INF/views/caa/jsp/function/subject/subjectManagement.jsp</result>
+		<!-- 新增訪員 -->
+		<action name="addExaminer" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="addExaminer">
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
 		</action>
 
-    	<!-- 導頁至「新增受試者」頁面 --> 
-		<action name="showAddSubjectView" class="com.pmt.caa.web.webapp.action.ServiceAction" method="showAddSubjectView">
-			<result name="success">/WEB-INF/views/caa/jsp/function/subject/addSubject.jsp</result>
+		<!-- 刪除訪員 -->
+		<action name="deleteExaminer" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="deleteExaminer">
+			<result name="success" type="chain">showExaminerManagementView
+			</result>
 		</action>
 
-    	<!-- 新增受試者 主檔--> 
-		<action name="addSubject" class="com.pmt.caa.web.webapp.action.ServiceAction" method="addSubject">
-			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp</result>
-		</action>
-		
-		<!-- 新增受試者 明細檔 --> 
-		<action name="addSubjectRecord" class="com.pmt.caa.web.webapp.action.ServiceAction" method="addSubjectRecord">
-			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp</result>
-		</action>
-		
-    	<!-- 刪除 受試者 單筆紀錄 --> 
-		<action name="deleteSubjectRecord" class="com.pmt.caa.web.webapp.action.ServiceAction" method="deleteSubjectRecord">
-			<result name="success" type="chain">showSubjectManagementView</result> 
-		</action>	
-
-    	<!-- 導頁至「編輯 受試者」頁面 --> 
-		<action name="showEditSubjectView" class="com.pmt.caa.web.webapp.action.ServiceAction" method="showEditSubjectView">
-			<result name="success">/WEB-INF/views/caa/jsp/function/subject/editSubject.jsp</result>
+		<!-- 導頁至「編輯訪員」頁面 -->
+		<action name="showEditExaminerView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showEditExaminerView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/examiner/editExaminer.jsp
+			</result>
 		</action>
 
-    	<!-- 編輯受試者 --> 
-		<action name="editSubject" class="com.pmt.caa.web.webapp.action.ServiceAction" method="editSubject">
-			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp</result>
-		</action>	
-<!-- ===============  受試者 end   ===============  -->		
-		
-		
+		<!-- 編輯訪員 -->
+		<action name="editExaminer" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="editExaminer">
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
+		</action>
+		<!-- =============== 訪員 end =============== -->
+
+
+		<!-- =============== 受試者 begin =============== -->
+
+		<!-- 導頁至「受試者管理」頁面 -->
+		<action name="showSubjectManagementView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showSubjectManagementView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/subject/subjectManagement.jsp
+			</result>
+		</action>
+
+		<!-- 導頁至「新增受試者」頁面 -->
+		<action name="showAddSubjectView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showAddSubjectView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/subject/addSubject.jsp
+			</result>
+		</action>
+
+		<!-- 新增受試者 主檔 -->
+		<action name="addSubject" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="addSubject">
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
+		</action>
+
+		<!-- 新增受試者 明細檔 -->
+		<action name="addSubjectRecord" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="addSubjectRecord">
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
+		</action>
+
+		<!-- 刪除 受試者 單筆紀錄 -->
+		<action name="deleteSubjectRecord" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="deleteSubjectRecord">
+			<result name="success" type="chain">showSubjectManagementView</result>
+		</action>
+
+		<!-- 導頁至「編輯 受試者」頁面 -->
+		<action name="showEditSubjectView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showEditSubjectView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/subject/editSubject.jsp
+			</result>
+		</action>
+
+		<!-- 編輯受試者 -->
+		<action name="editSubject" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="editSubject">
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
+		</action>
+		<!-- =============== 受試者 end =============== -->
+
+
 		<!-- 導向 測驗 畫面 -->
-		<action name="test" class="com.pmt.caa.web.webapp.action.ServiceAction" method="test">
+		<action name="test" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="test">
 			<result name="success">/WEB-INF/views/caa/jsp/console2.jsp</result>
 		</action>
-		
-		<action name="test2" class="com.pmt.caa.web.webapp.action.ServiceAction" method="test2">
-			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/${nextPage}.jsp</result>
-		</action>
-		
-		<action name="test3" class="com.pmt.caa.web.webapp.action.ServiceAction" method="test3">
-			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/03_demoIndex.jsp</result>
-		</action>		
 
-		<action name="test4" class="com.pmt.caa.web.webapp.action.ServiceAction" method="test4">
-			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/focus1.jsp</result>
+		<action name="test2" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="test2">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/${nextPage}.jsp
+			</result>
 		</action>
-				
+
+		<action name="test3" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="test3">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/03_demoIndex.jsp
+			</result>
+		</action>
+
+		<action name="test4" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="test4">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/focus1.jsp
+			</result>
+		</action>
+
+		<!-- 另一種導頁分類 -->
+		<!-- <action name="showTest01Main" class="com.pmt.caa.web.webapp.action.ServiceAction" 
+			method="showTest01Main"> -->
+		<!-- <result name="success">/WEB-INF/views/caa/jsp/console01.jsp</result> -->
+		<!-- </action> -->
+
+		<action name="showTest02Main" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showTest02Main">
+			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp</result>
+		</action>
+
+		<action name="showTest02Process" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showTest02Process">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/${nextPage}.jsp
+			</result>
+		</action>
+
+		<!-- <action name="showTest03Main" class="com.pmt.caa.web.webapp.action.ServiceAction" 
+			method="showTest03Main"> -->
+		<!-- <result name="success">/WEB-INF/views/caa/jsp/console03.jsp</result> -->
+		<!-- </action> -->
+
+		<action name="showFocus" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showFocus">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/demo/focus.jsp</result>
+		</action>
+
 	</package>
 
 </struts>

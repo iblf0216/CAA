@@ -170,6 +170,16 @@ function openTest1(test) {
 	
 }
 
+//執行測驗2 (目前先以測驗1的內容為例)
+function openTest2(test) {
+	alert("開啟測驗2 : " + test );
+
+	var screenHeight = screen.height;
+	var screenWidth = screen.width;
+	
+	window.open('showTest02Main.do?id=' + test, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
+}
+
 // 再做一次  傳入病歷號碼  查詢目前已有筆數，再新增一筆(+1)測驗記錄  [即新增一筆明細]
 function doAgain(medical_no){
 	
