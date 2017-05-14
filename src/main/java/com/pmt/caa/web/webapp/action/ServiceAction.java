@@ -418,6 +418,20 @@ public class ServiceAction extends CaaAbstractAction {
 	}
 
 	/**
+	 * 刪除受試者 單筆記錄
+	 */
+	public String deleteSubject() {
+		System.out.println("刪除 受試者 ");
+
+		// TODO 查詢單位資訊 by id
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String medical_no = getReqestParameter(request, "medical_no");
+		subjectFacade.deleteSubject(medical_no);
+
+		return CaaActionResult.SUCCESS;
+	}
+	
+	/**
 	 * 新增受試者 明細
 	 */
 	public String addSubjectRecord() {
@@ -453,6 +467,28 @@ public class ServiceAction extends CaaAbstractAction {
 		return CaaActionResult.SUCCESS;
 	}
 
+	/**
+	 * 導頁至 受試者 個人頁
+	 * 
+	 * @return
+	 */
+	public String showPersonalAssessmentView() {
+
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String medical_no = getReqestParameter(request, "medical_no");
+
+		// 取得受試者個人測驗歷史
+		List<Map<String, Object>> subjectRecordData = subjectFacade.getSubjectRecordByMedical_No(medical_no);
+
+		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
+
+		reqMp.put(Context.REQ_PARAM_NAME, JsonUtil.toJson(subjectRecordData));
+
+		System.out.println("json = " + JsonUtil.toJson(subjectRecordData));
+		
+		return CaaActionResult.SUCCESS;
+	}
+	
 	// ================ 受試者管理 end ================
 
 	public String getNextPage() {

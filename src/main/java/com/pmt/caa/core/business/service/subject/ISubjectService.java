@@ -13,6 +13,13 @@ public interface ISubjectService {
 	 * @return
 	 */
 	List<Map<String, Object>> getSubjectRecord();
+	
+	/**
+	 * 取得單一 受試者的全部紀錄
+	 * 
+	 * @return
+	 */
+	List<Map<String, Object>> getSubjectRecordByMedical_No(String medical_no);
 
 	/**
 	 * 新增  受試者 (新增主檔 + 一筆明細檔)

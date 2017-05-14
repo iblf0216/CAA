@@ -47,7 +47,7 @@ public class SubjectServiceImpl implements ISubjectService {
 	public List<Map<String, Object>> getSubjectRecord() {
 		List<Map<String, Object>> dataList = null;
 		try {
-			String sqltext = ResourceFileUtil.SQL.getResource("test", "GET_SUBJECT_RECORD");
+			String sqltext = "select medical_no ,name as subjectName, birthday ,status as subjectStatus from subject_main";
 			
 			dataList = iaJdbcDAO.queryForList(sqltext);
 
@@ -59,6 +59,27 @@ public class SubjectServiceImpl implements ISubjectService {
 
 		return dataList;
 	}
+
+	@Override
+	public List<Map<String, Object>> getSubjectRecordByMedical_No(String medical_no) {
+		List<Map<String, Object>> dataList = null;
+		try {
+			String sqltext = ResourceFileUtil.SQL.getResource("test", "GET_SUBJECT_RECORD");
+			
+			sqltext += "and T1.medical_no = '" + medical_no + "'";
+			
+			dataList = iaJdbcDAO.queryForList(sqltext);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+
+			return Collections.emptyList();
+		}
+
+		return dataList;
+	}
+	
+	
 
 	@Override
 	public boolean addSubject(String medical_no, String gender, String name, String birthday) {

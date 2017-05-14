@@ -150,6 +150,13 @@
 			<result name="success">/WEB-INF/views/caa/jsp/function/subject/subjectManagement.jsp
 			</result>
 		</action>
+		
+		<!-- 導頁至「受試者個人」頁面 -->
+		<action name="showPersonalAssessmentView" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showPersonalAssessmentView">
+			<result name="success">/WEB-INF/views/caa/jsp/function/subject/subjectPage.jsp
+			</result>
+		</action>
 
 		<!-- 導頁至「新增受試者」頁面 -->
 		<action name="showAddSubjectView" class="com.pmt.caa.web.webapp.action.ServiceAction"
@@ -163,6 +170,12 @@
 			method="addSubject">
 			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
 			</result>
+		</action>
+
+		<!-- 刪除 受試者  -->
+		<action name="deleteSubject" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="deleteSubject">
+			<result name="success" type="chain">showSubjectManagementView</result>
 		</action>
 
 		<!-- 新增受試者 明細檔 -->

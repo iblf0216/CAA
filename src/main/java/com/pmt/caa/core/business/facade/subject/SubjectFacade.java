@@ -20,8 +20,16 @@ public class SubjectFacade {
 		return subjectService.getSubjectRecord();
 	}
 	
+	public List<Map<String, Object>> getSubjectRecordByMedical_No(String medical_no) {
+		return subjectService.getSubjectRecordByMedical_No(medical_no);
+	}
+	
 	public boolean addSubject(String medical_no, String gender, String name, String birthday) {
 		return subjectService.addSubject(medical_no, gender, name, birthday);
+	}
+	
+	public boolean deleteSubject(String medical_no) {
+		return subjectService.deleteSubject(medical_no);
 	}
 
 	public SubjectVo getSubjectById(String medical_no) {
