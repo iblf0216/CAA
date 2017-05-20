@@ -188,7 +188,7 @@
 		<!-- 刪除 受試者 單筆紀錄 -->
 		<action name="deleteSubjectRecord" class="com.pmt.caa.web.webapp.action.ServiceAction"
 			method="deleteSubjectRecord">
-			<result name="success" type="chain">showSubjectManagementView</result>
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp</result>
 		</action>
 
 		<!-- 導頁至「編輯 受試者」頁面 -->

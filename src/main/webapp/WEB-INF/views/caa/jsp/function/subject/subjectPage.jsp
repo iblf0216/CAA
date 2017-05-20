@@ -212,6 +212,8 @@ function deleteSubjectRecord(id) {
 	var params = {};
 // 	params.medical_no = medical_no;
 	params.id = id;
+	
+	var medical_no = $('#subjectPersonalView').find('td:first').text();
 
 	bootbox.confirm({
 		message : "是否確定刪除這筆測驗紀錄?",
@@ -236,7 +238,7 @@ function deleteSubjectRecord(id) {
 					dataType : 'html',
 					success : function(data) {
 						
-						$('#reflashDiv').empty().html(data);
+						openmenu('showPersonalAssessmentView.do?medical_no=' + $.trim(medical_no));
 						
 					},
 					error : function(dataMp) {

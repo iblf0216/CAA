@@ -47,7 +47,7 @@ public class SubjectServiceImpl implements ISubjectService {
 	public List<Map<String, Object>> getSubjectRecord() {
 		List<Map<String, Object>> dataList = null;
 		try {
-			String sqltext = "select medical_no ,name as subjectName, birthday ,status as subjectStatus from subject_main";
+			String sqltext = "select medical_no ,name as subjectName, birthday ,status as subjectStatus from subject_main where status='Y'";
 			
 			dataList = iaJdbcDAO.queryForList(sqltext);
 
