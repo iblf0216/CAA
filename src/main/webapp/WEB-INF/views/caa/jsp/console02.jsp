@@ -9,29 +9,29 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">    
 
-<link href="resources/css/myStyles.css" rel="stylesheet">
+<link href="/CAA/resources/css/myStyles.css" rel="stylesheet">
         
 <!-- Bootstrap Core CSS -->
-<link href="resources/css/bootstrap.min.css" rel="stylesheet">
+<link href="/CAA/resources/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="resources/css/heroic-features.css" rel="stylesheet">
+<link href="/CAA/resources/css/heroic-features.css" rel="stylesheet">
 
-<link href="resources/css/jquery.dataTables.min.css" rel="stylesheet">
-
-<!-- jQuery -->
-<script src="resources/js/jquery.js"></script>
+<link href="/CAA/resources/css/jquery.dataTables.min.css" rel="stylesheet">
 
 <!-- jQuery -->
-<script src="resources/js/jquery-ui.js"></script>
+<script src="/CAA/resources/js/jquery.js"></script>
+
+<!-- jQuery -->
+<script src="/CAA/resources/js/jquery-ui.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="resources/js/bootstrap.min.js"></script>
+<script src="/CAA/resources/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="resources/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/CAA/resources/js/jquery.dataTables.min.js"></script>
 
 <!-- Bootbox -->
-<script src="resources/js/bootbox.min.js"></script>
+<script src="/CAA/resources/js/bootbox.min.js"></script>
         
 <style>
     .highlight_kpi {
@@ -44,7 +44,7 @@
 	
 	<div id="container">
 		
-		<div class="hide1" id="nextPage">main/02_intro</div>
+		<div class="hide1" id="nextPage">test_01/main/intro</div>
 	
 		<div id="titleDiv">
 			<div class="wrapper"><p class="text">專注性注意力測驗</p></div>
@@ -105,7 +105,7 @@ $(document).ready(function(){
 					
 					console.log("下一頁 = " + next);
 					
-					if (next == 'main/03_demoIndex'){
+					if (next == 'test_01/main/demoIndex'){
 						document.location.href="showTest02Process.do?next=" + next;
 					} else {
 						$('#container').empty().html(data);
