@@ -277,7 +277,7 @@
 
 		<action name="showPractice" class="com.pmt.caa.web.webapp.action.TestOneAction"
 			method="showPractice">
-			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_01/practice/practice.jsp
 			</result>
 		</action>
 

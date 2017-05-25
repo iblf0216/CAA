@@ -123,6 +123,10 @@
 							console.log("接Demo");
 
 							step++;
+							
+							// 目前使用導頁，也可使用ajax refreshDiv
+							var demoUrl = "/CAA/test01/showDemo.do";
+							document.location.href = demoUrl;
 						}
 					}
 

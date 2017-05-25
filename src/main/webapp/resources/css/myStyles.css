@@ -1,8 +1,8 @@
 body {
 	overflow-x: hidden;
 	overflow-y: hidden;
-/* 	FIXME 暫時先關起來 */
-/* 	cursor: none; */
+	/* 	FIXME 暫時先關起來 */
+	/* 	cursor: none; */
 }
 
 #container {
@@ -24,10 +24,20 @@ body {
 	text-align: center;
 }
 
+#resultTitle {
+	height: 55%;
+	text-align: center;
+}
+
+#confirm {
+	height: 55%;
+	text-align: center;
+}
+
 #promptDiv {
 	height: 20%;
 	text-align: center;
-	font-size:30px;
+	font-size: 30px;
 	border-style: solid;
 	border-color: #3366cc;
 	border-width: 2px;
@@ -48,7 +58,7 @@ body {
 	/*text-align: center;*/
 }
 
-li.text{
+li.text {
 	font-size: 50px;
 }
 
@@ -57,28 +67,37 @@ li.text{
 	text-align: center;
 }
 
+#confirmButton {
+	height: 35%;
+	text-align: center;
+}
+
+#resultButton {
+	height: 35%;
+	text-align: center;
+}
+
 .wrapper {
-  height: 100%;
-  text-align: center;
-
-  /* Point */
-  font-size: 0;
+	height: 100%;
+	text-align: center;
+	/* Point */
+	font-size: 0;
 }
+
 .wrapper:before {
-  content: "";
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
+	content: "";
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
 }
 
-p.text{
-  display: inline-block;
-  vertical-align: middle;
-  font-family: DFKai-sb;
-  font-weight:bolder;
-
-  /* Point 要使用絕對值的 font-size 覆寫掉父層的 font-size: 0 */
-  font-size: 80px;
+p.text {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: DFKai-sb;
+	font-weight: bolder;
+	/* Point 要使用絕對值的 font-size 覆寫掉父層的 font-size: 0 */
+	font-size: 80px;
 }
 
 /* 自製button內的打勾、打叉 方框樣式 */
@@ -103,5 +122,5 @@ p.text{
 	font-size: 36px;
 	font-family: DFKai-sb;
 	font-weight: bolder;
-	margin:0px auto; /*置中*/
+	margin: 0px auto; /*置中*/
 }
