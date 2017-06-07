@@ -291,7 +291,7 @@
 							console.log("response : " + response);
 							console.log("reactionTime : " + reactionTime);
 							console.log("current step :  " + step);
-							
+
 							if (event.which == 56) { // 數字8 換下一頁
 								console.log("按下8,step : " + step);
 
@@ -310,134 +310,115 @@
 								}
 
 								// 題目一 start 
-								if (2 == step) {
+								else if (2 == step) {
 									showItem01("practice01-1", "practice01-2",
 											1000, 2000, 2000, 2000);
-								}
-								if (4 == step) {
+								} else if (4 == step) {
 									selectItem1("practice01-1", "practice01-2",
 											2000, 2000, 8);
-								}
-								if (6 == step) {
+								} else if (6 == step) {
 									selectItem2("practice01-2", 8);
 								}
 								// 題目一 end
 
 								// 題目二
-								if (7 == step) {
+								else if (7 == step) {
 									showItem01("practice02-1", "practice02-2",
 											1000, 2000, 1750, 1750);
-								}
-								if (9 == step) {
+								} else if (9 == step) {
 									selectItem1("practice02-1", "practice02-2",
 											1750, 1750, 8);
-								}
-								if (11 == step) {
+								} else if (11 == step) {
 									selectItem2("practice02-2", 8);
 								}
 
 								// 題目三
-								if (12 == step) {
+								else if (12 == step) {
 									showItem01("practice03-1", "practice03-2",
 											1000, 2000, 1500, 1500);
-								}
-								if (14 == step) {
+								} else if (14 == step) {
 									selectItem1("practice03-1", "practice03-2",
 											1500, 1500, 8);
-								}
-								if (16 == step) {
+								} else if (16 == step) {
 									selectItem2("practice03-2", 8);
 								}
 
 								// 題目四
-								if (17 == step) {
+								else if (17 == step) {
 									showItem01("practice04-1", "practice04-2",
 											1000, 2000, 1000, 1000);
-								}
-								if (19 == step) {
+								} else if (19 == step) {
 									selectItem1("practice04-1", "practice04-2",
 											1000, 1000, 8);
-								}
-								if (21 == step) {
+								} else if (21 == step) {
 									selectItem2("practice04-2", 8);
 								}
 
 								// 題目五
-								if (22 == step) {
+								else if (22 == step) {
 									showItem01("practice05-1", "practice05-2",
 											1000, 2000, 500, 2000);
-								}
-								if (24 == step) {
+								} else if (24 == step) {
 									selectItem1("practice05-1", "practice05-2",
 											500, 2000, 8);
-								}
-								if (26 == step) {
+								} else if (26 == step) {
 									selectItem2("practice05-2", 8);
 								}
 
 								// 題目六
-								if (27 == step) {
+								else if (27 == step) {
 									showItem01("practice06-1", "practice06-2",
 											1000, 2000, 750, 1750);
-								}
-								if (29 == step) {
+								} else if (29 == step) {
 									selectItem1("practice06-1", "practice06-2",
 											750, 1750, 8);
-								}
-								if (31 == step) {
+								} else if (31 == step) {
 									selectItem2("practice06-2", 8);
 								}
 
 								// 題目七
-								if (32 == step) {
+								else if (32 == step) {
 									showItem01("practice07-1", "practice07-2",
 											1000, 2000, 1000, 750);
-								}
-								if (34 == step) {
+								} else if (34 == step) {
 									selectItem1("practice07-1", "practice07-2",
 											1000, 750, 8);
-								}
-								if (36 == step) {
+								} else if (36 == step) {
 									selectItem2("practice07-2", 8);
 								}
 
 								// 題目八
-								if (37 == step) {
+								else if (37 == step) {
 									showItem01("practice08-1", "practice08-2",
 											1000, 2000, 1000, 1500);
-								}
-								if (39 == step) {
+								} else if (39 == step) {
 									selectItem1("practice08-1", "practice08-2",
 											1000, 1500, 8);
-								}
-								if (41 == step) {
+								} else if (41 == step) {
 									selectItem2("practice08-2", 8);
 								}
 
 								// 題目九
-								if (42 == step) {
+								else if (42 == step) {
 									showItem01("practice09-1", "practice09-2",
 											1000, 2000, 1000, 500);
-								}
-								if (44 == step) {
+								} else if (44 == step) {
 									selectItem1("practice09-1", "practice09-2",
 											1000, 500, 8);
-								}
-								if (46 == step) {
+								} else if (46 == step) {
 									selectItem2("practice09-2", 8);
 								}
 
 								// 題目十
-								if (47 == step) {
-									showItem01("practice10-1", "practice10-2",
-											1000, 2000, 2000, 500);
-								}
-								if (49 == step) {
-									selectItem1("practice10-1", "practice10-2",
-											2000, 500, 8);
-								}
-								if (51 == step) {
-									selectLastItem("practice10-2", 8);
+								else if (47 == step) {
+									showLastItem("practice10-1",
+											"practice10-2", 1000, 2000, 2000,
+											500);
+								} else if (49 == step) {
+									selectLastItem1("practice10-1",
+											"practice10-2", 2000, 500, 8);
+								} else if (51 == step) {
+									selectLastItem2("practice10-2", 8);
 								}
 							}
 
@@ -455,76 +436,67 @@
 								// 題目一 end
 
 								// 題目二
-								if (9 == step) {
+								else if (9 == step) {
 									selectItem1("practice02-1", "practice02-2",
 											1750, 1750, 2);
-								}
-								if (11 == step) {
+								} else if (11 == step) {
 									selectItem2("practice02-2", 2);
 								}
 								// 題目三
-								if (14 == step) {
+								else if (14 == step) {
 									selectItem1("practice03-1", "practice03-2",
 											1500, 1500, 2);
-								}
-								if (16 == step) {
+								} else if (16 == step) {
 									selectItem2("practice03-2", 2);
 								}
 								// 題目四
-								if (19 == step) {
+								else if (19 == step) {
 									selectItem1("practice04-1", "practice04-2",
 											1000, 1000, 2);
-								}
-								if (21 == step) {
+								} else if (21 == step) {
 									selectItem2("practice04-2", 2);
 								}
 								// 題目五
-								if (24 == step) {
+								else if (24 == step) {
 									selectItem1("practice05-1", "practice05-2",
 											500, 2000, 2);
-								}
-								if (26 == step) {
+								} else if (26 == step) {
 									selectItem2("practice05-2", 2);
 								}
 								// 題目六
-								if (29 == step) {
+								else if (29 == step) {
 									selectItem1("practice06-1", "practice06-2",
 											750, 1750, 2);
-								}
-								if (31 == step) {
+								} else if (31 == step) {
 									selectItem2("practice06-2", 2);
 								}
 								// 題目七
-								if (34 == step) {
+								else if (34 == step) {
 									selectItem1("practice07-1", "practice07-2",
 											1000, 750, 2);
-								}
-								if (36 == step) {
+								} else if (36 == step) {
 									selectItem2("practice07-2", 2);
 								}
 								// 題目八
-								if (39 == step) {
+								else if (39 == step) {
 									selectItem1("practice08-1", "practice08-2",
 											1000, 1500, 2);
-								}
-								if (41 == step) {
+								} else if (41 == step) {
 									selectItem2("practice08-2", 2);
 								}
 								// 題目九
-								if (44 == step) {
+								else if (44 == step) {
 									selectItem1("practice09-1", "practice09-2",
 											1000, 500, 2);
-								}
-								if (46 == step) {
+								} else if (46 == step) {
 									selectItem2("practice09-2", 2);
 								}
 								// 題目十
-								if (49 == step) {
-									selectItem1("practice10-1", "practice10-2",
-											2000, 500, 2);
-								}
-								if (51 == step) {
-									selectLastItem("practice10-2", 2);
+								else if (49 == step) {
+									selectLastItem1("practice10-1",
+											"practice10-2", 2000, 500, 2);
+								} else if (51 == step) {
+									selectLastItem2("practice10-2", 2);
 								}
 							}
 
@@ -550,7 +522,9 @@
 			beginTime = new Date();
 			step++;
 
-			itemTimer1 = setTimeout(function() {
+			itemTimer1 = setInterval(function() {
+				console.log("beginStep1 : " + beginStep1);
+				console.log("Step : " + step);
 				if ((step - beginStep1) == 2) {
 					$("#" + item_1).hide();
 					$("#materialDiv").show();
@@ -565,7 +539,7 @@
 						beginTime = new Date();
 						step++;
 
-						itemTimer2 = setTimeout(function() {
+						itemTimer2 = setInterval(function() {
 							if ((step - beginStep1) == 4) {
 								$("#" + item_2).show();
 
@@ -575,9 +549,13 @@
 
 								response.push(0);
 								reactionTime.push(-1);
+							} else {
+								clearInterval(itemTimer2);
 							}
 						}, time4);
 					}, time3);
+				} else {
+					clearInterval(itemTimer1);
 				}
 			}, time2);
 		}, time1);
@@ -586,8 +564,8 @@
 	// 作答第一個項目
 	function selectItem1(item1, item2, time1, time2, selection) {
 		var beginStep2 = step;
-		clearTimeout(itemTimer1);
-		clearTimeout(itemTimer2);
+		clearInterval(itemTimer1);
+		clearInterval(itemTimer2);
 		$("#" + item1).hide();
 		$("#materialDiv").show();
 		step++;
@@ -602,7 +580,7 @@
 			beginTime = new Date();
 			step++;
 
-			itemTimer2 = setTimeout(function() {
+			itemTimer2 = setInterval(function() {
 				if ((step - beginStep2) == 2) {
 					$("#" + item2).hide();
 
@@ -612,6 +590,8 @@
 
 					response.push(0);
 					reactionTime.push(-1);
+				} else {
+					clearInterval(itemTimer2);
 				}
 			}, time2);
 		}, time1);
@@ -620,8 +600,8 @@
 	// 作答第二個項目
 	function selectItem2(item, selection) {
 		$("#" + item).hide();
-		clearTimeout(itemTimer1);
-		clearTimeout(itemTimer2);
+		clearInterval(itemTimer1);
+		clearInterval(itemTimer2);
 		$("#confirm").show();
 		$("#confirmButton").show()
 		step++;
@@ -631,7 +611,109 @@
 		reactionTime.push(delta);
 	}
 
-	function selectLastItem(item, selection) {
+	function showLastItem(item_1, item_2, time1, time2, time3, time4) {
+		var beginStep1 = step;
+
+		$("#confirm").hide();
+		$("#confirmButton").hide();
+
+		$("#materialDiv").show();
+		step++;
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item_1).show();
+			beginTime = new Date();
+			step++;
+
+			itemTimer1 = setInterval(function() {
+				console.log("beginStep1 : " + beginStep1);
+				console.log("Step : " + step);
+				if ((step - beginStep1) == 2) {
+					$("#" + item_1).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item_2).show();
+						beginTime = new Date();
+						step++;
+
+						itemTimer2 = setInterval(function() {
+							if ((step - beginStep1) == 4) {
+								clearInterval(itemTimer1);
+								clearInterval(itemTimer2);
+
+								$("#titleDiv").hide();
+								$("#btnDiv").hide();
+								$("#" + item2).hide();
+								$("#practiceResult").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+
+								calculateResult();
+							} else {
+								clearInterval(itemTimer2);
+							}
+						}, time4);
+					}, time3);
+				} else {
+					clearInterval(itemTimer1);
+				}
+			}, time2);
+		}, time1);
+	}
+
+	// 作答第一個項目
+	function selectLastItem1(item1, item2, time1, time2, selection) {
+		var beginStep2 = step;
+		clearInterval(itemTimer1);
+		clearInterval(itemTimer2);
+		$("#" + item1).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item2).show();
+			beginTime = new Date();
+			step++;
+
+			itemTimer2 = setInterval(function() {
+				if ((step - beginStep2) == 2) {
+					clearInterval(itemTimer1);
+					clearInterval(itemTimer2);
+
+					$("#titleDiv").hide();
+					$("#btnDiv").hide();
+					$("#" + item2).hide();
+					$("#practiceResult").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+
+					calculateResult();
+				} else {
+					clearInterval(itemTimer2);
+				}
+			}, time2);
+		}, time1);
+	}
+
+	function selectLastItem2(item, selection) {
+		clearInterval(itemTimer1);
+		clearInterval(itemTimer2);
 		$("#titleDiv").hide();
 		$("#btnDiv").hide();
 		$("#" + item).hide();
@@ -642,11 +724,11 @@
 		var delta = new Date() - beginTime;
 		reactionTime.push(delta);
 
-		calculateResult()
+		calculateResult();
 	}
 
 	function calculateResult() {
-		var answer = [ 2, 2, 8, 8, 8, 8, 2, 2, 8, 8, 8, 8, 2, 2, 2, 2, 2, 2, 8,
+		var answer = [ 2, 2, 8, 8, 2, 8, 8, 2, 2, 8, 2, 8, 8, 2, 2, 2, 8, 2, 8,
 				8 ];
 		var correct = 0;
 
