@@ -299,13 +299,13 @@
 	<package name="test03" namespace="/test03" extends="struts-extension">
 		<action name="showIntro" class="com.pmt.caa.web.webapp.action.TestThreeAction"
 			method="showIntro">
-			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_03/main/intro.jsp
 			</result>
 		</action>
 
 		<action name="showDemo" class="com.pmt.caa.web.webapp.action.TestThreeAction"
 			method="showDemo">
-			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_03/demo/demo.jsp
 			</result>
 		</action>
 
