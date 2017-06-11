@@ -295,7 +295,7 @@
 	</package>
 	<!-- 測驗一 End -->
 
-	<!-- 測驗一 start -->
+	<!-- 測驗三 start -->
 	<package name="test03" namespace="/test03" extends="struts-extension">
 		<action name="showIntro" class="com.pmt.caa.web.webapp.action.TestThreeAction"
 			method="showIntro">
@@ -311,13 +311,19 @@
 
 		<action name="showPractice" class="com.pmt.caa.web.webapp.action.TestThreeAction"
 			method="showPractice">
-			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_03/practice/practice.jsp
+			</result>
+		</action>
+
+		<action name="showPreFormalTest" class="com.pmt.caa.web.webapp.action.TestThreeAction"
+			method="showPreFormalTest">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_03/formal/preFormalTest.jsp
 			</result>
 		</action>
 
 		<action name="showFormalTest" class="com.pmt.caa.web.webapp.action.TestThreeAction"
 			method="showFormalTest">
-			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_03/formal/formalTest.jsp
 			</result>
 		</action>
 

@@ -234,6 +234,8 @@
 			</div>
 		</div>
 		<script>
+			var recordId = ${recordId};
+		
 			var step = 1;
 			var response = [];
 			$(document).ready(function() {
@@ -377,15 +379,26 @@
 						} else if (15 == step) {
 							console.log("接續下一段(練習)");
 							
-							console.log("response = " + response);
+							var practiceUrl = "/CAA/test03/showPractice.do?recordId=" + recordId;
+							document.location.href = practiceUrl;
 						}
 					}
 					
 					// TODO  按2的反應
 					if (event.which == 50) { // 數字2 換下一頁
 						console.log("按下2,step : " + step);
+					
+						if (1 == step) {
+							console.log("接練習頁");
+							
+// 							step++;
+							
+							var practiceUrl = "/CAA/test03/showPractice.do?recordId=" + recordId;
+							document.location.href = practiceUrl;
+						}
+					
 						
-						if (8 == step) {
+						else if (8 == step) {
 							//(P11) (demo8)
 							// 示範1  請判斷以下圖形
 							$("#demo7").hide();

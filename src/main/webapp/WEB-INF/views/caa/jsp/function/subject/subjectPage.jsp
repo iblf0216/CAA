@@ -43,10 +43,36 @@ $(document).ready(function(){
  			"sTitle" : "進行測驗",
  			"mRender" : function(obj) {
  				var recordid = obj.recordid;
- 	
-				var template =  "<input id='test1' class='btn btn-small btn-success' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>" +
-							"&nbsp;<input id='test2' class='btn btn-small btn-success' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>" +
-							"&nbsp;<input id='test3' class='btn btn-small btn-success' type='button' value='分配性測驗' onclick='openTest3(" + recordid + ");'>";
+ 				
+ 				// FIXME 處理已做過測驗
+ 				//var isTest1Finished = obj.response1;
+ 				//var isTest2Finished = obj.response2;
+ 				//var isTest3Finished = obj.response3;
+ 				var isTest1Finished = "done";
+ 				var isTest2Finished = "done";
+ 				var isTest3Finished = "";
+ 				
+ 				var template1 = "<input id='test1' class='btn btn-small btn-success' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>";
+ 				var template2 = "&nbsp;<input id='test2' class='btn btn-small btn-success' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>";
+ 				var template3 = "&nbsp;<input id='test3' class='btn btn-small btn-success' type='button' value='分配性測驗' onclick='openTest3(" + recordid + ");'>"
+ 				
+ 				if (isTest1Finished) {
+ 					template1 = "<input id='test1' class='btn btn-small btn-success disabled' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>";
+ 				}
+
+ 				if (isTest2Finished) {
+ 					template2 = "&nbsp;<input id='test2' class='btn btn-small btn-success disabled' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>";
+ 				}
+ 				
+ 				if (isTest3Finished) {
+ 					template3 = "&nbsp;<input id='test3' class='btn btn-small btn-success disabled' type='button' value='分配性測驗' onclick='openTest3(" + recordid + ");'>";
+ 				}
+ 				
+ 				var template = template1 + template2 + template3;
+ 				
+// 				var template =  "<input id='test1' class='btn btn-small btn-success' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>" +
+// 							"&nbsp;<input id='test2' class='btn btn-small btn-success' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>" +
+// 							"&nbsp;<input id='test3' class='btn btn-small btn-success' type='button' value='分配性測驗' onclick='openTest3(" + recordid + ");'>";
  	
  				return template;
  			},
@@ -120,8 +146,8 @@ $(document).ready(function(){
 });
 
 // 執行測驗1
-function openTest1(test) {
-	alert(test);
+function openTest1(recordId) {
+	alert(recordId);
 	
 // 	var openUrl = "assessment1/01_index.html?" + test;
 
@@ -130,10 +156,7 @@ function openTest1(test) {
 	
 // 	window.open(openUrl, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 
-	
-	window.open('test.do?id=' + test, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
-	
-	
+	window.open('test01/showIntro.do?recordId=' + recordId, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 }
 
 //執行測驗2 (目前先以測驗1的內容為例)
@@ -144,6 +167,20 @@ function openTest2(test) {
 	var screenWidth = screen.width;
 	
 	window.open('showTest02Main.do?id=' + test, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
+}
+
+//執行測驗1
+function openTest3(recordId) {
+	alert(recordId);
+	
+// 	var openUrl = "assessment1/01_index.html?" + test;
+
+	var screenHeight = screen.height;
+	var screenWidth = screen.width;
+	
+// 	window.open(openUrl, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
+
+	window.open('test03/showIntro.do?recordId=' + recordId, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 }
 
 // 再做一次  傳入病歷號碼  查詢目前已有筆數，再新增一筆(+1)測驗記錄  [即新增一筆明細]

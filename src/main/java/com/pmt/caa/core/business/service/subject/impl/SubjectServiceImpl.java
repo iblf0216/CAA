@@ -281,4 +281,18 @@ public class SubjectServiceImpl implements ISubjectService {
 		return false;
 	}
 
+	@Override
+	public boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime) {
+		String sqltext = "update subject_detail set response1= '" + response + "' ,responsetime1= '" + reactionTime +  "' where id = '" + recordId
+				+ "'";
+		
+		int updateStatus = iaJdbcDAO.update(sqltext);
+
+		if (updateStatus > 0) {
+			return true;
+		}
+
+		return false;
+	}
+
 }

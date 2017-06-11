@@ -76,4 +76,15 @@ public class SubjectServiceImplTest extends SpringTest {
 		System.out.println("刪除 [" + id + " ] 的紀錄 : " + result);
 	}
 
+	@Test
+	public void testUpdateSubjectRecord() {
+		String recordId = "1";
+		String whichTest ="1";
+		String response ="3,3,2,2";
+		String reactionTime = "321,111,111";
+		
+		boolean result = subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime);
+		
+		System.out.println("更新 [" + recordId + " ] 的測驗結果紀錄 : " + result);
+	}
 }

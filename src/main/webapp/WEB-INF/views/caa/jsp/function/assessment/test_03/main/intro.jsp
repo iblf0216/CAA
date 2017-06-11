@@ -98,12 +98,28 @@
 		</div>
 
 		<script type="text/javascript">
+			var recordId = ${recordId};
+		
 			var step = 0;
 
 			$(document).ready(function() {
 				$('body').keydown(function(event) {
 					if (event.which == 50) { // 數字2  回到受測者資料管理
-						console.log("press 2");
+						
+						if (0 == step) {
+							console.log("press 2 關閉此頁!");
+							window.close();
+						} 
+						
+// 						else if (1 == step) {
+// 							console.log("接練習頁");
+							
+// 							step++;
+							
+// 							var practiceUrl = "/CAA/test03/showPractice.do?recordId=" + recordId;
+// 							document.location.href = practiceUrl;
+// 						}
+						
 					}
 
 					if (event.which == 56) { // 數字8 換下一頁
@@ -125,7 +141,7 @@
 							step++;
 							
 							// 目前使用導頁，也可使用ajax refreshDiv
-							var demoUrl = "/CAA/test03/showDemo.do";
+							var demoUrl = "/CAA/test03/showDemo.do?recordId=" + recordId;
 							document.location.href = demoUrl;
 						}
 					}

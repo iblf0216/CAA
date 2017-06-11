@@ -82,5 +82,13 @@ public interface ISubjectService {
 	 * @return
 	 */
 	boolean deleteSubject(String medical_no);
+	
+	/**
+	 * 編輯 一筆明細 (即紀錄作答紀錄)
+	 * 
+	 * @param id
+	 * @return
+	 */
+	boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime);
 
 }

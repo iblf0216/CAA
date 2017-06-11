@@ -47,6 +47,10 @@ public class SubjectFacade {
 	public boolean deleteSubjectRecord(String id) {
 		return subjectService.deleteSubjectRecord(id);
 	}
+
+	public boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime) {
+		return subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime);
+	}
 	
 	@Transactional(propagation = Propagation.REQUIRED)
 	public boolean deleteSubjectRecord2() {
