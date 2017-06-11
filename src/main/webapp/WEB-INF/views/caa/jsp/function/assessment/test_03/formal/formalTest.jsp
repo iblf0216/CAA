@@ -176,11 +176,215 @@
 			</div>
 		</div>
 		
-		
-<!-- 		題目未完 待續 -->
-		
-		
-		
+		<!-- 題目11 -->
+		<div id="practice01" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-11.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目12 -->
+		<div id="practice02" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-12.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目13 -->
+		<div id="practice03" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-13.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目14 -->
+		<div id="practice04" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-14.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目15 -->
+		<div id="practice05" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-15.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目16 -->
+		<div id="practice06" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-16.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目17 -->
+		<div id="practice07" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-17.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目18 -->
+		<div id="practice08" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-18.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目19 -->
+		<div id="practice09" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-19.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目20 -->
+		<div id="practice10" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-20.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目21 -->
+		<div id="practice01" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-21.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目22 -->
+		<div id="practice02" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-22.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目23 -->
+		<div id="practice03" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-23.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目24 -->
+		<div id="practice04" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-24.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目25 -->
+		<div id="practice05" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-25.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目26 -->
+		<div id="practice06" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-26.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目27 -->
+		<div id="practice07" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-27.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目28 -->
+		<div id="practice08" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-28.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目29 -->
+		<div id="practice09" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-29.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目30 -->
+		<div id="practice10" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-30.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>		
+
+		<!-- 題目31 -->
+		<div id="practice01" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-31.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目32 -->
+		<div id="practice02" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-32.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目33 -->
+		<div id="practice03" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-33.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目34 -->
+		<div id="practice04" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-34.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目35 -->
+		<div id="practice05" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-35.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+		<!-- 題目36 -->
+		<div id="practice06" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test03/formal_pic/F-36.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+
+	
 
 		<div id="practiceResult" style="display: none; height: 100%;">
 			<div id="resultTitle">
@@ -322,10 +526,204 @@
 
 								// 題目十
 								else if (29 == step) {
-									showLastItem("practice10", 2000, 2000);
+									showItem01("practice10", 2000, 2000);
 								} else if (31 == step) {
-									selectLastItem2("practice10", 8);
+									selectItem2("practice10", 8);
 								}
+								
+								// 題目11 start 
+								else if (32 == step) {
+									showItem01("practice11", 1000, 1250);
+								} else if (34 == step) {
+									selectItem2("practice11", 8);
+								}
+								// 題目11 end
+
+								// 題目12
+								else if (35 == step) {
+									showItem01("practice12", 1000, 1000);
+								} else if (37 == step) {
+									selectItem2("practice12", 8);
+								}
+
+								// 題目13
+								else if (38 == step) {
+									showItem01("practice13", 1500, 1500);
+								} else if (40 == step) {
+									selectItem2("practice13", 8);
+								}
+
+								// 題目14
+								else if (41 == step) {
+									showItem01("practice14", 1000, 750);
+								} else if (43 == step) {
+									selectItem2("practice14", 8);
+								}
+
+								// 題目15
+								else if (44 == step) {
+									showItem01("practice15", 500, 1500);
+								} else if (46 == step) {
+									selectItem2("practice15", 8);
+								}
+
+								// 題目16
+								else if (47 == step) {
+									showItem01("practice16", 750, 2000);
+								} else if (49 == step) {
+									selectItem2("practice16", 8);
+								}
+
+								// 題目17
+								else if (50 == step) {
+									showItem01("practice17", 1000, 1750);
+								} else if (52 == step) {
+									selectItem2("practice17", 8);
+								}
+
+								// 題目18
+								else if (53 == step) {
+									showItem01("practice18", 1000, 1250);
+								} else if (55 == step) {
+									selectItem2("practice18", 8);
+								}
+
+								// 題目19
+								else if (56 == step) {
+									showItem01("practice19", 1000, 1250);
+								} else if (58 == step) {
+									selectItem2("practice19", 8);
+								}
+
+								// 題目20
+								else if (59 == step) {
+									showItem01("practice20", 2000, 1000);
+								} else if (61 == step) {
+									selectItem2("practice20", 8);
+								}
+								
+								// 題目21 start 
+								else if (62 == step) {
+									showItem01("practice21", 1000, 1250);
+								} else if (64 == step) {
+									selectItem2("practice21", 8);
+								}
+
+								// 題目22
+								else if (65 == step) {
+									showItem01("practice22", 1000, 750);
+								} else if (67 == step) {
+									selectItem2("practice22", 8);
+								}
+
+								// 題目23
+								else if (68 == step) {
+									showItem01("practice23", 1500, 1750);
+								} else if (70 == step) {
+									selectItem2("practice23", 8);
+								}
+
+								// 題目24
+								else if (71 == step) {
+									showItem01("practice24", 1000, 1750);
+								} else if (73 == step) {
+									selectItem2("practice24", 8);
+								}
+
+								// 題目25
+								else if (74 == step) {
+									showItem01("practice25", 500, 1750);
+								} else if (76 == step) {
+									selectItem2("practice25", 8);
+								}
+
+								// 題目26
+								else if (77 == step) {
+									showItem01("practice26", 750, 1500);
+								} else if (79 == step) {
+									selectItem2("practice26", 8);
+								}
+
+								// 題目27
+								else if (80 == step) {
+									showItem01("practice27", 1000, 1000);
+								} else if (82 == step) {
+									selectItem2("practice27", 8);
+								}
+
+								// 題目28
+								else if (83 == step) {
+									showItem01("practice28", 1000, 2000);
+								} else if (85 == step) {
+									selectItem2("practice28", 8);
+								}
+
+								// 題目29
+								else if (86 == step) {
+									showItem01("practice29", 1000, 750);
+								} else if (88 == step) {
+									selectItem2("practice29", 8);
+								}
+
+								// 題目30(final)
+								else if (89 == step) {
+									showItem01("practice30", 2000, 1500);
+								} else if (91 == step) {
+									selectItem2("practice30", 8);
+								}
+
+								// 題目31 start 
+								else if (92 == step) {
+									showItem01("practice31", 1000, 2000);
+								} else if (94 == step) {
+									selectItem2("practice31", 8);
+								}
+
+								// 題目32
+								else if (95 == step) {
+									showItem01("practice32", 1000, 1500);
+								} else if (97 == step) {
+									selectItem2("practice32", 8);
+								}
+
+								// 題目33
+								else if (98 == step) {
+									showItem01("practice33", 1500, 1750);
+								} else if (100 == step) {
+									selectItem2("practice33", 8);
+								}
+
+								// 題目34
+								else if (101 == step) {
+									showItem01("practice34", 1000, 750);
+								} else if (103 == step) {
+									selectItem2("practice34", 8);
+								}
+
+								// 題目35
+								else if (104 == step) {
+									showItem01("practice35", 500, 1000);
+								} else if (106 == step) {
+									selectItem2("practice35", 8);
+								}
+								
+								//題目36 (final)
+								else if (107 == step) {
+									showLastItem("practice36", 2000, 1750);
+								} else if (109 == step) {
+									selectLastItem2("practice36", 8);
+								}
+								
+								
+								// 於結果頁 按下8 關閉此視窗
+								else if (110 == step) {
+									alert("關閉測驗結果頁");
+									
+									window.close();
+									
+								}
+								
+								
 							}
 
 							if (event.which == 50) { // 數字8 換下一頁
@@ -371,8 +769,139 @@
 								}
 								// 題目十
 								else if (31 == step) {
-									selectLastItem2("practice10", 2);
+									selectItem2("practice10", 2);
 								}
+								
+								// 題目11 start 
+								else if (34 == step) {
+									selectItem2("practice11", 2);
+								}
+
+								// 題目12
+								else if (37 == step) {
+									selectItem2("practice12", 2);
+								}
+
+								// 題目13
+								else if (40 == step) {
+									selectItem2("practice13", 2);
+								}
+
+								// 題目14
+								else if (43 == step) {
+									selectItem2("practice14", 2);
+								}
+
+								// 題目15
+								else if (46 == step) {
+									selectItem2("practice15", 2);
+								}
+
+								// 題目16
+								else if (49 == step) {
+									selectItem2("practice16", 2);
+								}
+
+								// 題目17
+								else if (52 == step) {
+									selectItem2("practice17", 2);
+								}
+
+								// 題目18
+								else if (55 == step) {
+									selectItem2("practice18", 2);
+								}
+
+								// 題目19
+								else if (58 == step) {
+									selectItem2("practice19", 2);
+								}
+
+								// 題目20
+								else if (61 == step) {
+									selectItem2("practice20", 2);
+								}
+								
+								// 題目21 start 
+								else if (64 == step) {
+									selectItem2("practice21", 2);
+								}
+
+								// 題目22
+								else if (67 == step) {
+									selectItem2("practice22", 2);
+								}
+
+								// 題目23
+								else if (70 == step) {
+									selectItem2("practice23", 2);
+								}
+
+								// 題目24
+								else if (73 == step) {
+									selectItem2("practice24", 2);
+								}
+
+								// 題目25
+								else if (76 == step) {
+									selectItem2("practice25", 2);
+								}
+
+								// 題目26
+								else if (79 == step) {
+									selectItem2("practice26", 2);
+								}
+
+								// 題目27
+								else if (82 == step) {
+									selectItem2("practice27", 2);
+								}
+
+								// 題目28
+								else if (85 == step) {
+									selectItem2("practice28", 2);
+								}
+
+								// 題目29
+								else if (88 == step) {
+									selectItem2("practice29", 2);
+								}
+
+								// 題目30(final)
+								else if (91 == step) {
+									selectItem2("practice30", 2);
+								}
+
+								// 題目31 start 
+								else if (94 == step) {
+									selectItem2("practice31", 2);
+								}
+
+								// 題目32
+								else if (97 == step) {
+									selectItem2("practice32", 2);
+								}
+
+								// 題目33
+								else if (100 == step) {
+									selectItem2("practice33", 2);
+								}
+
+								// 題目34
+								else if (103 == step) {
+									selectItem2("practice34", 2);
+								}
+
+								// 題目35
+								else if (106 == step) {
+									selectItem2("practice35", 2);
+								}
+								
+								//題目36 (final)
+								else if (109 == step) {
+									selectLastItem2("practice36", 2);
+								}
+								
 							}
 
 							if (event.which == 27) { // ESC

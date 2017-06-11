@@ -30,7 +30,10 @@ $(document).ready(function(){
         "aaData" : aaData ,
         "aoColumns": 
         [
-         {
+        {
+        	"sTitle" : "recordid",
+            "mData" : "recordid"
+         },{  
              "sTitle" : "病歷號碼",
              "mData" : "medical_no"
          },{
@@ -51,6 +54,7 @@ $(document).ready(function(){
  				var isTest1Finished = "done";
  				var isTest2Finished = "done";
  				var isTest3Finished = "";
+ 				isTest3Finished = obj.response1;
  				
  				var template1 = "<input id='test1' class='btn btn-small btn-success' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>";
  				var template2 = "&nbsp;<input id='test2' class='btn btn-small btn-success' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>";
@@ -65,7 +69,7 @@ $(document).ready(function(){
  				}
  				
  				if (isTest3Finished) {
- 					template3 = "&nbsp;<input id='test3' class='btn btn-small btn-success disabled' type='button' value='分配性測驗' onclick='openTest3(" + recordid + ");'>";
+ 					template3 = "&nbsp;<input id='test3' class='btn btn-small btn-success disabled' type='button' value='分配性測驗' >";
  				}
  				
  				var template = template1 + template2 + template3;
