@@ -177,7 +177,7 @@
 		</div>
 		
 		<!-- 題目11 -->
-		<div id="practice01" style="display: none; height: 100%">
+		<div id="practice11" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-11.jpg"
 					style="height: 80%; weight: 80%;">
@@ -185,7 +185,7 @@
 		</div>
 
 		<!-- 題目12 -->
-		<div id="practice02" style="display: none; height: 100%">
+		<div id="practice12" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-12.jpg"
 					style="height: 80%; weight: 80%;">
@@ -193,7 +193,7 @@
 		</div>
 
 		<!-- 題目13 -->
-		<div id="practice03" style="display: none; height: 100%">
+		<div id="practice13" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-13.jpg"
 					style="height: 80%; weight: 80%;">
@@ -201,7 +201,7 @@
 		</div>
 
 		<!-- 題目14 -->
-		<div id="practice04" style="display: none; height: 100%">
+		<div id="practice14" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-14.jpg"
 					style="height: 80%; weight: 80%;">
@@ -209,7 +209,7 @@
 		</div>
 
 		<!-- 題目15 -->
-		<div id="practice05" style="display: none; height: 100%">
+		<div id="practice15" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-15.jpg"
 					style="height: 80%; weight: 80%;">
@@ -217,7 +217,7 @@
 		</div>
 
 		<!-- 題目16 -->
-		<div id="practice06" style="display: none; height: 100%">
+		<div id="practice16" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-16.jpg"
 					style="height: 80%; weight: 80%;">
@@ -225,7 +225,7 @@
 		</div>
 
 		<!-- 題目17 -->
-		<div id="practice07" style="display: none; height: 100%">
+		<div id="practice17" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-17.jpg"
 					style="height: 80%; weight: 80%;">
@@ -233,7 +233,7 @@
 		</div>
 
 		<!-- 題目18 -->
-		<div id="practice08" style="display: none; height: 100%">
+		<div id="practice18" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-18.jpg"
 					style="height: 80%; weight: 80%;">
@@ -241,7 +241,7 @@
 		</div>
 
 		<!-- 題目19 -->
-		<div id="practice09" style="display: none; height: 100%">
+		<div id="practice19" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-19.jpg"
 					style="height: 80%; weight: 80%;">
@@ -249,7 +249,7 @@
 		</div>
 
 		<!-- 題目20 -->
-		<div id="practice10" style="display: none; height: 100%">
+		<div id="practice20" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-20.jpg"
 					style="height: 80%; weight: 80%;">
@@ -257,7 +257,7 @@
 		</div>
 
 		<!-- 題目21 -->
-		<div id="practice01" style="display: none; height: 100%">
+		<div id="practice21" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-21.jpg"
 					style="height: 80%; weight: 80%;">
@@ -265,7 +265,7 @@
 		</div>
 
 		<!-- 題目22 -->
-		<div id="practice02" style="display: none; height: 100%">
+		<div id="practice22" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-22.jpg"
 					style="height: 80%; weight: 80%;">
@@ -273,7 +273,7 @@
 		</div>
 
 		<!-- 題目23 -->
-		<div id="practice03" style="display: none; height: 100%">
+		<div id="practice23" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-23.jpg"
 					style="height: 80%; weight: 80%;">
@@ -281,7 +281,7 @@
 		</div>
 
 		<!-- 題目24 -->
-		<div id="practice04" style="display: none; height: 100%">
+		<div id="practice24" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-24.jpg"
 					style="height: 80%; weight: 80%;">
@@ -289,7 +289,7 @@
 		</div>
 
 		<!-- 題目25 -->
-		<div id="practice05" style="display: none; height: 100%">
+		<div id="practice25" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-25.jpg"
 					style="height: 80%; weight: 80%;">
@@ -297,7 +297,7 @@
 		</div>
 
 		<!-- 題目26 -->
-		<div id="practice06" style="display: none; height: 100%">
+		<div id="practice26" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-26.jpg"
 					style="height: 80%; weight: 80%;">
@@ -305,7 +305,7 @@
 		</div>
 
 		<!-- 題目27 -->
-		<div id="practice07" style="display: none; height: 100%">
+		<div id="practice27" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-27.jpg"
 					style="height: 80%; weight: 80%;">
@@ -313,7 +313,7 @@
 		</div>
 
 		<!-- 題目28 -->
-		<div id="practice08" style="display: none; height: 100%">
+		<div id="practice28" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-28.jpg"
 					style="height: 80%; weight: 80%;">
@@ -321,7 +321,7 @@
 		</div>
 
 		<!-- 題目29 -->
-		<div id="practice09" style="display: none; height: 100%">
+		<div id="practice29" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-29.jpg"
 					style="height: 80%; weight: 80%;">
@@ -329,7 +329,7 @@
 		</div>
 
 		<!-- 題目30 -->
-		<div id="practice10" style="display: none; height: 100%">
+		<div id="practice30" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-30.jpg"
 					style="height: 80%; weight: 80%;">
@@ -337,7 +337,7 @@
 		</div>		
 
 		<!-- 題目31 -->
-		<div id="practice01" style="display: none; height: 100%">
+		<div id="practice31" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-31.jpg"
 					style="height: 80%; weight: 80%;">
@@ -345,7 +345,7 @@
 		</div>
 
 		<!-- 題目32 -->
-		<div id="practice02" style="display: none; height: 100%">
+		<div id="practice32" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-32.jpg"
 					style="height: 80%; weight: 80%;">
@@ -353,7 +353,7 @@
 		</div>
 
 		<!-- 題目33 -->
-		<div id="practice03" style="display: none; height: 100%">
+		<div id="practice33" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-33.jpg"
 					style="height: 80%; weight: 80%;">
@@ -361,7 +361,7 @@
 		</div>
 
 		<!-- 題目34 -->
-		<div id="practice04" style="display: none; height: 100%">
+		<div id="practice34" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-34.jpg"
 					style="height: 80%; weight: 80%;">
@@ -369,7 +369,7 @@
 		</div>
 
 		<!-- 題目35 -->
-		<div id="practice05" style="display: none; height: 100%">
+		<div id="practice35" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-35.jpg"
 					style="height: 80%; weight: 80%;">
@@ -377,7 +377,7 @@
 		</div>
 
 		<!-- 題目36 -->
-		<div id="practice06" style="display: none; height: 100%">
+		<div id="practice36" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
 				<img src="/CAA/resources/images/test03/formal_pic/F-36.jpg"
 					style="height: 80%; weight: 80%;">
@@ -537,7 +537,6 @@
 								} else if (34 == step) {
 									selectItem2("practice11", 8);
 								}
-								// 題目11 end
 
 								// 題目12
 								else if (35 == step) {
@@ -950,7 +949,6 @@
 		}, time1);
 	}
 
-
 	// 作答第二個項目
 	function selectItem2(item, selection) {
 		$("#" + item).hide();
@@ -1020,7 +1018,11 @@
 	}
 
 	function calculateResult() {
-		var answer = [ 2, 8, 2, 8, 2, 8, 8, 8, 2, 2 ]; // 練習題正確答案
+		var answer = [ 2, 8, 2, 8, 2, 8, 8, 8, 2, 2,
+						2, 2, 8, 2, 2, 8, 8, 2, 8, 8,
+						8, 8, 2, 2, 8, 8, 8, 8, 8, 2,
+						2, 2, 8, 2, 2, 2
+					]; // 正式題 正確答案
 		var correct = 0;
 		var totalAnswerCorrectTime = 0;
 		var averageTime = 0;
@@ -1032,7 +1034,7 @@
 				totalAnswerCorrectTime += reactionTime[key];
 			}
 		}
-		var wrong = 10 - correct;
+		var wrong = 36 - correct;
 
 		$("#sumOfCorrect").html(correct);
 		$("#sumOfWrong").html(wrong);
@@ -1042,10 +1044,12 @@
 				"recordId" : recordId,
 				"response" : response.toString(),
 				"whichTest" : whichTest,
-				"reactionTime" : reactionTime.toString()
+				"reactionTime" : reactionTime.toString(),
+				"rightNum" : correct,
+				"wrongNum" : wrong,
+				"averageTime" : totalAnswerCorrectTime/correct
 		};
-		
-		
+
 		// 將測驗結果存入DB
 		$.ajax({
 			type : "POST",

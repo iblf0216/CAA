@@ -19,11 +19,12 @@ public class TestThreeAction extends CaaAbstractAction {
 	@Autowired
 	SubjectFacade subjectFacade;
 
+	// 介紹頁首頁
 	public String showIntro() {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
-		
-		System.out.println("[showDemo] recordId  = " + recordId);
+
+		System.out.println("[showIntro] recordId  = " + recordId);
 		
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -32,6 +33,7 @@ public class TestThreeAction extends CaaAbstractAction {
 		return CaaActionResult.SUCCESS;
 	}
 
+	// demo 首頁
 	public String showDemo() {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
@@ -45,8 +47,8 @@ public class TestThreeAction extends CaaAbstractAction {
 		return CaaActionResult.SUCCESS;
 	}
 
+	// 練習題 首頁
 	public String showPractice() {
-		
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 		
@@ -59,10 +61,8 @@ public class TestThreeAction extends CaaAbstractAction {
 		return CaaActionResult.SUCCESS;
 	}
 
-	
-
+	// 正式測驗前的 休息頁
 	public String showPreFormalTest() {
-		
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 		
@@ -75,8 +75,8 @@ public class TestThreeAction extends CaaAbstractAction {
 		return CaaActionResult.SUCCESS;
 	}
 	
+	// 正式測驗 首頁
 	public String showFormalTest() {
-		
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 		
@@ -101,6 +101,15 @@ public class TestThreeAction extends CaaAbstractAction {
 		String whichTest = getReqestParameter(request, "whichTest");
 		String response = getReqestParameter(request, "response");
 		String reactionTime = getReqestParameter(request, "reactionTime");
+		
+		// TODO 紀錄 答對題數、答錯題數、答對的平均時間
+		String rightNum = getReqestParameter(request, "rightNum");
+		String wrongNum = getReqestParameter(request, "wrongNum");
+		String averageTime = getReqestParameter(request, "averageTime");
+		
+		rightNum = "1";
+		wrongNum = "35";
+		averageTime = "630.5555";
 		
 		System.out.println("更新 受試者 該筆 測驗結果記錄");
 
