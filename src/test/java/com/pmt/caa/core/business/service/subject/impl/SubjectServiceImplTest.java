@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.pmt.caa.SpringTest;
 import com.pmt.caa.core.business.service.subject.ISubjectService;
+import com.pmt.caa.core.vo.SubjectDetailVo;
 import com.pmt.caa.core.vo.SubjectVo;
 
 public class SubjectServiceImplTest extends SpringTest {
@@ -83,8 +84,21 @@ public class SubjectServiceImplTest extends SpringTest {
 		String response ="3,3,2,2";
 		String reactionTime = "321,111,111";
 		
-		boolean result = subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime);
+		String rightNum = "20";
+		String wrongNum = "16";
+		String averageTime = "480.34";
 		
-		System.out.println("更新 [" + recordId + " ] 的測驗結果紀錄 : " + result);
+		boolean result = subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime, rightNum, wrongNum, averageTime);
+		
+		System.out.println("更新 [ " + recordId + " ] 的測驗結果紀錄 : " + result);
 	}
+	
+	@Test
+	public void testGetSubjectResultByRecordId() {
+		String recordId = "1";
+		SubjectDetailVo result = subjectService.getSubjectResultByRecordId(recordId);
+		
+		System.out.println("查詢 [" + recordId + " ] 的測驗結果紀錄 : " + result);
+	}
+	
 }

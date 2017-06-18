@@ -204,6 +204,14 @@
 			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
 			</result>
 		</action>
+		
+		<!-- 顯示 受試者 某次 測驗結果 -->
+		<action name="showSubjectTestResult" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="showSubjectTestResult">
+			<result name="success">/WEB-INF/views/caa/jsp/function/subject/testResultPage.jsp</result>
+<!-- 			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp -->
+<!-- 			</result> -->
+		</action>
 		<!-- =============== 受試者 end =============== -->
 
 

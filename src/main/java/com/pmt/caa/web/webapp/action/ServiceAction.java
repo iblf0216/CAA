@@ -18,6 +18,7 @@ import com.pmt.caa.core.business.facade.subject.SubjectFacade;
 import com.pmt.caa.core.common.Context;
 import com.pmt.caa.core.common.util.JsonUtil;
 import com.pmt.caa.core.vo.ExaminerVo;
+import com.pmt.caa.core.vo.SubjectDetailVo;
 import com.pmt.caa.core.vo.SubjectVo;
 import com.pmt.caa.core.vo.UserSessionVO;
 import com.pmt.caa.web.webapp.action.CaaAbstractAction;
@@ -320,7 +321,7 @@ public class ServiceAction extends CaaAbstractAction {
 
 		reqMp.put(Context.REQ_PARAM_NAME, JsonUtil.toJson(subjectRecordData));
 
-		System.out.println("json = " + JsonUtil.toJson(subjectRecordData));
+		System.out.println("[showSubjectManagementView] json = " + JsonUtil.toJson(subjectRecordData));
 
 		return CaaActionResult.SUCCESS;
 	}
@@ -485,6 +486,33 @@ public class ServiceAction extends CaaAbstractAction {
 		reqMp.put(Context.REQ_PARAM_NAME, JsonUtil.toJson(subjectRecordData));
 
 		System.out.println("json = " + JsonUtil.toJson(subjectRecordData));
+		
+		return CaaActionResult.SUCCESS;
+	}
+
+	
+	
+	/**
+	 * 查詢 受試者 某次測驗結果
+	 * 
+	 * @return
+	 */	
+	public String showSubjectTestResult() {
+		
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String recordId = getReqestParameter(request, "recordId");
+		
+		SubjectDetailVo subjectDetailVo = subjectFacade.getSubjectResultByRecordId(recordId);
+		
+		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
+		
+		reqMp.put("subjectDetailVo", subjectDetailVo);
+
+		reqMp.put(Context.REQ_PARAM_NAME, JsonUtil.toJson(subjectDetailVo));
+		reqMp.put(Context.R_RESULT_ATTR_KEY, JsonUtil.toJson(subjectDetailVo));
+		
+		
+		System.out.println("json = " + JsonUtil.toJson(subjectDetailVo));
 		
 		return CaaActionResult.SUCCESS;
 	}

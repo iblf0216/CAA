@@ -190,7 +190,9 @@ function openTest3(recordId) {
 // 再做一次  傳入病歷號碼  查詢目前已有筆數，再新增一筆(+1)測驗記錄  [即新增一筆明細]
 function doAgain(){
 	
-	var medical_no = $('#subjectPersonalView').find('td:first').text();
+	var medical_no = $('#subjectPersonalView').find('td:eq(1)').text();
+	
+	alert(medical_no);
 	
 	medical_no = $.trim(medical_no);
 	
@@ -244,8 +246,39 @@ function doAgain(){
 
 
 // 顯示這次的三個分測驗結果
-function showResult(){
-	alert("待實作 顯示測驗結果");
+function showResult(recordId){
+	
+	var params = {};
+	params.recordId = recordId;
+	
+	$.ajax({
+		type : "POST",
+		url : "showSubjectTestResult.do",
+		data : params,
+		dataType : 'html',
+		success : function(data) {
+			
+			console.log(data);
+			
+			if (data) {
+				$("#testResultDiv").empty().html(data);
+				
+			 	bootbox.alert({
+		 	    message: data,
+		 	    backdrop: true
+		 	});
+			}
+			
+		},
+		error : function(dataMp) {
+		}
+	});
+	
+	
+// 	bootbox.alert({
+// 	    message: result,
+// 	    backdrop: true
+// 	});
 }
 
 //根據 recordid 刪除 該筆測驗紀錄 (刪除detail檔)

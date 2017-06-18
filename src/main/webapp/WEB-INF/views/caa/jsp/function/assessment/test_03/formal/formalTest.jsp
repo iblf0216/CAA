@@ -388,7 +388,7 @@
 
 		<div id="practiceResult" style="display: none; height: 100%;">
 			<div id="resultTitle">
-				<h1 class="text-center">練習題施測結果</h1>
+				<h1 class="text-center">正式題施測結果</h1>
 				<table class="table table-bordered text-center"
 					style="font-size: 30px; margin: 0 50px;">
 					<tr>
@@ -425,6 +425,9 @@
 </body>
 
 <script>
+
+	var recordId = ${recordId};
+
 	var step = 1;
 	var beginTime;
 	var response = [];
@@ -1047,7 +1050,7 @@
 				"reactionTime" : reactionTime.toString(),
 				"rightNum" : correct,
 				"wrongNum" : wrong,
-				"averageTime" : totalAnswerCorrectTime/correct
+				"averageTime" : (totalAnswerCorrectTime/correct).toFixed(3)
 		};
 
 		// 將測驗結果存入DB

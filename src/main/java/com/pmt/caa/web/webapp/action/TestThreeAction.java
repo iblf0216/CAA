@@ -107,14 +107,14 @@ public class TestThreeAction extends CaaAbstractAction {
 		String wrongNum = getReqestParameter(request, "wrongNum");
 		String averageTime = getReqestParameter(request, "averageTime");
 		
-		rightNum = "1";
-		wrongNum = "35";
-		averageTime = "630.5555";
+//		rightNum = "1";
+//		wrongNum = "35";
+//		averageTime = "630.5555";
 		
 		System.out.println("更新 受試者 該筆 測驗結果記錄");
 
 		//TODO 更新作答紀錄  將資料存入DB  by recordid
-		subjectFacade.updateSubjectRecord(recordId, whichTest, response, reactionTime);
+		subjectFacade.updateSubjectRecord(recordId, whichTest, response, reactionTime, rightNum, wrongNum, averageTime);
 
 		return CaaActionResult.SUCCESS;
 	}

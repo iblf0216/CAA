@@ -3,6 +3,7 @@ package com.pmt.caa.core.business.service.subject;
 import java.util.List;
 import java.util.Map;
 
+import com.pmt.caa.core.vo.SubjectDetailVo;
 import com.pmt.caa.core.vo.SubjectVo;
 
 public interface ISubjectService {
@@ -89,6 +90,14 @@ public interface ISubjectService {
 	 * @param id
 	 * @return
 	 */
-	boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime);
+	boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime, String rightnum, String wrongnum1, String averagetime);
 
+	
+	/**
+	 * 查詢單次測驗結果
+	 * 
+	 * @param recordId
+	 * @return
+	 */
+	SubjectDetailVo getSubjectResultByRecordId(String recordId);
 }

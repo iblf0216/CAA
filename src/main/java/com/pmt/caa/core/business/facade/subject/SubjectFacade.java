@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.pmt.caa.core.business.service.subject.ISubjectService;
+import com.pmt.caa.core.vo.SubjectDetailVo;
 import com.pmt.caa.core.vo.SubjectVo;
 
 @Service
@@ -48,8 +49,12 @@ public class SubjectFacade {
 		return subjectService.deleteSubjectRecord(id);
 	}
 
-	public boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime) {
-		return subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime);
+	public boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime, String rightNum, String wrongNum, String averageTime) {
+		return subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime, rightNum, rightNum, rightNum);
+	}
+	
+	public SubjectDetailVo getSubjectResultByRecordId(String recordId) {
+		return subjectService.getSubjectResultByRecordId(recordId);
 	}
 	
 	@Transactional(propagation = Propagation.REQUIRED)
