@@ -492,7 +492,7 @@
 									selectItem1("practice01-1", "practice01-2",
 											2000, 2000, 2);
 								}
-								if (6 == step) {
+								else if (6 == step) {
 									selectItem2("practice01-2", 2);
 								}
 								// 題目一 end
