@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>測驗介紹頁</title>
+<title>測驗一(專注性測驗)介紹頁</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -98,12 +98,15 @@
 		</div>
 
 		<script type="text/javascript">
+		var recordId = ${recordId};
+		
 			var step = 0;
 
 			$(document).ready(function() {
 				$('body').keydown(function(event) {
 					if (event.which == 50) { // 數字2  回到受測者資料管理
 						console.log("press 2");
+						window.close();
 					}
 
 					if (event.which == 56) { // 數字8 換下一頁
@@ -125,7 +128,7 @@
 							step++;
 							
 							// 目前使用導頁，也可使用ajax refreshDiv
-							var demoUrl = "/CAA/test01/showDemo.do";
+							var demoUrl = "/CAA/test01/showDemo.do?recordId=" + recordId;
 							document.location.href = demoUrl;
 						}
 					}

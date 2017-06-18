@@ -427,6 +427,7 @@
 <script>
 
 	var recordId = ${recordId};
+	var whichTest = "3";
 
 	var step = 1;
 	var beginTime;
@@ -721,7 +722,9 @@
 								else if (110 == step) {
 									alert("關閉測驗結果頁");
 									
-									window.close();
+									console.log("觀察一下  有無寫入db");
+									
+// 									window.close();
 									
 								}
 								
@@ -955,7 +958,7 @@
 	// 作答第二個項目
 	function selectItem2(item, selection) {
 		$("#" + item).hide();
-		clearInterval(itemTimer1);
+		clearTimeout(itemTimer1);
 		$("#confirm").show();
 		$("#confirmButton").show()
 		step++;
@@ -1006,7 +1009,7 @@
 	}
 
 	function selectLastItem2(item, selection) {
-		clearInterval(itemTimer1);
+		clearTimeout(itemTimer1);
 		$("#titleDiv").hide();
 		$("#btnDiv").hide();
 		$("#" + item).hide();

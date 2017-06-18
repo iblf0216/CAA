@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>測驗三正式測驗(前導頁)</title>
+<title>測驗一正式測驗(前導頁)</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
 	setTimeout(function() {
 		
 		if (0 == step) {
-			var formalUrl = "/CAA/test03/showFormalTest.do?recordId=" + recordId;
+			var formalUrl = "/CAA/test01/showFormalTest.do?recordId=" + recordId;
 			document.location.href = formalUrl;
 		}
 		
@@ -79,7 +79,7 @@ $(document).ready(function() {
 		
 			step++; //1
 		
-			var formalUrl = "/CAA/test03/showFormalTest.do?recordId=" + recordId;
+			var formalUrl = "/CAA/test01/showFormalTest.do?recordId=" + recordId;
 			document.location.href = formalUrl;
 		}
 		

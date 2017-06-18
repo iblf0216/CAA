@@ -9,8 +9,8 @@ select
 	,T2.createdate	as createdate
 	,T2.status		as detailStatus
 	,T2.response1	as response1
-	--,T2.response2	as response2
-	--,T2.response3	as response3
+	,T2.response2	as response2
+	,T2.response3	as response3
 from 
 	subject_main T1
 right join 

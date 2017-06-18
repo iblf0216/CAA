@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>測驗一練習頁</title>
+<title>測驗一(專注性測驗)練習頁</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -45,12 +45,16 @@
 <body>
 	<div id="container">
 		<div id="titleDiv">
-			<div class="wrapper">
+			<div class="wrapper" id="title1">
 				<p class="text">練習題</p>
+			</div>
+			
+			<div class="wrapper" id="title2" style="display: none;">
+				<p class="text">是否需要再次練習</p>
 			</div>
 		</div>
 		<div id="btnDiv">
-			<div class="row">
+			<div class="row" id="btn1">
 				<div class="col-md-3"></div>
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
@@ -67,6 +71,25 @@
 				</div>
 				<div class="col-md-3"></div>
 			</div>
+		</div>
+		
+
+		<div class="row" id="btn2" style="display: none;">
+			<div class="col-md-3"></div>
+			<div class="col-md-3">
+				<div class="blue_bg_btn">
+					結束練習
+					<p class="red_border">✘</p>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="blue_bg_btn">
+					再次練習
+					<p class="red_border">✔</p>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
 		</div>
 
 		<div id="confirm" style="display: none;">
@@ -275,6 +298,10 @@
 </body>
 
 <script>
+	var recordId = ${recordId};
+	
+	var whichTest = "1";
+
 	var step = 1;
 	var beginTime;
 	var response = [];
@@ -420,13 +447,48 @@
 								} else if (51 == step) {
 									selectLastItem2("practice10-2", 8);
 								}
+								
+								
+								else if (52 == step) {
+									// 隱藏 結果頁  & 按鈕
+									// 顯示 是否再次練習
+									
+									$("#title1").hide();
+									$("#title2").show();
+									
+									$("#titleDiv").show();
+									
+									$("#btn1").hide();
+									$("#btn2").show();
+									
+									$("#btnDiv").show();
+									
+									step++; 
+								}
+								
+								else if (53 == step) {
+									step++; // step =54 不做任何反應
+									
+									alert("待實作  休息片刻頁");
+									var formalUrl = "/CAA/test01/showPreFormalTest.do?recordId=" + recordId;
+									document.location.href = formalUrl;
+								}
+								
+								
 							}
 
 							if (event.which == 50) { // 數字8 換下一頁
 								console.log("按下2,step : " + step);
+							
+								if (1 == step) {
+									console.log("略過練習題 跳到正式測驗!!");
+									
+									var formalUrl = "/CAA/test01/showPreFormalTest.do?recordId=" + recordId;
+									document.location.href = formalUrl;
+								}
 
 								// 題目一 start
-								if (4 == step) {
+								else if (4 == step) {
 									selectItem1("practice01-1", "practice01-2",
 											2000, 2000, 2);
 								}
@@ -498,6 +560,23 @@
 								} else if (51 == step) {
 									selectLastItem2("practice10-2", 2);
 								}
+								
+								
+								else if (53 == step) {
+									// 回到練習題首頁
+									step = 1;
+									
+									$("#title1").show();
+									$("#title2").hide();
+									
+									$("#titleDiv").show();
+									
+									$("#btn1").show();
+									$("#btn2").hide();
+									
+									$("#btnDiv").show();
+								}
+								
 							}
 
 							if (event.which == 27) { // ESC
@@ -522,7 +601,7 @@
 			beginTime = new Date();
 			step++;
 
-			itemTimer1 = setInterval(function() {
+			itemTimer1 = setTimeout(function() {
 				console.log("beginStep1 : " + beginStep1);
 				console.log("Step : " + step);
 				if ((step - beginStep1) == 2) {
@@ -539,7 +618,7 @@
 						beginTime = new Date();
 						step++;
 
-						itemTimer2 = setInterval(function() {
+						itemTimer2 = setTimeout(function() {
 							if ((step - beginStep1) == 4) {
 								$("#" + item_2).show();
 
@@ -550,12 +629,12 @@
 								response.push(0);
 								reactionTime.push(-1);
 							} else {
-								clearInterval(itemTimer2);
+								clearTimeout(itemTimer2);
 							}
 						}, time4);
 					}, time3);
 				} else {
-					clearInterval(itemTimer1);
+					clearTimeout(itemTimer1);
 				}
 			}, time2);
 		}, time1);
@@ -564,8 +643,8 @@
 	// 作答第一個項目
 	function selectItem1(item1, item2, time1, time2, selection) {
 		var beginStep2 = step;
-		clearInterval(itemTimer1);
-		clearInterval(itemTimer2);
+		clearTimeout(itemTimer1);
+		clearTimeout(itemTimer2);
 		$("#" + item1).hide();
 		$("#materialDiv").show();
 		step++;
@@ -580,7 +659,7 @@
 			beginTime = new Date();
 			step++;
 
-			itemTimer2 = setInterval(function() {
+			itemTimer2 = setTimeout(function() {
 				if ((step - beginStep2) == 2) {
 					$("#" + item2).hide();
 
@@ -591,7 +670,7 @@
 					response.push(0);
 					reactionTime.push(-1);
 				} else {
-					clearInterval(itemTimer2);
+					clearTimeout(itemTimer2);
 				}
 			}, time2);
 		}, time1);
@@ -600,8 +679,8 @@
 	// 作答第二個項目
 	function selectItem2(item, selection) {
 		$("#" + item).hide();
-		clearInterval(itemTimer1);
-		clearInterval(itemTimer2);
+		clearTimeout(itemTimer1);
+		clearTimeout(itemTimer2);
 		$("#confirm").show();
 		$("#confirmButton").show()
 		step++;
@@ -626,7 +705,7 @@
 			beginTime = new Date();
 			step++;
 
-			itemTimer1 = setInterval(function() {
+			itemTimer1 = setTimeout(function() {
 				console.log("beginStep1 : " + beginStep1);
 				console.log("Step : " + step);
 				if ((step - beginStep1) == 2) {
@@ -643,10 +722,10 @@
 						beginTime = new Date();
 						step++;
 
-						itemTimer2 = setInterval(function() {
+						itemTimer2 = setTimeout(function() {
 							if ((step - beginStep1) == 4) {
-								clearInterval(itemTimer1);
-								clearInterval(itemTimer2);
+								clearTimeout(itemTimer1);
+								clearTimeout(itemTimer2);
 
 								$("#titleDiv").hide();
 								$("#btnDiv").hide();
@@ -659,12 +738,12 @@
 
 								calculateResult();
 							} else {
-								clearInterval(itemTimer2);
+								clearTimeout(itemTimer2);
 							}
 						}, time4);
 					}, time3);
 				} else {
-					clearInterval(itemTimer1);
+					clearTimeout(itemTimer1);
 				}
 			}, time2);
 		}, time1);
@@ -673,8 +752,8 @@
 	// 作答第一個項目
 	function selectLastItem1(item1, item2, time1, time2, selection) {
 		var beginStep2 = step;
-		clearInterval(itemTimer1);
-		clearInterval(itemTimer2);
+		clearTimeout(itemTimer1);
+		clearTimeout(itemTimer2);
 		$("#" + item1).hide();
 		$("#materialDiv").show();
 		step++;
@@ -689,10 +768,10 @@
 			beginTime = new Date();
 			step++;
 
-			itemTimer2 = setInterval(function() {
+			itemTimer2 = setTimeout(function() {
 				if ((step - beginStep2) == 2) {
-					clearInterval(itemTimer1);
-					clearInterval(itemTimer2);
+					clearTimeout(itemTimer1);
+					clearTimeout(itemTimer2);
 
 					$("#titleDiv").hide();
 					$("#btnDiv").hide();
@@ -705,15 +784,15 @@
 
 					calculateResult();
 				} else {
-					clearInterval(itemTimer2);
+					clearTimeout(itemTimer2);
 				}
 			}, time2);
 		}, time1);
 	}
 
 	function selectLastItem2(item, selection) {
-		clearInterval(itemTimer1);
-		clearInterval(itemTimer2);
+		clearTimeout(itemTimer1);
+		clearTimeout(itemTimer2);
 		$("#titleDiv").hide();
 		$("#btnDiv").hide();
 		$("#" + item).hide();
@@ -731,16 +810,21 @@
 		var answer = [ 2, 2, 8, 8, 2, 8, 8, 2, 2, 8, 2, 8, 8, 2, 2, 2, 8, 2, 8,
 				8 ];
 		var correct = 0;
+		var totalAnswerCorrectTime = 0;
+		var averageTime = 0;
 
 		for (key in answer) {
 			if (answer[key] == response[key]) {
 				correct++;
+				
+				totalAnswerCorrectTime += reactionTime[key];
 			}
 		}
 		var wrong = 20 - correct;
 
 		$("#sumOfCorrect").html(correct);
 		$("#sumOfWrong").html(wrong);
+		$("#averageTime").html(totalAnswerCorrectTime/correct);
 	}
 </script>
 </html>

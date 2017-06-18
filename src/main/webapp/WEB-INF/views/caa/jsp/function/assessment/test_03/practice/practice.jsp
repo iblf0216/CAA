@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>測驗三練習頁</title>
+<title>測驗三(分配性測驗)練習頁</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -436,7 +436,7 @@
 								}
 
 								// 題目一 start
-								if (4 == step) {
+								else if (4 == step) {
 									selectItem2("practice01", 2);
 								}
 								// 題目一 end
@@ -548,7 +548,7 @@
 	// 作答第二個項目
 	function selectItem2(item, selection) {
 		$("#" + item).hide();
-		clearInterval(itemTimer1);
+		clearTimeout(itemTimer1);
 		$("#confirm").show();
 		$("#confirmButton").show()
 		step++;
@@ -599,7 +599,7 @@
 	}
 
 	function selectLastItem2(item, selection) {
-		clearInterval(itemTimer1);
+		clearTimeout(itemTimer1);
 		$("#titleDiv").hide();
 		$("#btnDiv").hide();
 		$("#" + item).hide();

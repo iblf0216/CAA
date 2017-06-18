@@ -289,9 +289,27 @@
 			</result>
 		</action>
 
+<!-- 		<action name="showFormalTest" class="com.pmt.caa.web.webapp.action.TestOneAction" -->
+<!-- 			method="showFormalTest"> -->
+<!-- 			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp -->
+<!-- 			</result> -->
+<!-- 		</action> -->
+
+<!-- 		<action name="FinishFormalTest" class="com.pmt.caa.web.webapp.action.TestOneAction" -->
+<!-- 			method="FinishFormalTest"> -->
+<!-- 			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp -->
+<!-- 			</result> -->
+<!-- 		</action> -->
+		
+		<action name="showPreFormalTest" class="com.pmt.caa.web.webapp.action.TestOneAction"
+			method="showPreFormalTest">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_01/formal/preFormalTest.jsp
+			</result>
+		</action>
+
 		<action name="showFormalTest" class="com.pmt.caa.web.webapp.action.TestOneAction"
 			method="showFormalTest">
-			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_01/formal/formalTest.jsp
 			</result>
 		</action>
 

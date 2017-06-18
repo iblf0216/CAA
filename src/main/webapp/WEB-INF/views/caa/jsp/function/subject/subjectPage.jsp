@@ -48,28 +48,30 @@ $(document).ready(function(){
  				var recordid = obj.recordid;
  				
  				// FIXME 處理已做過測驗
- 				//var isTest1Finished = obj.response1;
- 				//var isTest2Finished = obj.response2;
- 				//var isTest3Finished = obj.response3;
- 				var isTest1Finished = "done";
- 				var isTest2Finished = "done";
- 				var isTest3Finished = "";
- 				isTest3Finished = obj.response1;
+ 				var isTest1Finished = obj.response1;
+ 				var isTest2Finished = obj.response2;
+ 				var isTest3Finished = obj.response3;
+//  				var isTest1Finished = "";
+//  				var isTest2Finished = "done";
+//  				var isTest3Finished = "";
+//  				isTest1Finished = obj.response1;
+//  				isTest2Finished = obj.response2;
+//  				isTest3Finished = obj.response3;
  				
  				var template1 = "<input id='test1' class='btn btn-small btn-success' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>";
  				var template2 = "&nbsp;<input id='test2' class='btn btn-small btn-success' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>";
  				var template3 = "&nbsp;<input id='test3' class='btn btn-small btn-success' type='button' value='分配性測驗' onclick='openTest3(" + recordid + ");'>"
  				
  				if (isTest1Finished) {
- 					template1 = "<input id='test1' class='btn btn-small btn-success disabled' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>";
+ 					template1 = "<input id='test1' class='btn btn-small btn-success disabled' type='button' value='專注性測驗'>";
  				}
 
  				if (isTest2Finished) {
- 					template2 = "&nbsp;<input id='test2' class='btn btn-small btn-success disabled' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>";
+ 					template2 = "&nbsp;<input id='test2' class='btn btn-small btn-success disabled' type='button' value='轉換性測驗'>";
  				}
  				
  				if (isTest3Finished) {
- 					template3 = "&nbsp;<input id='test3' class='btn btn-small btn-success disabled' type='button' value='分配性測驗' >";
+ 					template3 = "&nbsp;<input id='test3' class='btn btn-small btn-success disabled' type='button' value='分配性測驗'>";
  				}
  				
  				var template = template1 + template2 + template3;
@@ -149,7 +151,7 @@ $(document).ready(function(){
     $('[id$=_length]').find("label").hide();
 });
 
-// 執行測驗1
+// 執行測驗1(專注性測驗)
 function openTest1(recordId) {
 	alert(recordId);
 	
@@ -173,7 +175,7 @@ function openTest2(test) {
 	window.open('showTest02Main.do?id=' + test, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 }
 
-//執行測驗1
+//執行測驗3
 function openTest3(recordId) {
 	alert(recordId);
 	

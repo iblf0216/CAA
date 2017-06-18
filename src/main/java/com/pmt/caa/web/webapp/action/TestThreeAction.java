@@ -111,7 +111,7 @@ public class TestThreeAction extends CaaAbstractAction {
 //		wrongNum = "35";
 //		averageTime = "630.5555";
 		
-		System.out.println("更新 受試者 該筆 測驗結果記錄");
+		System.out.println("(測驗三)更新 受試者 該筆 測驗結果記錄   whichTest = " + whichTest);
 
 		//TODO 更新作答紀錄  將資料存入DB  by recordid
 		subjectFacade.updateSubjectRecord(recordId, whichTest, response, reactionTime, rightNum, wrongNum, averageTime);

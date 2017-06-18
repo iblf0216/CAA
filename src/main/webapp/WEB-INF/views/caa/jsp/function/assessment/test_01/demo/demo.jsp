@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>測驗一示範頁</title>
+<title>測驗一(專注性測驗)示範頁</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
@@ -249,6 +249,8 @@
 			</div>
 		</div>
 		<script>
+		var recordId = ${recordId};
+		
 			var step = 1;
 			var response = [];
 			$(document).ready(function() {
@@ -394,12 +396,24 @@
 							response.push(8);
 						} else if (17 == step) {
 							console.log("接續下一段(練習)");
+							
+							var practiceUrl = "/CAA/test01/showPractice.do?recordId=" + recordId;
+							document.location.href = practiceUrl;
 						}
 					}
 
 					if (event.which == 50) { // 數字2 換下一頁
 						console.log("按下2,step : " + step);
-						if (6 == step) {
+						
+						if (1 == step) {
+							console.log("接練習頁");
+							
+							var practiceUrl = "/CAA/test01/showPractice.do?recordId=" + recordId;
+							document.location.href = practiceUrl;
+						}
+					
+					
+						else if (6 == step) {
 							$("#demo5").hide();
 							$("#demo6").show();
 							step++;

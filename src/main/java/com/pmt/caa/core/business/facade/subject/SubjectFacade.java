@@ -50,7 +50,7 @@ public class SubjectFacade {
 	}
 
 	public boolean updateSubjectRecord(String recordId, String whichTest, String response, String reactionTime, String rightNum, String wrongNum, String averageTime) {
-		return subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime, rightNum, rightNum, rightNum);
+		return subjectService.updateSubjectRecord(recordId, whichTest, response, reactionTime, rightNum, wrongNum, averageTime);
 	}
 	
 	public SubjectDetailVo getSubjectResultByRecordId(String recordId) {
