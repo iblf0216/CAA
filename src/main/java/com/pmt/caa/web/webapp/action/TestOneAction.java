@@ -14,31 +14,6 @@ import com.pmt.caa.web.webapp.util.ScopeUtil;
 import com.pmt.caa.web.webapp.util.ScopeUtil.Scope;
 
 public class TestOneAction extends CaaAbstractAction {
-
-//	public String showIntro() {
-//
-//		return CaaActionResult.SUCCESS;
-//	}
-//
-//	public String showDemo() {
-//
-//		return CaaActionResult.SUCCESS;
-//	}
-//
-//	public String showPractice() {
-//
-//		return CaaActionResult.SUCCESS;
-//	}
-//
-//	public String showFormalTest() {
-//
-//		return CaaActionResult.SUCCESS;
-//	}
-//
-//	public String FinishFormalTest() {
-//
-//		return CaaActionResult.SUCCESS;
-//	}
 	
 	@Autowired
 	SubjectFacade subjectFacade;
@@ -48,7 +23,7 @@ public class TestOneAction extends CaaAbstractAction {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 
-		System.out.println("[showIntro] recordId  = " + recordId);
+		System.out.println("[showIntro01] recordId  = " + recordId);
 		
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -62,7 +37,7 @@ public class TestOneAction extends CaaAbstractAction {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 		
-		System.out.println("[showDemo] recordId  = " + recordId);
+		System.out.println("[showDemo01] recordId  = " + recordId);
 		
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -76,7 +51,7 @@ public class TestOneAction extends CaaAbstractAction {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 		
-		System.out.println("[showPractice] recordId  = " + recordId);
+		System.out.println("[showPractice01] recordId  = " + recordId);
 		
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -90,7 +65,7 @@ public class TestOneAction extends CaaAbstractAction {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 		
-		System.out.println("[showPreFormalTest] recordId  = " + recordId);
+		System.out.println("[showPreFormalTest01] recordId  = " + recordId);
 		
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -104,7 +79,7 @@ public class TestOneAction extends CaaAbstractAction {
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");
 		
-		System.out.println("[showFormalTest] recordId  = " + recordId);
+		System.out.println("[showFormalTest01] recordId  = " + recordId);
 		
 		Map<String, Object> reqMp = ScopeUtil.getScopeAttribute(Scope.REQUEST);
 
@@ -117,8 +92,7 @@ public class TestOneAction extends CaaAbstractAction {
 	 * 更新作答紀錄  //updateSubjectRecord
 	 */
 	public String FinishFormalTest() {
-		
-		System.out.println("=========== 完成正式測驗 begin =============");
+		System.out.println("=========== 完成正式測驗一 begin =============");
 
 		HttpServletRequest request = ServletActionContext.getRequest();
 		String recordId = getReqestParameter(request, "recordId");

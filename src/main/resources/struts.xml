@@ -321,6 +321,46 @@
 	</package>
 	<!-- 測驗一 End -->
 
+<!-- 測驗二 start -->
+	<package name="test02" namespace="/test02" extends="struts-extension">
+		<action name="showIntro" class="com.pmt.caa.web.webapp.action.TestTwoAction"
+			method="showIntro">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_02/main/intro.jsp
+			</result>
+		</action>
+
+		<action name="showDemo" class="com.pmt.caa.web.webapp.action.TestTwoAction"
+			method="showDemo">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_02/demo/demo.jsp
+			</result>
+		</action>
+
+		<action name="showPractice" class="com.pmt.caa.web.webapp.action.TestTwoAction"
+			method="showPractice">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_02/practice/practice.jsp
+			</result>
+		</action>
+
+		<action name="showPreFormalTest" class="com.pmt.caa.web.webapp.action.TestTwoAction"
+			method="showPreFormalTest">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_02/formal/preFormalTest.jsp
+			</result>
+		</action>
+
+		<action name="showFormalTest" class="com.pmt.caa.web.webapp.action.TestTwoAction"
+			method="showFormalTest">
+			<result name="success">/WEB-INF/views/caa/jsp/function/assessment/test_02/formal/formalTest.jsp
+			</result>
+		</action>
+
+		<action name="FinishFormalTest" class="com.pmt.caa.web.webapp.action.TestTwoAction"
+			method="FinishFormalTest">
+			<result name="success">/WEB-INF/views/caa/jsp/console02.jsp
+			</result>
+		</action>
+	</package>
+	<!-- 測驗二 End -->
+
 	<!-- 測驗三 start -->
 	<package name="test03" namespace="/test03" extends="struts-extension">
 		<action name="showIntro" class="com.pmt.caa.web.webapp.action.TestThreeAction"
