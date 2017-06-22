@@ -144,125 +144,437 @@
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
+		<div id="practice02-1" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-2-1.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice02-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-2.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-2-2.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice02-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-2-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice02-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-2-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice02-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-2-5.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 
 		<!-- 題目3 -->
+		<div id="practice03-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice03-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-3-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice03-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-3.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-2.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice03-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice03-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice03-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-5.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice03-6" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-6.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice03-7" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-7.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice03-8" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-8.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice03-9" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-3-9.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 
 		<!-- 題目4 -->
+		<div id="practice04-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice04-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-4-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice04-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-4.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-2.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
-
+		<div id="practice04-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice04-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice04-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-5.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice04-6" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-6.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice04-7" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-7.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice04-8" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-8.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice04-9" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-4-9.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		
 		<!-- 題目5 -->
+		<div id="practice05-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-5-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice05-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-5-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-5-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice05-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-5.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-5-2.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice05-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-5-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice05-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-5-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice05-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-5-5.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 
 		<!-- 題目6 -->
+		<div id="practice06-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice06-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-6-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice06-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-6.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-2.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice06-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice06-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice06-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-5.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice06-6" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-6.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice06-7" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-7.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice06-8" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-8.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice06-9" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-6-9.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 
 		<!-- 題目7 -->
+		<div id="practice07-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-7-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice07-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-7-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-7-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice07-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-7.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-7-2.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
-
+		<div id="practice07-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-7-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice07-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-7-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice07-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-7-5.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		
 		<!-- 題目8 -->
+		<div id="practice08-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice08-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-8-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice08-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-8.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-2.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice08-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice08-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice08-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-5.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice08-6" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-6.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice08-7" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-8-7.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 
 		<!-- 題目9 -->
+		<div id="practice09-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice09-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-9-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice09-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-9.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-2.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice09-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice09-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice09-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-5.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice09-6" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-6.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice09-7" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-9-7.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 
 		<!-- 題目10 -->
+		<div id="practice10-S" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-10-S.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
 		<div id="practice10-1" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-10-A.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-10-1.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
 		<div id="practice10-2" style="display: none; height: 100%">
 			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test01/practice_pic/P-10.jpg"
+				<img src="/CAA/resources/images/test02/practice_pic/P-10-2.jpg"
 					style="height: 80%; weight: 80%;">
 			</div>
 		</div>
-
+		<div id="practice10-3" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-10-3.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice10-4" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-10-4.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		<div id="practice10-5" style="display: none; height: 100%">
+			<div class="text-center" style="height: 100%">
+				<img src="/CAA/resources/images/test02/practice_pic/P-10-5.jpg"
+					style="height: 80%; weight: 80%;">
+			</div>
+		</div>
+		
 		<div id="practiceResult" style="display: none; height: 100%;">
 			<div id="resultTitle">
 				<h1 class="text-center">練習題施測結果</h1>
@@ -311,12 +623,18 @@
 	var response = [];
 	var reactionTime = [];
 
+	var currentItem = 0;
+	
 	var itemTimer1;
 	var itemTimer2;
 	var itemTimer3;
 	var itemTimer4;
 	var itemTimer5;
-
+	var itemTimer6;
+	var itemTimer7;
+	var itemTimer8;
+	var itemTimer9;
+	
 	var audio;
 	
 	try {
@@ -339,7 +657,7 @@
 							if (event.which == 56) { // 數字8 換下一頁
 								console.log("按下8,step : " + step);
 
-								if (1 == step) {
+								if (currentItem == 0 && 1 == step) {
 									$("#titleDiv").hide();
 									$("#btnDiv").hide();
 
@@ -350,48 +668,64 @@
 									reactionTime = [];
 
 									step++;
+									currentItem++;
 								}
 
-								// 題目一 start 
-								else if (2 == step) {
-									showItem05("practice01-S", "practice01-1", "practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice01-S",
+								// 題目一 (5) 
+								else if (currentItem == 1 && 2 == step) {
+									showItem05("practice01-S", "practice01-1", "practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice02-S",
 										1500, 1250, 1750, 1000, 2000);
-								} else if (4 == step) {
-									selectItem5_1("practice01-1", "practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice01-S", 
+								} else if (currentItem == 1 && 4 == step) {
+									selectItem5_1("practice01-1", "practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice02-S", 
 										1250, 1750, 1000, 2000, 8);
-								} else if (6 == step) {
-									selectItem5_2("practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice01-S", 
+								} else if (currentItem == 1 && 6 == step) {
+									selectItem5_2("practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice02-S", 
 										1750, 1000, 2000, 8);
-								} else if (8 == step) {
-									selectItem5_3("practice01-3", "practice01-4", "practice01-5", "practice01-S", 
+								} else if (currentItem == 1 && 8 == step) {
+									selectItem5_3("practice01-3", "practice01-4", "practice01-5", "practice02-S", 
 										1000, 2000, 8);
-								} else if (10 == step) {
-									selectItem5_4("practice01-4", "practice01-5", "practice01-S", 
+								} else if (currentItem == 1 && 10 == step) {
+									selectItem5_4("practice01-4", "practice01-5", "practice02-S", 
 											2000, 8);
-								} else if (12 == step) {
-									selectItem5_5("practice01-5", "practice01-S", 8);
+								} else if (currentItem == 1 && 12 == step) {
+									selectItem5_5("practice01-5", "practice02-S", 8);
 								}
-								// 題目一 end
+								// 題目一 (5)end
 
-								// 題目二
-								else if (13 == step) {
-									
+								// 題目二(5)
+								else if (currentItem == 2 && 2 == step) {
+									showItem05("practice02-S", "practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S",
+											1500, 1250, 1750, 1000, 2000);
+								} else if (currentItem == 1 && 4 == step) {
+									selectItem5_1("practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
+											1250, 1750, 1000, 2000, 8);
+								} else if (currentItem == 1 && 6 == step) {
+									selectItem5_2("practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
+										1750, 1000, 2000, 8);
+								} else if (currentItem == 1 && 8 == step) {
+									selectItem5_3("practice02-3", "practice02-4", "practice02-5", "practice03-S", 
+										1000, 2000, 8);
+								} else if (currentItem == 1 && 10 == step) {
+									selectItem5_4("practice02-4", "practice02-5", "practice03-S", 
+											2000, 8);
+								} else if (currentItem == 1 && 12 == step) {
+									selectItem5_5("practice02-5", "practice03-S", 8);
 								}
-								// 題目三
+								// 題目三(9)
+								
+								// 題目四(9)
 
-								// 題目四
+								// 題目五(5)
 
-								// 題目五
+								// 題目六(9)
 
-								// 題目六
+								// 題目七(5)
 
-								// 題目七
+								// 題目八(7)
 
-								// 題目八
+								// 題目九(7)
 
-								// 題目九
-
-								// 題目十
+								// 題目十(5)
 								else if (47 == step) {
 									showLastItem("practice10-1",
 											"practice10-2", 1000, 2000, 2000,
@@ -443,25 +777,46 @@
 								}
 
 								// 題目一 start
-								 else if (4 == step) {
-									selectItem5_1("practice01-1", "practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice01-S", 
+								// 題目一 (5) 
+								else if (currentItem == 1 && 2 == step) {
+									showItem05("practice01-S", "practice01-1", "practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice02-S",
+										1500, 1250, 1750, 1000, 2000);
+								} else if (currentItem == 1 && 4 == step) {
+									selectItem5_1("practice01-1", "practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice02-S", 
 										1250, 1750, 1000, 2000, 2);
-								} else if (6 == step) {
-									selectItem5_2("practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice01-S", 
+								} else if (currentItem == 1 && 6 == step) {
+									selectItem5_2("practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice02-S", 
 										1750, 1000, 2000, 2);
-								} else if (8 == step) {
-									selectItem5_3("practice01-3", "practice01-4", "practice01-5", "practice01-S", 
+								} else if (currentItem == 1 && 8 == step) {
+									selectItem5_3("practice01-3", "practice01-4", "practice01-5", "practice02-S", 
 										1000, 2000, 2);
-								} else if (10 == step) {
-									selectItem5_4("practice01-4", "practice01-5", "practice01-S", 
+								} else if (currentItem == 1 && 10 == step) {
+									selectItem5_4("practice01-4", "practice01-5", "practice02-S", 
 											2000, 2);
-								} else if (12 == step) {
-									selectItem5_5("practice01-5", "practice01-S", 2);
+								} else if (currentItem == 1 && 12 == step) {
+									selectItem5_5("practice01-5", "practice02-S", 2);
 								}
-								// 題目一 end
+								// 題目一 (5)end
 
-								// 題目二
-								
+								// 題目二(5)
+								else if (currentItem == 2 && 2 == step) {
+									showItem05("practice02-S", "practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S",
+											1500, 1250, 1750, 1000, 2000);
+								} else if (currentItem == 1 && 4 == step) {
+									selectItem5_1("practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
+											1250, 1750, 1000, 2000, 2);
+								} else if (currentItem == 1 && 6 == step) {
+									selectItem5_2("practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
+										1750, 1000, 2000, 2);
+								} else if (currentItem == 1 && 8 == step) {
+									selectItem5_3("practice02-3", "practice02-4", "practice02-5", "practice03-S", 
+										1000, 2000, 2);
+								} else if (currentItem == 1 && 10 == step) {
+									selectItem5_4("practice02-4", "practice02-5", "practice03-S", 
+											2000, 2);
+								} else if (currentItem == 1 && 12 == step) {
+									selectItem5_5("practice02-5", "practice03-S", 2);
+								}								
 								// 題目三
 								
 								// 題目四
@@ -509,7 +864,7 @@
 						});
 			});
 
-	/* 五個素材畫面控制 Start */
+	/* ---------- 五個素材畫面控制 Start ---------- */
 	
 	// 五個素材第一個素材出現
 	function showItem05(item_s, item_1, item_2, item_3, item_4, item_5, item_next, time1, time2, time3, time4, time5) {
@@ -591,8 +946,9 @@
 																if ((step - beginStep1) == 10) {
 																	$("#" + item_5).hide();
 																	$("#" + item_next).show();
-																	step++;
-
+																	currentItem++;
+																	step = 2;
+	
 																	response.push(0);
 																	reactionTime.push(-1);
 																} else {
@@ -838,7 +1194,7 @@
 
 						itemTimer5 = setTimeout(function() {
 							if ((step - beginStep1) == 4) {
-								$("#" + item3).hide();
+								$("#" + item5).hide();
 								$("#" + item_next).show();
 								step++;
 
@@ -879,7 +1235,7 @@
 
 			itemTimer5 = setTimeout(function() {
 				if ((step - beginStep1) == 2) {
-					$("#" + item4).hide();
+					$("#" + item5).hide();
 					$("#" + item_next).show();
 					step++;
 
@@ -897,6 +1253,450 @@
 		clearTimeout(itemTimer5);
 		$("#" + item5).hide();
 		$("#" + item_next).show();
+		currentItem++;
+		step = 2;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+	}
+	
+	/* ---------- 五個素材畫面控制 End ---------- */
+
+	/* ---------- 七個素材畫面控制 Start ---------- */
+	
+	// 七個素材第一個素材出現
+	function showItem07(item_s, item_1, item_2, item_3, item_4, item_5, item6, item7, 
+			item_next, time1, time2, time3, time4, time5, time6, time7) {
+		var beginStep1 = step;
+
+		$("#" + item_s).hide();
+		$("#materialDiv").show();
+		step++;
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item_1).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer1 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item_1).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item_2).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer2 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item_2).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item_3).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer3 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item_3).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item_4).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer4 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item_4).hide();
+														$("#materialDiv").show();
+														// 撥放聲音
+														audio.play();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item_5).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer5 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item_5).hide();
+																	$("#materialDiv").show();
+																	step++;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+																	
+																	setTimeout(function() {
+																		$("#materialDiv").hide();
+																		$("#" + item_6).show()
+																		beginTime = new Date();
+																		step++;
+
+																		itemTimer6 = setTimeout(function() {
+																			if ((step - beginStep1) == 12) {
+																				$("#" + item_6).hide();
+																				$("#materialDiv").show();
+																				// 撥放聲音
+																				audio.play();
+																				step++;
+
+																				response.push(0);
+																				reactionTime.push(-1);
+																				
+																				setTimeout(function() {
+																					$("#materialDiv").hide();
+																					$("#" + item_7).show()
+																					beginTime = new Date();
+																					step++;
+
+																					itemTimer7 = setTimeout(function() {
+																						if ((step - beginStep1) == 14) {
+																							$("#" + item_7).hide();
+																							$("#" + item_next).show();
+																							step++;
+
+																							response.push(0);
+																							reactionTime.push(-1);
+																						} else {
+																							clearTimeout(itemTimer7);
+																						}
+																					}, time7);
+																				}, 1000)
+																			} else {
+																				clearTimeout(itemTimer6);
+																			}
+																		}, time6);
+																	}, 1000)
+																} else {
+																	clearTimeout(itemTimer5);
+																}
+															}, time5);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer4);
+													}
+												}, time4);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer3);
+										}
+									}, time3);
+								}, 1000);
+							} else {
+								clearTimeout(itemTimer2);
+							}
+						}, time2);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer1);
+				}
+			}, time1);
+		}, 1000);
+	}
+
+	// 七個素材作答第3個項目
+	function selectItem7_3(item3, item4, item5, item6, item7, 
+			item_next, time4, time5, time6, time7, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		$("#" + item3).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item4).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer4 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item4).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item5).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer5 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item5).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item6).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer6 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item6).hide();
+											$("#materialDiv").show();
+											// 撥放聲音
+											audio.play();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item7).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer7 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item7).hide();
+														$("#" + next).show();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+													} else {
+														clearTimeout(itemTimer7);
+													}
+												}, time5);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer6);
+										}
+									}, time6);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer5);
+							}
+						}, time5);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer4);
+				}
+			}, time4);
+		}, 1000);
+	}
+
+	// 七個素材作答第4個項目
+	function selectItem7_4(item4, item5, item6, item7, 
+			item_next, time5, time6, time7, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		$("#" + item4).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item5).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer5 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item5).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item4).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer6 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item6).hide();
+								$("#materialDiv").show();
+								// 撥放聲音
+								audio.play();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item7).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer7 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item7).hide();
+											$("#" + item_next).show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+										} else {
+											clearTimeout(itemTimer7);
+										}
+									}, time7);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer6);
+							}
+						}, time6);
+					}, 1000)
+				} else {
+					clearTimeout(itemTimer5);
+				}
+			}, time5);
+		}, 1000);
+	}
+	
+	// 七個素材作答第5個項目
+	function selectItem7_5(item5, item6, item7, 
+			item_next, time6, time7, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		$("#" + item5).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item6).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer6 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item6).hide();
+					$("#materialDiv").show();
+					// 撥放聲音
+					audio.play();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item7).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer7 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item7).hide();
+								$("#" + item_next).show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+							} else {
+								clearTimeout(itemTimer7);
+							}
+						}, time7);
+					}, 1000)
+				} else {
+					clearTimeout(itemTimer6);
+				}
+			}, time6);
+		}, 1000)
+	}
+	
+	// 七個素材作答第6個項目
+	function selectItem7_6(item6, item7, item_next, time7, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		$("#" + item6).hide();
+		$("#materialDiv").show();
+		// 撥放聲音
+		audio.play();
+		step++;
+		
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item7).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer7 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item7).hide();
+					$("#" + item_next).show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+				} else {
+					clearTimeout(itemTimer7);
+				}
+			}, time7);
+		}, 1000)
+	}
+	
+	// 七個素材作答第7個項目
+	function selectItem7_7(item7, item_next, selection) {
+		clearTimeout(itemTimer7);
+		$("#" + item7).hide();
+		$("#" + item_next).show();
 		step++;
 
 		response.push(selection);
@@ -904,8 +1704,492 @@
 		reactionTime.push(delta);
 	}
 	
-	/* 五個素材畫面控制 End */
+	/* ---------- 七個素材畫面控制 End ---------- */	
+	
+	/* ---------- 九個素材畫面控制 Start ---------- */
+	
+	// 九個素材第一個素材出現
+	function showItem09(item_s, item_1, item_2, item_3, item_4, item_5, item_6, item_7, item_8, item_9, 
+			item_next, time1, time2, time3, time4, time5, time6, time7, time8, time9) {
+		var beginStep1 = step;
 
+		$("#" + item_s).hide();
+		$("#materialDiv").show();
+		step++;
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item_1).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer1 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item_1).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item_2).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer2 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item_2).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item_3).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer3 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item_3).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item_4).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer4 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item_4).hide();
+														$("#materialDiv").show();
+														// 撥放聲音
+														audio.play();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item_5).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer5 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item_5).hide();
+																	$("#materialDiv").show();
+																	step++;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+
+																	setTimeout(function() {
+																		$("#materialDiv").hide();
+																		$("#" + item_6).show()
+																		beginTime = new Date();
+																		step++;
+
+																		itemTimer6 = setTimeout(function() {
+																			if ((step - beginStep1) == 12) {
+																				$("#" + item_6).hide();
+																				$("#materialDiv").show();
+																				step++;
+
+																				response.push(0);
+																				reactionTime.push(-1);
+																				
+																				setTimeout(function() {
+																					$("#materialDiv").hide();
+																					$("#" + item_7).show()
+																					beginTime = new Date();
+																					step++;
+
+																					itemTimer7 = setTimeout(function() {
+																						if ((step - beginStep1) == 14) {
+																							$("#" + item_7).hide();
+																							$("#materialDiv").show();
+																							step++;
+
+																							response.push(0);
+																							reactionTime.push(-1);
+																							
+																							setTimeout(function() {
+																								$("#materialDiv").hide();
+																								$("#" + item_8).show()
+																								beginTime = new Date();
+																								step++;
+
+																								itemTimer8 = setTimeout(function() {
+																									if ((step - beginStep1) == 16) {
+																										$("#" + item_8).hide();
+																										$("#materialDiv").show();
+																										// 撥放聲音
+																										audio.play();
+																										step++;
+
+																										response.push(0);
+																										reactionTime.push(-1);
+																										
+																										setTimeout(function() {
+																											$("#materialDiv").hide();
+																											$("#" + item_9).show()
+																											beginTime = new Date();
+																											step++;
+
+																											itemTimer9 = setTimeout(function() {
+																												if ((step - beginStep1) == 18) {
+																													$("#" + item_9).hide();
+																													$("#" + item_next).show();
+																													step++;
+
+																													response.push(0);
+																													reactionTime.push(-1);
+																												} else {
+																													clearTimeout(itemTimer9);
+																												}
+																											}, time9);
+																										}, 1000)
+																									} else {
+																										clearTimeout(itemTimer8);
+																									}
+																								}, time8);
+																							}, 1000)
+																						} else {
+																							clearTimeout(itemTimer7);
+																						}
+																					}, time7);
+																				}, 1000);
+																			} else {
+																				clearTimeout(itemTimer6);
+																			}
+																		}, time6);
+																	}, 1000);
+																} else {
+																	clearTimeout(itemTimer5);
+																}
+															}, time5);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer4);
+													}
+												}, time4);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer3);
+										}
+									}, time3);
+								}, 1000);
+							} else {
+								clearTimeout(itemTimer2);
+							}
+						}, time2);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer1);
+				}
+			}, time1);
+		}, 1000);
+	}
+
+	// 九個素材作答第5個項目
+	function selectItem9_5(item5, item6, item7, item8, item9, 
+			item_next, time6, time7, time8, time9, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item5).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item6).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer6 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item6).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item7).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer7 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item7).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item8).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer8 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item8).hide();
+											$("#materialDiv").show();
+											// 撥放聲音
+											audio.play();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item9).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer9 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item9).hide();
+														$("#" + next).show();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+													} else {
+														clearTimeout(itemTimer9);
+													}
+												}, time9);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer8);
+										}
+									}, time8);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer7);
+							}
+						}, time7);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer6);
+				}
+			}, time6);
+		}, 1000);
+	}
+
+	// 九個素材作答第6個項目
+	function selectItem9_6(item6, item7, item8, item9, 
+			item_next, time7, time8, time9, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item6).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item7).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer7 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item7).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item8).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer8 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item8).hide();
+								$("#materialDiv").show();
+								// 撥放聲音
+								audio.play();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item9).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer9 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item9).hide();
+											$("#" + item_next).show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+										} else {
+											clearTimeout(itemTimer9);
+										}
+									}, time9);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer8);
+							}
+						}, time8);
+					}, 1000)
+				} else {
+					clearTimeout(itemTimer7);
+				}
+			}, time7);
+		}, 1000);
+	}
+	
+	// 九個素材作答第7個項目
+	function selectItem9_7(item7, item8, item9, 
+			item_next, time8, time9, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer7);
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item7).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item8).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer8 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item8).hide();
+					$("#materialDiv").show();
+					// 撥放聲音
+					audio.play();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item9).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer9 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item9).hide();
+								$("#" + item_next).show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+							} else {
+								clearTimeout(itemTimer9);
+							}
+						}, time9);
+					}, 1000)
+				} else {
+					clearTimeout(itemTimer8);
+				}
+			}, time8);
+		}, 1000)
+	}
+	
+	// 九個素材作答第8個項目
+	function selectItem9_8(item8, item9, 
+			item_next, time5, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item8).hide();
+		$("#materialDiv").show();
+		// 撥放聲音
+		audio.play();
+		step++;
+		
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item9).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer9 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item9).hide();
+					$("#" + item_next).show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+				} else {
+					clearTimeout(itemTimer9);
+				}
+			}, time9);
+		}, 1000)
+	}
+	
+	// 九個素材作答第九個項目
+	function selectItem9_9(item9, item_next, selection) {
+		clearTimeout(itemTimer5);
+		$("#" + item9).hide();
+		$("#" + item_next).show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+	}
+	
+	/* ---------- 九個素材畫面控制 End ---------- */	
+	
 	function showLastItem(item_1, item_2, time1, time2, time3, time4) {
 		var beginStep1 = step;
 
