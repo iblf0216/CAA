@@ -77,16 +77,16 @@
 		<div class="row" id="btn2" style="display: none;">
 			<div class="col-md-3"></div>
 			<div class="col-md-3">
-				<div class="blue_bg_btn">
+				<div class="blue_bg_btn text-center">
 					結束練習
-					<p class="red_border">✘</p>
+					<p class="red_border">✔</p>
 				</div>
 			</div>
 
 			<div class="col-md-3">
-				<div class="blue_bg_btn">
+				<div class="blue_bg_btn text-center">
 					再次練習
-					<p class="red_border">✔</p>
+					<p class="red_border">✘</p>
 				</div>
 			</div>
 			<div class="col-md-3"></div>
@@ -652,7 +652,7 @@
 						function(event) {
 							console.log("response : " + response);
 							console.log("reactionTime : " + reactionTime);
-							console.log("current step :  " + step);
+							console.log("current step :  " + step + "; currentItem : " + currentItem);
 
 							if (event.which == 56) { // 數字8 換下一頁
 								console.log("按下8,step : " + step);
@@ -662,13 +662,20 @@
 									$("#btnDiv").hide();
 
 									$("#practice01-S").show();
-
+									
 									// 重置紀錄反應與反應時間
 									response = []
 									reactionTime = [];
 
 									step++;
+									
+									// 完整流程
 									currentItem++;
+									
+									// 測試用
+									//currentItem = 10; //(可指定開始測試點)
+									//$("#practice10-S").show(); // (換成指定的開始圖)
+									//$("#practice01-S").hide();
 								}
 
 								// 題目一 (5) 
@@ -686,7 +693,7 @@
 										1000, 2000, 8);
 								} else if (currentItem == 1 && 10 == step) {
 									selectItem5_4("practice01-4", "practice01-5", "practice02-S", 
-											2000, 8);
+										2000, 8);
 								} else if (currentItem == 1 && 12 == step) {
 									selectItem5_5("practice01-5", "practice02-S", 8);
 								}
@@ -696,49 +703,122 @@
 								else if (currentItem == 2 && 2 == step) {
 									showItem05("practice02-S", "practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S",
 											1500, 1250, 1750, 1000, 2000);
-								} else if (currentItem == 1 && 4 == step) {
+								} else if (currentItem == 2 && 4 == step) {
 									selectItem5_1("practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
 											1250, 1750, 1000, 2000, 8);
-								} else if (currentItem == 1 && 6 == step) {
+								} else if (currentItem == 2 && 6 == step) {
 									selectItem5_2("practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
 										1750, 1000, 2000, 8);
-								} else if (currentItem == 1 && 8 == step) {
+								} else if (currentItem == 2 && 8 == step) {
 									selectItem5_3("practice02-3", "practice02-4", "practice02-5", "practice03-S", 
 										1000, 2000, 8);
-								} else if (currentItem == 1 && 10 == step) {
+								} else if (currentItem == 2 && 10 == step) {
 									selectItem5_4("practice02-4", "practice02-5", "practice03-S", 
 											2000, 8);
-								} else if (currentItem == 1 && 12 == step) {
+								} else if (currentItem == 2 && 12 == step) {
 									selectItem5_5("practice02-5", "practice03-S", 8);
 								}
 								// 題目三(9)
-								
+								else if (currentItem == 3 && 2 == step) {
+									showItem09("practice03-S", "practice03-1", "practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S",
+											1500, 1250, 1750, 1000, 2000, 1250, 1750, 1000, 2000);
+								} else if (currentItem == 3 && 4 == step) {
+									selectItem9_1("practice03-1", "practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+											1000, 1250,	2000, 1750, 1000, 1750, 1000, 1000, 8);
+								} else if (currentItem == 3 && 6 == step) {
+									selectItem9_2("practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1000, 1250,	2000, 1750, 1000, 1750, 1000, 8);
+								} else if (currentItem == 3 && 8 == step) {
+									selectItem9_3("practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										2000, 1750, 1000, 1750, 1000, 1750, 8);
+								} else if (currentItem == 3 && 10 == step) {
+									selectItem9_4("practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1750, 1000, 1750, 1000, 1000, 8);
+								} else if (currentItem == 3 && 12 == step) {
+									selectItem9_5("practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1750, 1000, 2000, 2000, 8);
+								} else if (currentItem == 3 && 14 == step) {
+									selectItem9_6("practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1750, 1000, 2000, 8);
+								} else if (currentItem == 3 && 16 == step) {
+									selectItem9_7("practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1000, 2000, 8);
+								} else if (currentItem == 3 && 18 == step) {
+									selectItem9_8("practice03-8", "practice03-9", "practice04-S", 
+										2000, 8);
+								} else if (currentItem == 3 && 20 == step) {
+									selectItem9_9("practice03-9", "practice04-S", 8);
+								}
 								// 題目四(9)
-
+								else if (currentItem == 4 && 2 == step) {
+									showItem09("practice04-S", "practice04-1", "practice04-2", "practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S",
+											1500, 1250, 1750, 1000, 2000, 1250, 1750, 1000, 2000);
+								}
 								// 題目五(5)
-
+								else if (currentItem == 5 && 2 == step) {
+									showItem05("practice05-S", "practice05-1", "practice05-2", "practice05-3", "practice05-4", "practice05-5", "practice06-S",
+											1500, 1250, 1750, 1000, 2000);
+								}
 								// 題目六(9)
-
+								else if (currentItem == 6 && 2 == step) {
+									showItem09("practice06-S", "practice06-1", "practice06-2", "practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S",
+											1500, 1250, 1750, 1000, 2000, 1250, 1750, 1000, 2000);
+								}
 								// 題目七(5)
-
+								else if (currentItem == 7 && 2 == step) {
+									showItem05("practice07-S", "practice07-1", "practice07-2", "practice07-3", "practice07-4", "practice07-5", "practice08-S",
+											1500, 1250, 1750, 1000, 2000);
+								}
 								// 題目八(7)
-
+								else if (currentItem == 8 && 2 == step) {
+									showItem07("practice08-S", "practice08-1", "practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S",
+										1500, 1250, 1750, 1000, 2000, 1250, 1750);
+								} else if (currentItem == 8 && 4 == step) {
+									selectItem7_1("practice08-1", "practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										2000, 1750, 1000, 1750, 1000, 1000, 8);
+								} else if (currentItem == 8 && 6 == step) {
+									selectItem7_2("practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										2000, 1750, 1000, 1750, 1000, 8);
+								} else if (currentItem == 8 && 8 == step) {
+									selectItem7_3("practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										1000, 1750, 1000, 1750, 8);
+								} else if (currentItem == 8 && 10 == step) {
+									selectItem7_4("practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										1750, 1000, 1000, 8);
+								} else if (currentItem == 8 && 12 == step) {
+									selectItem7_5("practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										2000, 2000, 8);
+								} else if (currentItem == 8 && 14 == step) {
+									selectItem7_6("practice08-6", "practice08-7", "practice09-S", 
+										2000, 8);
+								} else if (currentItem == 8 && 16 == step) {
+									selectItem7_7("practice08-7", "practice09-S", 8);
+								}
 								// 題目九(7)
-
+								else if (currentItem == 9 && 2 == step) {
+									showItem09("practice09-S", "practice09-1", "practice09-2", "practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S",
+											1500, 1250, 1750, 1000, 2000, 1250, 1750);
+								}
 								// 題目十(5)
-								else if (47 == step) {
-									showLastItem("practice10-1",
-											"practice10-2", 1000, 2000, 2000,
-											500);
-								} else if (49 == step) {
-									selectLastItem1("practice10-1",
-											"practice10-2", 2000, 500, 8);
-								} else if (51 == step) {
-									selectLastItem2("practice10-2", 8);
+								else if (currentItem == 10 && 2 == step) {
+									showLastItem05("practice10-S", "practice10-1","practice10-2", "practice10-3","practice10-4", "practice10-5",
+											1000, 1000, 1000, 1000, 1000);
+								} else if (currentItem == 10 && 4 == step) {
+									selectLastItem5_1("practice10-1","practice10-2", "practice10-3","practice10-4", "practice10-5",
+											1000, 1000, 1000,1000, 8);
+								} else if (currentItem == 10 && 6 == step) {
+									selectLastItem5_2("practice10-2", "practice10-3","practice10-4", "practice10-5",
+											1000, 1000, 1000, 8);
+								} else if (currentItem == 10 && 8 == step) {
+									selectLastItem5_3("practice10-3","practice10-4", "practice10-5", 1000, 1000, 8);
+								} else if (currentItem == 10 && 10 == step) {
+									selectLastItem5_4("practice10-4", "practice10-5", 1000, 8);
+								} else if (currentItem == 10 && 12 == step) {
+									selectLastItem5_5("practice10-5", 8);
 								}
 								
 								
-								else if (52 == step) {
+								else if (currentItem == 10 && 0 == step) {
 									// 隱藏 結果頁  & 按鈕
 									// 顯示 是否再次練習
 									
@@ -750,26 +830,24 @@
 									$("#btn1").hide();
 									$("#btn2").show();
 									
-									$("#btnDiv").show();
+									$("#practiceResult").hide();
 									
-									step++; 
+									step = 1; 
 								}
 								
-								else if (53 == step) {
-									step++; // step =54 不做任何反應
+								else if (currentItem == 10 && 1 == step) {
+									step = 999;
 									
 									alert("待實作  休息片刻頁");
-									var formalUrl = "/CAA/test01/showPreFormalTest.do?recordId=" + recordId;
+									var formalUrl = "/CAA/test02/showPreFormalTest.do?recordId=" + recordId;
 									document.location.href = formalUrl;
 								}
-								
-								
 							}
 
 							if (event.which == 50) { // 數字8 換下一頁
 								console.log("按下2,step : " + step);
 							
-								if (1 == step) {
+								if (currentItem == 0 && 1 == step) {
 									console.log("略過練習題 跳到正式測驗!!");
 									
 									var formalUrl = "/CAA/test02/showPreFormalTest.do?recordId=" + recordId;
@@ -832,27 +910,20 @@
 								// 題目九
 								
 								// 題目十
-								else if (49 == step) {
-									selectLastItem1("practice10-1",
-											"practice10-2", 2000, 500, 2);
-								} else if (51 == step) {
-									selectLastItem2("practice10-2", 2);
-								}
 								
 								
-								else if (53 == step) {
-									// 回到練習題首頁
-									step = 1;
-									
+								
+								else if (currentItem == 10 && 1 == step) {
 									$("#title1").show();
 									$("#title2").hide();
 									
 									$("#titleDiv").show();
+									$("#btnDiv").show();
 									
 									$("#btn1").show();
 									$("#btn2").hide();
 									
-									$("#btnDiv").show();
+									currentItem = 0;
 								}
 								
 							}
@@ -1051,7 +1122,8 @@
 													if ((step - beginStep1) == 8) {
 														$("#" + item5).hide();
 														$("#" + next).show();
-														step++;
+														currentItem++;
+														step = 2;
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -1134,7 +1206,8 @@
 										if ((step - beginStep1) == 6) {
 											$("#" + item5).hide();
 											$("#" + item_next).show();
-											step++;
+											currentItem++;
+											step = 2;
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -1196,8 +1269,9 @@
 							if ((step - beginStep1) == 4) {
 								$("#" + item5).hide();
 								$("#" + item_next).show();
-								step++;
-
+								currentItem++;
+								step = 2;
+								
 								response.push(0);
 								reactionTime.push(-1);
 							} else {
@@ -1237,7 +1311,8 @@
 				if ((step - beginStep1) == 2) {
 					$("#" + item5).hide();
 					$("#" + item_next).show();
-					step++;
+					currentItem++;
+					step = 2;
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -1266,7 +1341,7 @@
 	/* ---------- 七個素材畫面控制 Start ---------- */
 	
 	// 七個素材第一個素材出現
-	function showItem07(item_s, item_1, item_2, item_3, item_4, item_5, item6, item7, 
+	function showItem07(item_s, item_1, item_2, item_3, item_4, item_5, item_6, item_7, 
 			item_next, time1, time2, time3, time4, time5, time6, time7) {
 		var beginStep1 = step;
 
@@ -1329,8 +1404,6 @@
 													if ((step - beginStep1) == 8) {
 														$("#" + item_4).hide();
 														$("#materialDiv").show();
-														// 撥放聲音
-														audio.play();
 														step++;
 
 														response.push(0);
@@ -1378,7 +1451,8 @@
 																						if ((step - beginStep1) == 14) {
 																							$("#" + item_7).hide();
 																							$("#" + item_next).show();
-																							step++;
+																							currentItem++;
+																							step = 2;
 
 																							response.push(0);
 																							reactionTime.push(-1);
@@ -1418,7 +1492,271 @@
 			}, time1);
 		}, 1000);
 	}
+	// 七個素材作答第1個項目
+	function selectItem7_1(item1, item2, item3, item4, item5, item6, item7, 
+			item_next, time2, time3, time4, time5, time6, time7, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer1);
+		clearTimeout(itemTimer2);
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		$("#" + item1).hide();
+		$("#materialDiv").show();
+		step++;
 
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item2).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer2 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item2).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item3).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer3 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item3).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item4).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer4 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item4).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item5).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer5 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item5).hide();
+														$("#materialDiv").show();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item6).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer6 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item6).hide();
+																	$("#materialDiv").show();
+																	// 撥放聲音
+																	audio.play();
+																	step++;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+																	
+																	setTimeout(function() {
+																		$("#materialDiv").hide();
+																		$("#" + item7).show()
+																		beginTime = new Date();
+																		step++;
+
+																		itemTimer7 = setTimeout(function() {
+																			if ((step - beginStep1) == 12) {
+																				$("#" + item7).hide();
+																				$("#" + item_next).show();
+																				currentItem++;
+																				step = 2;
+
+																				response.push(0);
+																				reactionTime.push(-1);
+																			} else {
+																				clearTimeout(itemTimer7);
+																			}
+																		}, time7);
+																	}, 1000)
+																} else {
+																	clearTimeout(itemTimer6);
+																}
+															}, time6);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer5);
+													}
+												}, time5);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer4);
+										}
+									}, time4);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer3);
+							}
+						}, time3);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer2);
+				}
+			}, time2);
+		}, 1000);
+	}
+	
+	// 七個素材作答第2個項目
+	function selectItem7_2(item2, item3, item4, item5, item6, item7, 
+			item_next, time3, time4, time5, time6, time7, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer2);
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		$("#" + item2).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item3).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer3 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item3).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item4).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer4 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item4).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item5).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer5 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item5).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item6).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer6 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item6).hide();
+														$("#materialDiv").show();
+														// 撥放聲音
+														audio.play();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item7).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer7 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item7).hide();
+																	$("#" + item_next).show();
+																	currentItem++;
+																	step = 2;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+																} else {
+																	clearTimeout(itemTimer7);
+																}
+															}, time7);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer6);
+													}
+												}, time6);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer5);
+										}
+									}, time5);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer4);
+							}
+						}, time4);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer3);
+				}
+			}, time3);
+		}, 1000);
+	}
+	
 	// 七個素材作答第3個項目
 	function selectItem7_3(item3, item4, item5, item6, item7, 
 			item_next, time4, time5, time6, time7, selection) {
@@ -1492,8 +1830,9 @@
 												itemTimer7 = setTimeout(function() {
 													if ((step - beginStep1) == 8) {
 														$("#" + item7).hide();
-														$("#" + next).show();
-														step++;
+														$("#" + item_next).show();
+														currentItem++;
+														step = 2;
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -1552,7 +1891,7 @@
 					
 					setTimeout(function() {
 						$("#materialDiv").hide();
-						$("#" + item4).show()
+						$("#" + item6).show()
 						beginTime = new Date();
 						step++;
 
@@ -1577,7 +1916,8 @@
 										if ((step - beginStep1) == 6) {
 											$("#" + item7).hide();
 											$("#" + item_next).show();
-											step++;
+											currentItem++;
+											step = 2;
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -1640,7 +1980,8 @@
 							if ((step - beginStep1) == 4) {
 								$("#" + item7).hide();
 								$("#" + item_next).show();
-								step++;
+								currentItem++;
+								step = 2;
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -1681,7 +2022,8 @@
 				if ((step - beginStep1) == 2) {
 					$("#" + item7).hide();
 					$("#" + item_next).show();
-					step++;
+					currentItem++;
+					step = 2;
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -1697,7 +2039,8 @@
 		clearTimeout(itemTimer7);
 		$("#" + item7).hide();
 		$("#" + item_next).show();
-		step++;
+		currentItem++;
+		step = 2;
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -1772,8 +2115,6 @@
 													if ((step - beginStep1) == 8) {
 														$("#" + item_4).hide();
 														$("#materialDiv").show();
-														// 撥放聲音
-														audio.play();
 														step++;
 
 														response.push(0);
@@ -1851,7 +2192,8 @@
 																												if ((step - beginStep1) == 18) {
 																													$("#" + item_9).hide();
 																													$("#" + item_next).show();
-																													step++;
+																													currentItem++;
+																													step = 2;
 
 																													response.push(0);
 																													reactionTime.push(-1);
@@ -1901,7 +2243,622 @@
 			}, time1);
 		}, 1000);
 	}
+	
+	// 九個素材作答第1個項目
+	function selectItem9_1(item1, item2, item3, item4, item5, item6, item7, item8, item9, 
+			item_next, time2, time3, time4, time5, time6, time7, time8, time9, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer1);
+		clearTimeout(itemTimer2);
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item1).hide();
+		$("#materialDiv").show();
+		step++;
 
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item2).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer2 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item2).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item3).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer3 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item3).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(selection);
+								var delta = new Date() - beginTime;
+								reactionTime.push(delta);
+
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item4).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer4 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item4).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item5).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer5 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item5).hide();
+														$("#materialDiv").show();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item6).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer6 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item6).hide();
+																	$("#materialDiv").show();
+																	step++;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+																	
+																	setTimeout(function() {
+																		$("#materialDiv").hide();
+																		$("#" + item7).show()
+																		beginTime = new Date();
+																		step++;
+
+																		itemTimer7 = setTimeout(function() {
+																			if ((step - beginStep1) == 12) {
+																				$("#" + item7).hide();
+																				$("#materialDiv").show();
+																				step++;
+
+																				response.push(0);
+																				reactionTime.push(-1);
+																				
+																				setTimeout(function() {
+																					$("#materialDiv").hide();
+																					$("#" + item8).show()
+																					beginTime = new Date();
+																					step++;
+
+																					itemTimer8 = setTimeout(function() {
+																						if ((step - beginStep1) == 14) {
+																							$("#" + item8).hide();
+																							$("#materialDiv").show();
+																							// 撥放聲音
+																							audio.play();
+																							step++;
+
+																							response.push(0);
+																							reactionTime.push(-1);
+																							
+																							setTimeout(function() {
+																								$("#materialDiv").hide();
+																								$("#" + item9).show()
+																								beginTime = new Date();
+																								step++;
+
+																								itemTimer9 = setTimeout(function() {
+																									if ((step - beginStep1) == 16) {
+																										$("#" + item9).hide();
+																										$("#" + item_next).show();
+																										currentItem++;
+																										step = 2;
+
+																										response.push(0);
+																										reactionTime.push(-1);
+																									} else {
+																										clearTimeout(itemTimer9);
+																									}
+																								}, time9);
+																							}, 1000)
+																						} else {
+																							clearTimeout(itemTimer8);
+																						}
+																					}, time8);
+																				}, 1000)
+																			} else {
+																				clearTimeout(itemTimer7);
+																			}
+																		}, time7);
+																	}, 1000)
+																} else {
+																	clearTimeout(itemTimer6);
+																}
+															}, time6);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer5);
+													}
+												}, time5);
+											}, 1000);
+										} else {
+											clearTimeout(itemTimer4);
+										}
+									}, time4);
+								}, 1000);
+							} else {
+								clearTimeout(itemTimer3);
+							}
+						}, time3);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer2);
+				}
+			}, time2);
+		}, 1000);
+	}
+	
+	// 九個素材作答第2個項目
+	function selectItem9_2(item2, item3, item4, item5, item6, item7, item8, item9,  
+			item_next, time3, time4, time5, time6, time7, time8, time9, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer2);
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item2).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(0);
+		reactionTime.push(-1);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item3).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer3 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item3).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(selection);
+					var delta = new Date() - beginTime;
+					reactionTime.push(delta);
+
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item4).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer4 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item4).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item5).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer5 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item5).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item6).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer6 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item6).hide();
+														$("#materialDiv").show();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item7).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer7 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item7).hide();
+																	$("#materialDiv").show();
+																	step++;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+																	
+																	setTimeout(function() {
+																		$("#materialDiv").hide();
+																		$("#" + item8).show()
+																		beginTime = new Date();
+																		step++;
+
+																		itemTimer8 = setTimeout(function() {
+																			if ((step - beginStep1) == 12) {
+																				$("#" + item8).hide();
+																				$("#materialDiv").show();
+																				// 撥放聲音
+																				audio.play();
+																				step++;
+
+																				response.push(0);
+																				reactionTime.push(-1);
+																				
+																				setTimeout(function() {
+																					$("#materialDiv").hide();
+																					$("#" + item9).show()
+																					beginTime = new Date();
+																					step++;
+
+																					itemTimer9 = setTimeout(function() {
+																						if ((step - beginStep1) == 14) {
+																							$("#" + item9).hide();
+																							$("#" + item_next).show();
+																							currentItem++;
+																							step = 2;
+
+																							response.push(0);
+																							reactionTime.push(-1);
+																						} else {
+																							clearTimeout(itemTimer9);
+																						}
+																					}, time9);
+																				}, 1000)
+																			} else {
+																				clearTimeout(itemTimer8);
+																			}
+																		}, time8);
+																	}, 1000)
+																} else {
+																	clearTimeout(itemTimer7);
+																}
+															}, time7);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer6);
+													}
+												}, time6);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer5);
+										}
+									}, time5);
+								}, 1000);
+							} else {
+								clearTimeout(itemTimer4);
+							}
+						}, time4);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer3);
+				}
+			}, time3);
+		}, 1000);
+	}
+
+	// 九個素材作答第3個項目
+	function selectItem9_3(item3, item4, item5, item6, item7, item8, item9, 
+			item_next, time4, time5, time6, time7, time8, time9, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item3).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item4).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer4 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item4).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item5).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer5 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item5).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item6).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer6 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item6).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item7).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer7 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item7).hide();
+														$("#materialDiv").show();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item8).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer8 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item8).hide();
+																	$("#materialDiv").show();
+																	// 撥放聲音
+																	audio.play();
+																	step++;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+																	
+																	setTimeout(function() {
+																		$("#materialDiv").hide();
+																		$("#" + item9).show()
+																		beginTime = new Date();
+																		step++;
+
+																		itemTimer9 = setTimeout(function() {
+																			if ((step - beginStep1) == 12) {
+																				$("#" + item9).hide();
+																				$("#" + item_next).show();
+																				currentItem++;
+																				step = 2;
+
+																				response.push(0);
+																				reactionTime.push(-1);
+																			} else {
+																				clearTimeout(itemTimer9);
+																			}
+																		}, time9);
+																	}, 1000)
+																} else {
+																	clearTimeout(itemTimer8);
+																}
+															}, time8);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer7);
+													}
+												}, time7);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer6);
+										}
+									}, time6);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer5);
+							}
+						}, time5);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer4);
+				}
+			}, time4);
+		}, 1000);
+	}
+	
+	// 九個素材作答第4個項目
+	function selectItem9_4(item4, item5, item6, item7, item8, item9,  
+			item_next, time5, time6, time7, time8, time9, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer6);
+		clearTimeout(itemTimer7);
+		clearTimeout(itemTimer8);
+		clearTimeout(itemTimer9);
+		$("#" + item4).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item5).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer5 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item5).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item6).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer6 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item6).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item7).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer7 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item7).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item8).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer8 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item8).hide();
+														$("#materialDiv").show();
+														// 撥放聲音
+														audio.play();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item9).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer9 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#" + item9).hide();
+																	$("#" + item_next).show();
+																	currentItem++;
+																	step = 2;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+																} else {
+																	clearTimeout(itemTimer9);
+																}
+															}, time9);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer8);
+													}
+												}, time8);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer7);
+										}
+									}, time7);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer6);
+							}
+						}, time6);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer5);
+				}
+			}, time5);
+		}, 1000);
+	}
+	
 	// 九個素材作答第5個項目
 	function selectItem9_5(item5, item6, item7, item8, item9, 
 			item_next, time6, time7, time8, time9, selection) {
@@ -1975,8 +2932,9 @@
 												itemTimer9 = setTimeout(function() {
 													if ((step - beginStep1) == 8) {
 														$("#" + item9).hide();
-														$("#" + next).show();
-														step++;
+														$("#" + item_next).show();
+														currentItem++;
+														step = 2;
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -2060,7 +3018,8 @@
 										if ((step - beginStep1) == 6) {
 											$("#" + item9).hide();
 											$("#" + item_next).show();
-											step++;
+											currentItem++;
+											step = 2;
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -2123,7 +3082,8 @@
 							if ((step - beginStep1) == 4) {
 								$("#" + item9).hide();
 								$("#" + item_next).show();
-								step++;
+								currentItem++;
+								step = 2;
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -2141,7 +3101,7 @@
 	
 	// 九個素材作答第8個項目
 	function selectItem9_8(item8, item9, 
-			item_next, time5, selection) {
+			item_next, time9, selection) {
 		var beginStep1 = step;
 		clearTimeout(itemTimer8);
 		clearTimeout(itemTimer9);
@@ -2165,7 +3125,8 @@
 				if ((step - beginStep1) == 2) {
 					$("#" + item9).hide();
 					$("#" + item_next).show();
-					step++;
+					currentItem++;
+					step = 2;
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -2181,7 +3142,8 @@
 		clearTimeout(itemTimer5);
 		$("#" + item9).hide();
 		$("#" + item_next).show();
-		step++;
+		currentItem++;
+		step = 2;
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -2190,24 +3152,23 @@
 	
 	/* ---------- 九個素材畫面控制 End ---------- */	
 	
-	function showLastItem(item_1, item_2, time1, time2, time3, time4) {
+	
+	/* ---------- 最後一題五個素材畫面控制 End ---------- */
+	// 最後一題五個素材第一個素材出現
+	function showLastItem05(item_s, item_1, item_2, item_3, item_4, item_5, time1, time2, time3, time4, time5) {
 		var beginStep1 = step;
 
-		$("#confirm").hide();
-		$("#confirmButton").hide();
-
+		$("#" + item_s).hide();
 		$("#materialDiv").show();
 		step++;
 
 		setTimeout(function() {
 			$("#materialDiv").hide();
-			$("#" + item_1).show();
+			$("#" + item_1).show()
 			beginTime = new Date();
 			step++;
 
 			itemTimer1 = setTimeout(function() {
-				console.log("beginStep1 : " + beginStep1);
-				console.log("Step : " + step);
 				if ((step - beginStep1) == 2) {
 					$("#" + item_1).hide();
 					$("#materialDiv").show();
@@ -2218,42 +3179,104 @@
 
 					setTimeout(function() {
 						$("#materialDiv").hide();
-						$("#" + item_2).show();
+						$("#" + item_2).show()
 						beginTime = new Date();
 						step++;
 
 						itemTimer2 = setTimeout(function() {
 							if ((step - beginStep1) == 4) {
-								clearTimeout(itemTimer1);
-								clearTimeout(itemTimer2);
-
-								$("#titleDiv").hide();
-								$("#btnDiv").hide();
-								$("#" + item2).hide();
-								$("#practiceResult").show();
+								$("#" + item_2).hide();
+								$("#materialDiv").show();
 								step++;
 
 								response.push(0);
 								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item_3).show()
+									beginTime = new Date();
+									step++;
 
-								calculateResult();
+									itemTimer3 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item_3).hide();
+											$("#materialDiv").show();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item_4).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer4 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#" + item_4).hide();
+														$("#materialDiv").show();
+														// 撥放聲音
+														audio.play();
+														step++;
+
+														response.push(0);
+														reactionTime.push(-1);
+														
+														setTimeout(function() {
+															$("#materialDiv").hide();
+															$("#" + item_5).show()
+															beginTime = new Date();
+															step++;
+
+															itemTimer5 = setTimeout(function() {
+																if ((step - beginStep1) == 10) {
+																	$("#titleDiv").hide();
+																	$("#btnDiv").hide();
+																	$("#" + item_5).hide();
+																	$("#practiceResult").show();
+																	step = 0;
+
+																	response.push(0);
+																	reactionTime.push(-1);
+
+																	calculateResult();
+																} else {
+																	clearTimeout(itemTimer5);
+																}
+															}, time5);
+														}, 1000)
+													} else {
+														clearTimeout(itemTimer4);
+													}
+												}, time4);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer3);
+										}
+									}, time3);
+								}, 1000);
 							} else {
 								clearTimeout(itemTimer2);
 							}
-						}, time4);
-					}, time3);
+						}, time2);
+					}, 1000);
 				} else {
 					clearTimeout(itemTimer1);
 				}
-			}, time2);
-		}, time1);
+			}, time1);
+		}, 1000);
 	}
 
-	// 作答第一個項目
-	function selectLastItem1(item1, item2, time1, time2, selection) {
-		var beginStep2 = step;
+	// 最後一題五個素材作答第一個項目
+	function selectLastItem5_1(item1, item2, item3, item4, item5, time2, time3, time4, time5, selection) {
+		var beginStep1 = step;
 		clearTimeout(itemTimer1);
 		clearTimeout(itemTimer2);
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
 		$("#" + item1).hide();
 		$("#materialDiv").show();
 		step++;
@@ -2264,40 +3287,282 @@
 
 		setTimeout(function() {
 			$("#materialDiv").hide();
-			$("#" + item2).show();
+			$("#" + item2).show()
 			beginTime = new Date();
 			step++;
 
 			itemTimer2 = setTimeout(function() {
-				if ((step - beginStep2) == 2) {
-					clearTimeout(itemTimer1);
-					clearTimeout(itemTimer2);
+				if ((step - beginStep1) == 2) {
+					$("#" + item2).hide();
+					$("#materialDiv").show();
+					step++;
 
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item3).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer3 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item3).hide();
+								$("#materialDiv").show();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item4).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer4 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#" + item4).hide();
+											$("#materialDiv").show();
+											// 撥放聲音
+											audio.play();
+											step++;
+
+											response.push(0);
+											reactionTime.push(-1);
+											
+											setTimeout(function() {
+												$("#materialDiv").hide();
+												$("#" + item5).show()
+												beginTime = new Date();
+												step++;
+
+												itemTimer5 = setTimeout(function() {
+													if ((step - beginStep1) == 8) {
+														$("#titleDiv").hide();
+														$("#btnDiv").hide();
+														$("#" + item5).hide();
+														$("#practiceResult").show();
+														step = 0;
+
+														response.push(0);
+														reactionTime.push(-1);
+
+														calculateResult();
+													} else {
+														clearTimeout(itemTimer5);
+													}
+												}, time5);
+											}, 1000)
+										} else {
+											clearTimeout(itemTimer4);
+										}
+									}, time4);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer3);
+							}
+						}, time3);
+					}, 1000);
+				} else {
+					clearTimeout(itemTimer2);
+				}
+			}, time2);
+		}, 1000);
+	}
+
+	// 最後一題五個素材作答第二個項目
+	function selectLastItem5_2(item2, item3, item4, item5, time3, time4, time5, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer2);
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		$("#" + item2).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item3).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer3 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item3).hide();
+					$("#materialDiv").show();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item4).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer4 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#" + item4).hide();
+								$("#materialDiv").show();
+								// 撥放聲音
+								audio.play();
+								step++;
+
+								response.push(0);
+								reactionTime.push(-1);
+								
+								setTimeout(function() {
+									$("#materialDiv").hide();
+									$("#" + item5).show()
+									beginTime = new Date();
+									step++;
+
+									itemTimer5 = setTimeout(function() {
+										if ((step - beginStep1) == 6) {
+											$("#titleDiv").hide();
+											$("#btnDiv").hide();
+											$("#" + item5).hide();
+											$("#practiceResult").show();
+											step = 0;
+
+											response.push(0);
+											reactionTime.push(-1);
+
+											calculateResult();
+										} else {
+											clearTimeout(itemTimer5);
+										}
+									}, time5);
+								}, 1000)
+							} else {
+								clearTimeout(itemTimer4);
+							}
+						}, time4);
+					}, 1000)
+				} else {
+					clearTimeout(itemTimer3);
+				}
+			}, time3);
+		}, 1000);
+	}
+	
+	// 最後一題五個素材作答第三個項目
+	function selectLastItem5_3(item3, item4, item5, time4, time5, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer3);
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		$("#" + item3).hide();
+		$("#materialDiv").show();
+		step++;
+
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item4).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer4 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
+					$("#" + item4).hide();
+					$("#materialDiv").show();
+					// 撥放聲音
+					audio.play();
+					step++;
+
+					response.push(0);
+					reactionTime.push(-1);
+					
+					setTimeout(function() {
+						$("#materialDiv").hide();
+						$("#" + item5).show()
+						beginTime = new Date();
+						step++;
+
+						itemTimer5 = setTimeout(function() {
+							if ((step - beginStep1) == 4) {
+								$("#titleDiv").hide();
+								$("#btnDiv").hide();
+								$("#" + item5).hide();
+								$("#practiceResult").show();
+								step = 0;
+
+								response.push(0);
+								reactionTime.push(-1);
+
+								calculateResult();
+							} else {
+								clearTimeout(itemTimer5);
+							}
+						}, time5);
+					}, 1000)
+				} else {
+					clearTimeout(itemTimer4);
+				}
+			}, time4);
+		}, 1000)
+	}
+	
+	// 最後一題五個素材作答第四個項目
+	function selectLastItem5_4(item4, item5, time5, selection) {
+		var beginStep1 = step;
+		clearTimeout(itemTimer4);
+		clearTimeout(itemTimer5);
+		$("#" + item4).hide();
+		$("#materialDiv").show();
+		// 撥放聲音
+		audio.play();
+		step++;
+		
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
+		
+		setTimeout(function() {
+			$("#materialDiv").hide();
+			$("#" + item5).show()
+			beginTime = new Date();
+			step++;
+
+			itemTimer5 = setTimeout(function() {
+				if ((step - beginStep1) == 2) {
 					$("#titleDiv").hide();
 					$("#btnDiv").hide();
-					$("#" + item2).hide();
+					$("#" + item5).hide();
 					$("#practiceResult").show();
-					step++;
+					step = 0;
 
 					response.push(0);
 					reactionTime.push(-1);
 
 					calculateResult();
 				} else {
-					clearTimeout(itemTimer2);
+					clearTimeout(itemTimer5);
 				}
-			}, time2);
-		}, time1);
+			}, time5);
+		}, 1000)
 	}
-
-	function selectLastItem2(item, selection) {
-		clearTimeout(itemTimer1);
-		clearTimeout(itemTimer2);
+	
+	// 最後一題五個素材作答第五個項目
+	function selectLastItem5_5(item5, selection) {
+		clearTimeout(itemTimer5);
 		$("#titleDiv").hide();
 		$("#btnDiv").hide();
-		$("#" + item).hide();
+		$("#" + item5).hide();
 		$("#practiceResult").show();
-		step++;
+		step = 0;
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -2305,6 +3570,8 @@
 
 		calculateResult();
 	}
+	
+	/* ---------- 最後一題畫面控制 End ---------- */
 
 	function calculateResult() {
 		var answer = [ 2, 2, 8, 8, 2, 8, 8, 2, 2, 8, 2, 8, 8, 2, 2, 2, 8, 2, 8,
