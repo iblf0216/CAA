@@ -71,25 +71,24 @@
 				</div>
 				<div class="col-md-3"></div>
 			</div>
-		</div>
-		
-
-		<div class="row" id="btn2" style="display: none;">
-			<div class="col-md-3"></div>
-			<div class="col-md-3">
-				<div class="blue_bg_btn text-center">
-					結束練習
-					<p class="red_border">✔</p>
+			
+			<div class="row" id="btn2" style="display: none;">
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<div class="blue_bg_btn text-center">
+						結束練習
+						<p class="red_border">✔</p>
+					</div>
 				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="blue_bg_btn text-center">
-					再次練習
-					<p class="red_border">✘</p>
+	
+				<div class="col-md-3">
+					<div class="blue_bg_btn text-center">
+						再次練習
+						<p class="red_border">✘</p>
+					</div>
 				</div>
+				<div class="col-md-3"></div>
 			</div>
-			<div class="col-md-3"></div>
 		</div>
 
 		<!-- 凝視點 -->
@@ -702,117 +701,217 @@
 								// 題目二(5)
 								else if (currentItem == 2 && 2 == step) {
 									showItem05("practice02-S", "practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S",
-											1500, 1250, 1750, 1000, 2000);
+										1000, 1500, 2000, 750, 1500);
 								} else if (currentItem == 2 && 4 == step) {
 									selectItem5_1("practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
-											1250, 1750, 1000, 2000, 8);
+										1500, 2000, 750, 1500, 8);
 								} else if (currentItem == 2 && 6 == step) {
 									selectItem5_2("practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
-										1750, 1000, 2000, 8);
+										2000, 750, 1500, 8);
 								} else if (currentItem == 2 && 8 == step) {
 									selectItem5_3("practice02-3", "practice02-4", "practice02-5", "practice03-S", 
-										1000, 2000, 8);
+										750, 1500, 8);
 								} else if (currentItem == 2 && 10 == step) {
 									selectItem5_4("practice02-4", "practice02-5", "practice03-S", 
-											2000, 8);
+										1500, 8);
 								} else if (currentItem == 2 && 12 == step) {
 									selectItem5_5("practice02-5", "practice03-S", 8);
 								}
 								// 題目三(9)
 								else if (currentItem == 3 && 2 == step) {
 									showItem09("practice03-S", "practice03-1", "practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S",
-											1500, 1250, 1750, 1000, 2000, 1250, 1750, 1000, 2000);
+										750, 1750, 1750, 1500, 1250, 1750, 1250, 1250, 1000);
 								} else if (currentItem == 3 && 4 == step) {
 									selectItem9_1("practice03-1", "practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
-											1000, 1250,	2000, 1750, 1000, 1750, 1000, 1000, 8);
+										1750, 1750, 1500, 1250, 1750, 1250, 1250, 1000, 8);
 								} else if (currentItem == 3 && 6 == step) {
 									selectItem9_2("practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
-										1000, 1250,	2000, 1750, 1000, 1750, 1000, 8);
+										1750, 1500, 1250, 1750, 1250, 1250, 1000, 8);
 								} else if (currentItem == 3 && 8 == step) {
 									selectItem9_3("practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
-										2000, 1750, 1000, 1750, 1000, 1750, 8);
+										1500, 1250, 1750, 1250, 1250, 1000, 8);
 								} else if (currentItem == 3 && 10 == step) {
 									selectItem9_4("practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
-										1750, 1000, 1750, 1000, 1000, 8);
+										1250, 1750, 1250, 1250, 1000, 8);
 								} else if (currentItem == 3 && 12 == step) {
 									selectItem9_5("practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
-										1750, 1000, 2000, 2000, 8);
+										1750, 1250, 1250, 1000, 8);
 								} else if (currentItem == 3 && 14 == step) {
 									selectItem9_6("practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
-										1750, 1000, 2000, 8);
+										1250, 1250, 1000, 8);
 								} else if (currentItem == 3 && 16 == step) {
 									selectItem9_7("practice03-7", "practice03-8", "practice03-9", "practice04-S", 
-										1000, 2000, 8);
+										1250, 1000, 8);
 								} else if (currentItem == 3 && 18 == step) {
 									selectItem9_8("practice03-8", "practice03-9", "practice04-S", 
-										2000, 8);
+										1000, 8);
 								} else if (currentItem == 3 && 20 == step) {
 									selectItem9_9("practice03-9", "practice04-S", 8);
 								}
 								// 題目四(9)
 								else if (currentItem == 4 && 2 == step) {
 									showItem09("practice04-S", "practice04-1", "practice04-2", "practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S",
-											1500, 1250, 1750, 1000, 2000, 1250, 1750, 1000, 2000);
+										750, 750, 1000, 1250, 1500, 2000, 1750, 1000, 1250);
+								} else if (currentItem == 4 && 4 == step) {
+									selectItem9_1("practice04-1", "practice04-2", "practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										750, 1000, 1250, 1500, 2000, 1750, 1000, 1250, 8);
+								} else if (currentItem == 4 && 6 == step) {
+									selectItem9_2("practice04-2", "practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1000, 1250, 1500, 2000, 1750, 1000, 1250, 8);
+								} else if (currentItem == 4 && 8 == step) {
+									selectItem9_3("practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1250, 1500, 2000, 1750, 1000, 1250, 8);
+								} else if (currentItem == 4 && 10 == step) {
+									selectItem9_4("practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1500, 2000, 1750, 1000, 1250, 8);
+								} else if (currentItem == 4 && 12 == step) {
+									selectItem9_5("practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										2000, 1750, 1000, 1250, 8);
+								} else if (currentItem == 4 && 14 == step) {
+									selectItem9_6("practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1750, 1000, 1250, 8);
+								} else if (currentItem == 4 && 16 == step) {
+									selectItem9_7("practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1000, 1250, 8);
+								} else if (currentItem == 4 && 18 == step) {
+									selectItem9_8("practice04-8", "practice04-9", "practice05-S", 
+										1250, 8);
+								} else if (currentItem == 4 && 20 == step) {
+									selectItem9_9("practice04-9", "practice05-S", 8);
 								}
 								// 題目五(5)
 								else if (currentItem == 5 && 2 == step) {
 									showItem05("practice05-S", "practice05-1", "practice05-2", "practice05-3", "practice05-4", "practice05-5", "practice06-S",
-											1500, 1250, 1750, 1000, 2000);
+										1000, 1000, 1500, 1250, 750);
+								} else if (currentItem == 5 && 4 == step) {
+									selectItem5_1("practice05-1", "practice05-2", "practice05-3", "practice05-4", "practice05-5", "practice06-S", 
+										1000, 1500, 1250, 750, 8);
+								} else if (currentItem == 5 && 6 == step) {
+									selectItem5_2("practice05-2", "practice05-3", "practice05-4", "practice05-5", "practice06-S", 
+										1500, 1250, 750, 8);
+								} else if (currentItem == 5 && 8 == step) {
+									selectItem5_3("practice05-3", "practice05-4", "practice05-5", "practice06-S", 
+										1250, 750, 8);
+								} else if (currentItem == 5 && 10 == step) {
+									selectItem5_4("practice05-4", "practice05-5", "practice06-S", 
+										750, 8);
+								} else if (currentItem == 5 && 12 == step) {
+									selectItem5_5("practice05-5", "practice06-S", 8);
 								}
 								// 題目六(9)
 								else if (currentItem == 6 && 2 == step) {
 									showItem09("practice06-S", "practice06-1", "practice06-2", "practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S",
-											1500, 1250, 1750, 1000, 2000, 1250, 1750, 1000, 2000);
+										1250, 750, 2000, 750, 1500, 1250, 1500, 1000, 2000);
+								} else if (currentItem == 6 && 4 == step) {
+									selectItem9_1("practice06-1", "practice06-2", "practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										750, 2000, 750, 1500, 1250, 1500, 1000, 2000, 8);
+								} else if (currentItem == 6 && 6 == step) {
+									selectItem9_2("practice06-2", "practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										2000, 750, 1500, 1250, 1500, 1000, 2000, 8);
+								} else if (currentItem == 6 && 8 == step) {
+									selectItem9_3("practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										750, 1500, 1250, 1500, 1000, 2000, 8);
+								} else if (currentItem == 6 && 10 == step) {
+									selectItem9_4("practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1500, 1250, 1500, 1000, 2000, 8);
+								} else if (currentItem == 6 && 12 == step) {
+									selectItem9_5("practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1250, 1500, 1000, 2000, 8);
+								} else if (currentItem == 6 && 14 == step) {
+									selectItem9_6("practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1500, 1000, 2000, 8);
+								} else if (currentItem == 6 && 16 == step) {
+									selectItem9_7("practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1000, 2000, 8);
+								} else if (currentItem == 6 && 18 == step) {
+									selectItem9_8("practice06-8", "practice06-9", "practice07-S", 
+										2000, 8);
+								} else if (currentItem == 6 && 20 == step) {
+									selectItem9_9("practice06-9", "practice07-S", 8);
 								}
 								// 題目七(5)
 								else if (currentItem == 7 && 2 == step) {
 									showItem05("practice07-S", "practice07-1", "practice07-2", "practice07-3", "practice07-4", "practice07-5", "practice08-S",
-											1500, 1250, 1750, 1000, 2000);
+										2000, 1250, 750, 750, 1000);
+								} else if (currentItem == 7 && 4 == step) {
+									selectItem5_1("practice07-1", "practice07-2", "practice07-3", "practice07-4", "practice07-5", "practice08-S", 
+										1250, 750, 750, 1000, 8);
+								} else if (currentItem == 7 && 6 == step) {
+									selectItem5_2("practice07-2", "practice07-3", "practice07-4", "practice07-5", "practice08-S", 
+										750, 750, 1000, 8);
+								} else if (currentItem == 7 && 8 == step) {
+									selectItem5_3("practice07-3", "practice07-4", "practice07-5", "practice08-S", 
+										750, 1000, 8);
+								} else if (currentItem == 7 && 10 == step) {
+									selectItem5_4("practice07-4", "practice07-5", "practice08-S", 
+										1000, 8);
+								} else if (currentItem == 7 && 12 == step) {
+									selectItem5_5("practice07-5", "practice08-S", 8);
 								}
 								// 題目八(7)
 								else if (currentItem == 8 && 2 == step) {
 									showItem07("practice08-S", "practice08-1", "practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S",
-										1500, 1250, 1750, 1000, 2000, 1250, 1750);
+										1250, 1500, 1000, 1750, 1250, 750, 1250);
 								} else if (currentItem == 8 && 4 == step) {
 									selectItem7_1("practice08-1", "practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
-										2000, 1750, 1000, 1750, 1000, 1000, 8);
+										1500, 1000, 1750, 1250, 750, 1250, 8);
 								} else if (currentItem == 8 && 6 == step) {
 									selectItem7_2("practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
-										2000, 1750, 1000, 1750, 1000, 8);
+										1000, 1750, 1250, 750, 1250, 8);
 								} else if (currentItem == 8 && 8 == step) {
 									selectItem7_3("practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
-										1000, 1750, 1000, 1750, 8);
+										1750, 1250, 750, 1250, 8);
 								} else if (currentItem == 8 && 10 == step) {
 									selectItem7_4("practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
-										1750, 1000, 1000, 8);
+										1250, 750, 1250, 8);
 								} else if (currentItem == 8 && 12 == step) {
 									selectItem7_5("practice08-5", "practice08-6", "practice08-7", "practice09-S", 
-										2000, 2000, 8);
+										750, 1250, 8);
 								} else if (currentItem == 8 && 14 == step) {
 									selectItem7_6("practice08-6", "practice08-7", "practice09-S", 
-										2000, 8);
+										1250, 8);
 								} else if (currentItem == 8 && 16 == step) {
 									selectItem7_7("practice08-7", "practice09-S", 8);
 								}
 								// 題目九(7)
 								else if (currentItem == 9 && 2 == step) {
 									showItem09("practice09-S", "practice09-1", "practice09-2", "practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S",
-											1500, 1250, 1750, 1000, 2000, 1250, 1750);
+										2000, 1500, 1750, 1750, 2000, 750, 1500);
+								} else if (currentItem == 9 && 4 == step) {
+									selectItem7_1("practice09-1", "practice09-2", "practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										1500, 1750, 1750, 2000, 750, 1500, 8);
+								} else if (currentItem == 9 && 6 == step) {
+									selectItem7_2("practice09-2", "practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										1750, 1750, 2000, 750, 1500, 8);
+								} else if (currentItem == 9 && 8 == step) {
+									selectItem7_3("practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										1750, 2000, 750, 1500, 8);
+								} else if (currentItem == 9 && 10 == step) {
+									selectItem7_4("practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										2000, 750, 1500, 8);
+								} else if (currentItem == 9 && 12 == step) {
+									selectItem7_5("practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										750, 1500, 8);
+								} else if (currentItem == 9 && 14 == step) {
+									selectItem7_6("practice09-6", "practice09-7", "practice010-S", 
+										1500, 8);
+								} else if (currentItem == 9 && 16 == step) {
+									selectItem7_7("practice09-7", "practice010-S", 8);
 								}
 								// 題目十(5)
 								else if (currentItem == 10 && 2 == step) {
 									showLastItem05("practice10-S", "practice10-1","practice10-2", "practice10-3","practice10-4", "practice10-5",
-											1000, 1000, 1000, 1000, 1000);
+											1250, 1500, 1250, 1000, 1750);
 								} else if (currentItem == 10 && 4 == step) {
 									selectLastItem5_1("practice10-1","practice10-2", "practice10-3","practice10-4", "practice10-5",
-											1000, 1000, 1000,1000, 8);
+											1500, 1250, 1000, 1750, 8);
 								} else if (currentItem == 10 && 6 == step) {
 									selectLastItem5_2("practice10-2", "practice10-3","practice10-4", "practice10-5",
-											1000, 1000, 1000, 8);
+											1250, 1000, 1750, 8);
 								} else if (currentItem == 10 && 8 == step) {
-									selectLastItem5_3("practice10-3","practice10-4", "practice10-5", 1000, 1000, 8);
+									selectLastItem5_3("practice10-3","practice10-4", "practice10-5", 1000, 1750, 8);
 								} else if (currentItem == 10 && 10 == step) {
-									selectLastItem5_4("practice10-4", "practice10-5", 1000, 8);
+									selectLastItem5_4("practice10-4", "practice10-5", 1750, 8);
 								} else if (currentItem == 10 && 12 == step) {
 									selectLastItem5_5("practice10-5", 8);
 								}
@@ -829,6 +928,7 @@
 									
 									$("#btn1").hide();
 									$("#btn2").show();
+									$("#btnDiv").show();
 									
 									$("#practiceResult").hide();
 									
@@ -870,7 +970,7 @@
 										1000, 2000, 2);
 								} else if (currentItem == 1 && 10 == step) {
 									selectItem5_4("practice01-4", "practice01-5", "practice02-S", 
-											2000, 2);
+										2000, 2);
 								} else if (currentItem == 1 && 12 == step) {
 									selectItem5_5("practice01-5", "practice02-S", 2);
 								}
@@ -879,39 +979,220 @@
 								// 題目二(5)
 								else if (currentItem == 2 && 2 == step) {
 									showItem05("practice02-S", "practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S",
-											1500, 1250, 1750, 1000, 2000);
-								} else if (currentItem == 1 && 4 == step) {
+										1000, 1500, 2000, 750, 1500);
+								} else if (currentItem == 2 && 4 == step) {
 									selectItem5_1("practice02-1", "practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
-											1250, 1750, 1000, 2000, 2);
-								} else if (currentItem == 1 && 6 == step) {
+										1500, 2000, 750, 1500, 2);
+								} else if (currentItem == 2 && 6 == step) {
 									selectItem5_2("practice02-2", "practice02-3", "practice02-4", "practice02-5", "practice03-S", 
-										1750, 1000, 2000, 2);
-								} else if (currentItem == 1 && 8 == step) {
+										2000, 750, 1500, 2);
+								} else if (currentItem == 2 && 8 == step) {
 									selectItem5_3("practice02-3", "practice02-4", "practice02-5", "practice03-S", 
-										1000, 2000, 2);
-								} else if (currentItem == 1 && 10 == step) {
+										750, 1500, 2);
+								} else if (currentItem == 2 && 10 == step) {
 									selectItem5_4("practice02-4", "practice02-5", "practice03-S", 
-											2000, 2);
-								} else if (currentItem == 1 && 12 == step) {
+										1500, 2);
+								} else if (currentItem == 2 && 12 == step) {
 									selectItem5_5("practice02-5", "practice03-S", 2);
-								}								
-								// 題目三
-								
-								// 題目四
-								
-								// 題目五
-								
-								// 題目六
-								
-								// 題目七
-								
-								// 題目八
-								
-								// 題目九
-								
-								// 題目十
-								
-								
+								}
+								// 題目三(9)
+								else if (currentItem == 3 && 2 == step) {
+									showItem09("practice03-S", "practice03-1", "practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S",
+										750, 1750, 1750, 1500, 1250, 1750, 1250, 1250, 1000);
+								} else if (currentItem == 3 && 4 == step) {
+									selectItem9_1("practice03-1", "practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1750, 1750, 1500, 1250, 1750, 1250, 1250, 1000, 2);
+								} else if (currentItem == 3 && 6 == step) {
+									selectItem9_2("practice03-2", "practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1750, 1500, 1250, 1750, 1250, 1250, 1000, 2);
+								} else if (currentItem == 3 && 8 == step) {
+									selectItem9_3("practice03-3", "practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1500, 1250, 1750, 1250, 1250, 1000, 2);
+								} else if (currentItem == 3 && 10 == step) {
+									selectItem9_4("practice03-4", "practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1250, 1750, 1250, 1250, 1000, 2);
+								} else if (currentItem == 3 && 12 == step) {
+									selectItem9_5("practice03-5", "practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1750, 1250, 1250, 1000, 2);
+								} else if (currentItem == 3 && 14 == step) {
+									selectItem9_6("practice03-6", "practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1250, 1250, 1000, 2);
+								} else if (currentItem == 3 && 16 == step) {
+									selectItem9_7("practice03-7", "practice03-8", "practice03-9", "practice04-S", 
+										1250, 1000, 2);
+								} else if (currentItem == 3 && 18 == step) {
+									selectItem9_8("practice03-8", "practice03-9", "practice04-S", 
+										1000, 2);
+								} else if (currentItem == 3 && 20 == step) {
+									selectItem9_9("practice03-9", "practice04-S", 2);
+								}
+								// 題目四(9)
+								else if (currentItem == 4 && 2 == step) {
+									showItem09("practice04-S", "practice04-1", "practice04-2", "practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S",
+										750, 750, 1000, 1250, 1500, 2000, 1750, 1000, 1250);
+								} else if (currentItem == 4 && 4 == step) {
+									selectItem9_1("practice04-1", "practice04-2", "practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										750, 1000, 1250, 1500, 2000, 1750, 1000, 1250, 2);
+								} else if (currentItem == 4 && 6 == step) {
+									selectItem9_2("practice04-2", "practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1000, 1250, 1500, 2000, 1750, 1000, 1250, 2);
+								} else if (currentItem == 4 && 8 == step) {
+									selectItem9_3("practice04-3", "practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1250, 1500, 2000, 1750, 1000, 1250, 2);
+								} else if (currentItem == 4 && 10 == step) {
+									selectItem9_4("practice04-4", "practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1500, 2000, 1750, 1000, 1250, 2);
+								} else if (currentItem == 4 && 12 == step) {
+									selectItem9_5("practice04-5", "practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										2000, 1750, 1000, 1250, 2);
+								} else if (currentItem == 4 && 14 == step) {
+									selectItem9_6("practice04-6", "practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1750, 1000, 1250, 2);
+								} else if (currentItem == 4 && 16 == step) {
+									selectItem9_7("practice04-7", "practice04-8", "practice04-9", "practice05-S", 
+										1000, 1250, 2);
+								} else if (currentItem == 4 && 18 == step) {
+									selectItem9_8("practice04-8", "practice04-9", "practice05-S", 
+										1250, 2);
+								} else if (currentItem == 4 && 20 == step) {
+									selectItem9_9("practice04-9", "practice05-S", 2);
+								}
+								// 題目五(5)
+								else if (currentItem == 5 && 2 == step) {
+									showItem05("practice05-S", "practice05-1", "practice05-2", "practice05-3", "practice05-4", "practice05-5", "practice06-S",
+										1000, 1000, 1500, 1250, 750);
+								} else if (currentItem == 5 && 4 == step) {
+									selectItem5_1("practice05-1", "practice05-2", "practice05-3", "practice05-4", "practice05-5", "practice06-S", 
+										1000, 1500, 1250, 750, 2);
+								} else if (currentItem == 5 && 6 == step) {
+									selectItem5_2("practice05-2", "practice05-3", "practice05-4", "practice05-5", "practice06-S", 
+										1500, 1250, 750, 2);
+								} else if (currentItem == 5 && 8 == step) {
+									selectItem5_3("practice05-3", "practice05-4", "practice05-5", "practice06-S", 
+										1250, 750, 2);
+								} else if (currentItem == 5 && 10 == step) {
+									selectItem5_4("practice05-4", "practice05-5", "practice06-S", 
+										750, 2);
+								} else if (currentItem == 5 && 12 == step) {
+									selectItem5_5("practice05-5", "practice06-S", 2);
+								}
+								// 題目六(9)
+								else if (currentItem == 6 && 2 == step) {
+									showItem09("practice06-S", "practice06-1", "practice06-2", "practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S",
+										1250, 750, 2000, 750, 1500, 1250, 1500, 1000, 2000);
+								} else if (currentItem == 6 && 4 == step) {
+									selectItem9_1("practice06-1", "practice06-2", "practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										750, 2000, 750, 1500, 1250, 1500, 1000, 2000, 2);
+								} else if (currentItem == 6 && 6 == step) {
+									selectItem9_2("practice06-2", "practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										2000, 750, 1500, 1250, 1500, 1000, 2000, 2);
+								} else if (currentItem == 6 && 8 == step) {
+									selectItem9_3("practice06-3", "practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										750, 1500, 1250, 1500, 1000, 2000, 2);
+								} else if (currentItem == 6 && 10 == step) {
+									selectItem9_4("practice06-4", "practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1500, 1250, 1500, 1000, 2000, 2);
+								} else if (currentItem == 6 && 12 == step) {
+									selectItem9_5("practice06-5", "practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1250, 1500, 1000, 2000, 2);
+								} else if (currentItem == 6 && 14 == step) {
+									selectItem9_6("practice06-6", "practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1500, 1000, 2000, 2);
+								} else if (currentItem == 6 && 16 == step) {
+									selectItem9_7("practice06-7", "practice06-8", "practice06-9", "practice07-S", 
+										1000, 2000, 2);
+								} else if (currentItem == 6 && 18 == step) {
+									selectItem9_8("practice06-8", "practice06-9", "practice07-S", 
+										2000, 2);
+								} else if (currentItem == 6 && 20 == step) {
+									selectItem9_9("practice06-9", "practice07-S", 2);
+								}
+								// 題目七(5)
+								else if (currentItem == 7 && 2 == step) {
+									showItem05("practice07-S", "practice07-1", "practice07-2", "practice07-3", "practice07-4", "practice07-5", "practice08-S",
+										2000, 1250, 750, 750, 1000);
+								} else if (currentItem == 7 && 4 == step) {
+									selectItem5_1("practice07-1", "practice07-2", "practice07-3", "practice07-4", "practice07-5", "practice08-S", 
+										1250, 750, 750, 1000, 2);
+								} else if (currentItem == 7 && 6 == step) {
+									selectItem5_2("practice07-2", "practice07-3", "practice07-4", "practice07-5", "practice08-S", 
+										750, 750, 1000, 2);
+								} else if (currentItem == 7 && 8 == step) {
+									selectItem5_3("practice07-3", "practice07-4", "practice07-5", "practice08-S", 
+										750, 1000, 2);
+								} else if (currentItem == 7 && 10 == step) {
+									selectItem5_4("practice07-4", "practice07-5", "practice08-S", 
+										1000, 2);
+								} else if (currentItem == 7 && 12 == step) {
+									selectItem5_5("practice07-5", "practice08-S", 2);
+								}
+								// 題目八(7)
+								else if (currentItem == 8 && 2 == step) {
+									showItem07("practice08-S", "practice08-1", "practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S",
+										1250, 1500, 1000, 1750, 1250, 750, 1250);
+								} else if (currentItem == 8 && 4 == step) {
+									selectItem7_1("practice08-1", "practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										1500, 1000, 1750, 1250, 750, 1250, 2);
+								} else if (currentItem == 8 && 6 == step) {
+									selectItem7_2("practice08-2", "practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										1000, 1750, 1250, 750, 1250, 2);
+								} else if (currentItem == 8 && 8 == step) {
+									selectItem7_3("practice08-3", "practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										1750, 1250, 750, 1250, 2);
+								} else if (currentItem == 8 && 10 == step) {
+									selectItem7_4("practice08-4", "practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										1250, 750, 1250, 2);
+								} else if (currentItem == 8 && 12 == step) {
+									selectItem7_5("practice08-5", "practice08-6", "practice08-7", "practice09-S", 
+										750, 1250, 2);
+								} else if (currentItem == 8 && 14 == step) {
+									selectItem7_6("practice08-6", "practice08-7", "practice09-S", 
+										1250, 2);
+								} else if (currentItem == 8 && 16 == step) {
+									selectItem7_7("practice08-7", "practice09-S", 2);
+								}
+								// 題目九(7)
+								else if (currentItem == 9 && 2 == step) {
+									showItem09("practice09-S", "practice09-1", "practice09-2", "practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S",
+										2000, 1500, 1750, 1750, 2000, 750, 1500);
+								} else if (currentItem == 9 && 4 == step) {
+									selectItem7_1("practice09-1", "practice09-2", "practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										1500, 1750, 1750, 2000, 750, 1500, 2);
+								} else if (currentItem == 9 && 6 == step) {
+									selectItem7_2("practice09-2", "practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										1750, 1750, 2000, 750, 1500, 2);
+								} else if (currentItem == 9 && 8 == step) {
+									selectItem7_3("practice09-3", "practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										1750, 2000, 750, 1500, 2);
+								} else if (currentItem == 9 && 10 == step) {
+									selectItem7_4("practice09-4", "practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										2000, 750, 1500, 2);
+								} else if (currentItem == 9 && 12 == step) {
+									selectItem7_5("practice09-5", "practice09-6", "practice09-7", "practice10-S", 
+										750, 1500, 2);
+								} else if (currentItem == 9 && 14 == step) {
+									selectItem7_6("practice09-6", "practice09-7", "practice010-S", 
+										1500, 2);
+								} else if (currentItem == 9 && 16 == step) {
+									selectItem7_7("practice09-7", "practice010-S", 2);
+								}
+								// 題目十(5)
+								else if (currentItem == 10 && 2 == step) {
+									showLastItem05("practice10-S", "practice10-1","practice10-2", "practice10-3","practice10-4", "practice10-5",
+											1250, 1500, 1250, 1000, 1750);
+								} else if (currentItem == 10 && 4 == step) {
+									selectLastItem5_1("practice10-1","practice10-2", "practice10-3","practice10-4", "practice10-5",
+											1500, 1250, 1000, 1750, 2);
+								} else if (currentItem == 10 && 6 == step) {
+									selectLastItem5_2("practice10-2", "practice10-3","practice10-4", "practice10-5",
+											1250, 1000, 1750, 2);
+								} else if (currentItem == 10 && 8 == step) {
+									selectLastItem5_3("practice10-3","practice10-4", "practice10-5", 1000, 1750, 2);
+								} else if (currentItem == 10 && 10 == step) {
+									selectLastItem5_4("practice10-4", "practice10-5", 1750, 2);
+								} else if (currentItem == 10 && 12 == step) {
+									selectLastItem5_5("practice10-5", 2);
+								}
 								
 								else if (currentItem == 10 && 1 == step) {
 									$("#title1").show();

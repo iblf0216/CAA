@@ -71,25 +71,23 @@
 				</div>
 				<div class="col-md-3"></div>
 			</div>
-		</div>
-		
-
-		<div class="row" id="btn2" style="display: none;">
-			<div class="col-md-3"></div>
-			<div class="col-md-3">
-				<div class="blue_bg_btn">
-					結束練習
-					<p class="red_border">✘</p>
+			<div class="row" id="btn2" style="display: none;">
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<div class="blue_bg_btn">
+						結束練習
+						<p class="red_border">✘</p>
+					</div>
 				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="blue_bg_btn">
-					再次練習
-					<p class="red_border">✔</p>
+	
+				<div class="col-md-3">
+					<div class="blue_bg_btn">
+						再次練習
+						<p class="red_border">✔</p>
+					</div>
 				</div>
+				<div class="col-md-3"></div>
 			</div>
-			<div class="col-md-3"></div>
 		</div>
 
 		<div id="confirm" style="display: none;">
