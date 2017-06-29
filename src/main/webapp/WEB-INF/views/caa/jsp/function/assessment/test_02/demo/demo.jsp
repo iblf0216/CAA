@@ -866,7 +866,7 @@
 															
 															setTimeout(function() {
 																if (31 == step) {
-																	$("#demo20").hide();
+																	$("#demo30").hide();
 																	$("#demo31").show();
 																	step++;
 																}

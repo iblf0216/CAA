@@ -46,7 +46,19 @@ id SERIAL,
 medical_no varchar(50) references subject_main(medical_no) ON DELETE set Null,
 createdate date,
 status char,
-response1 varchar(500),
-responsetime1 varchar(500)
-
+response1 varchar(2000),
+responsetime1 varchar(20000),
+response2 varchar(2000),
+responsetime2 varchar(20000),
+response3 varchar(2000),
+responsetime3 varchar(20000),
+rightNum1 varchar(10),
+wrongNum1 varchar(10),
+averageTime1 varchar(10),
+rightNum2 varchar(10),
+wrongNum2 varchar(10),
+averageTime2 varchar(10),
+rightNum3 varchar(10),
+wrongNum3 varchar(10),
+averageTime3 varchar(10)
 );
