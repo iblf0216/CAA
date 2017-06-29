@@ -164,7 +164,7 @@ function openTest1(recordId) {
 }
 
 //執行測驗2
-function openTest2(test) {
+function openTest2(recordId) {
 // 	alert(recordId);
 
 	var screenHeight = screen.height;
