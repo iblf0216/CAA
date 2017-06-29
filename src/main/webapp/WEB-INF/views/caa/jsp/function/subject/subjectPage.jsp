@@ -153,10 +153,8 @@ $(document).ready(function(){
 
 // 執行測驗1(專注性測驗)
 function openTest1(recordId) {
-	alert(recordId);
+// 	alert(recordId);
 	
-// 	var openUrl = "assessment1/01_index.html?" + test;
-
 	var screenHeight = screen.height;
 	var screenWidth = screen.width;
 	
@@ -165,27 +163,23 @@ function openTest1(recordId) {
 	window.open('test01/showIntro.do?recordId=' + recordId, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 }
 
-//執行測驗2 (目前先以測驗1的內容為例)
+//執行測驗2
 function openTest2(test) {
-	alert("開啟測驗2 : " + test );
+// 	alert(recordId);
 
 	var screenHeight = screen.height;
 	var screenWidth = screen.width;
 	
-	window.open('showTest02Main.do?id=' + test, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
+	window.open('test02/showIntro.do?recordId=' + recordId, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 }
 
 //執行測驗3
 function openTest3(recordId) {
-	alert(recordId);
+// 	alert(recordId);
 	
-// 	var openUrl = "assessment1/01_index.html?" + test;
-
 	var screenHeight = screen.height;
 	var screenWidth = screen.width;
 	
-// 	window.open(openUrl, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
-
 	window.open('test03/showIntro.do?recordId=' + recordId, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 }
 
