@@ -893,10 +893,10 @@
 									selectItem7_5("practice09-5", "practice09-6", "practice09-7", "practice10-S", 
 										750, 1500, 8);
 								} else if (currentItem == 9 && 14 == step) {
-									selectItem7_6("practice09-6", "practice09-7", "practice010-S", 
+									selectItem7_6("practice09-6", "practice09-7", "practice10-S", 
 										1500, 8);
 								} else if (currentItem == 9 && 16 == step) {
-									selectItem7_7("practice09-7", "practice010-S", 8);
+									selectItem7_7("practice09-7", "practice10-S", 8);
 								}
 								// 題目十(5)
 								else if (currentItem == 10 && 2 == step) {
@@ -1171,10 +1171,10 @@
 									selectItem7_5("practice09-5", "practice09-6", "practice09-7", "practice10-S", 
 										750, 1500, 2);
 								} else if (currentItem == 9 && 14 == step) {
-									selectItem7_6("practice09-6", "practice09-7", "practice010-S", 
+									selectItem7_6("practice09-6", "practice09-7", "practice10-S", 
 										1500, 2);
 								} else if (currentItem == 9 && 16 == step) {
-									selectItem7_7("practice09-7", "practice010-S", 2);
+									selectItem7_7("practice09-7", "practice10-S", 2);
 								}
 								// 題目十(5)
 								else if (currentItem == 10 && 2 == step) {
@@ -3420,7 +3420,7 @@
 	
 	// 九個素材作答第九個項目
 	function selectItem9_9(item9, item_next, selection) {
-		clearTimeout(itemTimer5);
+		clearTimeout(itemTimer9);
 		$("#" + item9).hide();
 		$("#" + item_next).show();
 		currentItem++;
@@ -3855,8 +3855,17 @@
 	/* ---------- 最後一題畫面控制 End ---------- */
 
 	function calculateResult() {
-		var answer = [ 2, 2, 8, 8, 2, 8, 8, 2, 2, 8, 2, 8, 8, 2, 2, 2, 8, 2, 8,
-				8 ];
+		var answer = [ 8,8,2,2,8,
+		               8,2,2,2,8,
+		               8,8,2,8,8,2,8,2,8,
+		               8,2,2,2,8,8,2,2,8,
+		               8,2,8,8,8,				
+		               8,8,2,2,8,8,8,2,2,
+		               8,2,8,2,2,			
+		               8,2,2,2,8,8,2,		
+		               8,8,8,2,2,8,2,	
+		               8,8,2,2,2			
+		               ];
 		var correct = 0;
 		var totalAnswerCorrectTime = 0;
 		var averageTime = 0;
@@ -3868,11 +3877,14 @@
 				totalAnswerCorrectTime += reactionTime[key];
 			}
 		}
-		var wrong = 20 - correct;
+		var wrong = 66 - correct;
 
 		$("#sumOfCorrect").html(correct);
 		$("#sumOfWrong").html(wrong);
-		$("#averageTime").html(totalAnswerCorrectTime/correct);
+		
+		if (correct > 0) {
+			$("#averageTime").html(totalAnswerCorrectTime/correct);
+		}
 	}
 </script>
 </html>

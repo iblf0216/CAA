@@ -1987,7 +1987,7 @@
 									currentItem++;
 									
 									// 測試用
-// 									currentItem = 35; //(可指定開始測試點)
+//									currentItem = 35; //(可指定開始測試點)
 // 									$("#practice35-S").show(); // (換成指定的開始圖)
 // 									$("#practice01-S").hide();
 								}
@@ -7369,6 +7369,15 @@
 
 		$("#sumOfCorrect").html(correct);
 		$("#sumOfWrong").html(wrong);
+
+		var averageTime;
+		
+		if (correct > 0 ) {
+			averageTime = totalAnswerCorrectTime/correct;
+		} else {
+			averageTime = 0;
+		}
+		
 		$("#averageTime").html(totalAnswerCorrectTime/correct);
 		
 		var params = {
@@ -7378,7 +7387,7 @@
 				"reactionTime" : reactionTime.toString(),
 				"rightNum" : correct,
 				"wrongNum" : wrong,
-				"averageTime" : (totalAnswerCorrectTime/correct).toFixed(3)
+				"averageTime" : averageTime.toFixed(3)
 		};
 
 		// 將測驗結果存入DB

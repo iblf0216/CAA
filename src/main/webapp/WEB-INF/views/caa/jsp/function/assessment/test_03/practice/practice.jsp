@@ -630,28 +630,10 @@
 		
 		$("#sumOfCorrect").html(correct);
 		$("#sumOfWrong").html(wrong);
-		$("#averageTime").html(totalAnswerCorrectTime/correct);
 		
-// 		var params = {
-// 				"recordId" : recordId,
-// 				"response" : response.toString(),
-// 				"whichTest" : whichTest,
-// 				"reactionTime" : reactionTime.toString()
-// 		};
-		
-// 		// 將測驗結果存入DB
-// 		$.ajax({
-// 			type : "POST",
-// 			url : "test03/FinishFormalTest.do",
-// 			data : params,
-// 			dataType : 'html',
-// 			success : function(data) {
-				
-// 				console.log("將測驗結果存入DB ");
-// 			},
-// 			error : function(data) {
-// 			}
-// 		});
+		if (correct > 0) {
+			$("#averageTime").html(totalAnswerCorrectTime/correct);
+		}
 	}
 </script>
 </html>

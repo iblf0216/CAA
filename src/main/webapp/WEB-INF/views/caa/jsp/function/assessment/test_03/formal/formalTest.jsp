@@ -1039,6 +1039,15 @@
 
 		$("#sumOfCorrect").html(correct);
 		$("#sumOfWrong").html(wrong);
+		
+		var averageTime;
+		
+		if (correct > 0 ) {
+			averageTime = totalAnswerCorrectTime/correct;
+		} else {
+			averageTime = 0;
+		}
+		
 		$("#averageTime").html(totalAnswerCorrectTime/correct);
 		
 		var params = {
@@ -1048,7 +1057,7 @@
 				"reactionTime" : reactionTime.toString(),
 				"rightNum" : correct,
 				"wrongNum" : wrong,
-				"averageTime" : (totalAnswerCorrectTime/correct).toFixed(3)
+				"averageTime" : averageTime.toFixed(3)
 		};
 
 		// 將測驗結果存入DB

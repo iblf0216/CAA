@@ -12,6 +12,7 @@ import org.apache.commons.collections.MapUtils;
 import org.apache.commons.collections.map.HashedMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -310,7 +311,13 @@ public class SubjectServiceImpl implements ISubjectService {
 					+ "'";
 		}
 		
-		int updateStatus = iaJdbcDAO.update(sqltext);
+		int updateStatus = 0;
+		
+		try {
+			updateStatus = iaJdbcDAO.update(sqltext);
+		} catch (DataAccessException e) {
+			System.out.println(e.getMessage());
+		}
 
 		if (updateStatus > 0) {
 			return true;

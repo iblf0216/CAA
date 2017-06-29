@@ -822,7 +822,10 @@
 
 		$("#sumOfCorrect").html(correct);
 		$("#sumOfWrong").html(wrong);
-		$("#averageTime").html(totalAnswerCorrectTime/correct);
+		
+		if (correct > 0) {
+			$("#averageTime").html(totalAnswerCorrectTime/correct);
+		}
 	}
 </script>
 </html>
