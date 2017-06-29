@@ -722,13 +722,8 @@
 								else if (110 == step) {
 									alert("關閉測驗結果頁");
 									
-									console.log("觀察一下  有無寫入db");
-									
-// 									window.close();
-									
+									window.close();
 								}
-								
-								
 							}
 
 							if (event.which == 50) { // 數字8 換下一頁
