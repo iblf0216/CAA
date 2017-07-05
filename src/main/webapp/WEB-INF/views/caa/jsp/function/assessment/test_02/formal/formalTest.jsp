@@ -14,6 +14,9 @@
 <!-- Bootstrap Core CSS -->
 <link href="/CAA/resources/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- font-awesone CSS -->
+<link href="/CAA/resources/css/font-awesome.min.css" rel="stylesheet">
+
 <!-- Custom CSS -->
 <link href="/CAA/resources/css/heroic-features.css" rel="stylesheet">
 
@@ -84,7 +87,9 @@
 		<!-- 凝視點 -->
 		<div id="materialDiv" style="display: none;">
 			<div class="wrapper">
-				<p class="text" style="font-size: 40px;">+</p>
+				<p class="text" style="font-size: 80px;">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</p>
 			</div>
 		</div>
 

@@ -15,7 +15,7 @@
 <link href="/CAA/resources/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- font-awesone CSS -->
-<link href="/CAA/resources/css/bootstrap.min.css" rel="stylesheet">
+<link href="/CAA/resources/css/font-awesome.min.css" rel="stylesheet">
 
 <!-- Custom CSS -->
 <link href="/CAA/resources/css/heroic-features.css" rel="stylesheet">
