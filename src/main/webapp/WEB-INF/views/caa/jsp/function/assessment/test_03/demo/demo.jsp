@@ -343,17 +343,6 @@
 								$("#demo9").hide();//2秒後 關閉  凝視點
 								$("#demo10").show();// 緊接者，顯示白色三角形   (P13) (demo10)
 								step++;// 此時為作答狀態，step為11   
-								
-								setTimeout(function() {
-									if (11 == step) {
-										$("#demo10").hide();// 關閉白色三角形
-										$("#demo11").show();// 顯示   示範2  請判斷以下圖形
-										step++;
-
-										response.push(0);
-									}
-								}, 5000);
-								
 							}, 2000);
 							
 						} else if (11 == step) {
@@ -376,18 +365,6 @@
 								$("#demo12").hide();//2秒後 關閉  凝視點
 								$("#demo13").show();// 緊接者，顯示紅色菱形   (P16) (demo13)
 								step++;// 此時為作答狀態，step為14   
-								
-								setTimeout(function() {
-									if (14 == step) {
-										$("#demo13").hide();// 關閉紅色菱形
-										$("#titleDiv").show(); //顯示   是否再次示範
-										$("#btnDiv").show();
-										step++;
-
-										response.push(0);
-									}
-								}, 5000);
-								
 							}, 2000);
 							
 						} else if (14 == step) {

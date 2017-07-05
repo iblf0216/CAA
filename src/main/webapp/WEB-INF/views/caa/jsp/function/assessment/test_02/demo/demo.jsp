@@ -548,84 +548,6 @@
 								$("#demo13").hide(); // 2秒後關閉凝視點
 								$("#demo14").show(); // 顯示 示範一第一題   ppt17 白色三角形
 								step++;
-
-								setTimeout(function() {
-									if (15 == step) {
-										$("#demo14").hide();
-										$("#demo15").show(); //顯示凝視點
-										step++;
-
-										response.push(0);
-									}
-									setTimeout(function() {
-										if (16 == step) {
-											$("#demo15").hide();
-											$("#demo16").show();
-											step++;
-										}
-										setTimeout(function() {
-											if (17 == step) {
-												$("#demo16").hide();
-												$("#demo17").show();// 顯示凝視點
-												step++;
-
-												response.push(0);
-												
-												setTimeout(function() {
-													if (18 == step) {
-														$("#demo17").hide();
-														$("#demo18").show();
-														step++;
-													}
-													setTimeout(function() {
-														if (19 == step) {
-															$("#demo18").hide();
-															$("#demo19").show();// 顯示凝視點
-															step++;
-
-															response.push(0);
-															
-															setTimeout(function() {
-																if (20 == step) {
-																	$("#demo19").hide();
-																	$("#demo20").show();
-																	step++;
-																}
-																setTimeout(function() {
-																	if (21 == step) {
-																		$("#demo20").hide();
-																		$("#demo21").show();// 顯示凝視點
-																		audio.play(); // 播放聲音 
-																		step++;
-
-																		response.push(0);
-																		
-																		setTimeout(function() {
-																			if (22 == step) {
-																				$("#demo21").hide();
-																				$("#demo22").show();
-																				step++;
-																			}
-																			setTimeout(function() {
-																				if (23 == step) {
-																					$("#demo22").hide();
-																					$("#demo23").show();// 跳下一題
-																					step++;
-
-																					response.push(0);
-																				}
-																			}, 2000);
-																		}, 1000);
-																	}
-																}, 2000);
-															}, 1000);
-														}
-													}, 2000);
-												}, 1000);
-											}
-										}, 2000);
-									}, 1000);
-								}, 2000);
 							}, 1000);
 							
 						} else if (15 == step) {
@@ -642,67 +564,6 @@
 									$("#demo16").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (17 == step) {
-										$("#demo16").hide();
-										$("#demo17").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (18 == step) {
-												$("#demo17").hide();
-												$("#demo18").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (19 == step) {
-													$("#demo18").hide();
-													$("#demo19").show();// 顯示凝視點
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (20 == step) {
-															$("#demo19").hide();
-															$("#demo20").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (21 == step) {
-																$("#demo20").hide();
-																$("#demo21").show();// 顯示凝視點
-																audio.play(); // 播放聲音 
-																step++;
-
-																response.push(0);
-																
-																setTimeout(function() {
-																	if (22 == step) {
-																		$("#demo21").hide();
-																		$("#demo22").show();
-																		step++;
-																	}
-																	setTimeout(function() {
-																		if (23 == step) {
-																			$("#demo22").hide();
-																			$("#demo23").show();// 跳下一題
-																			step++;
-
-																			response.push(0);
-																		}
-																	}, 2000);
-																}, 1000);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (17 == step) {
@@ -719,50 +580,6 @@
 									$("#demo18").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (19 == step) {
-										$("#demo18").hide();
-										$("#demo19").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (20 == step) {
-												$("#demo19").hide();
-												$("#demo20").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (21 == step) {
-													$("#demo20").hide();
-													$("#demo21").show();// 顯示凝視點
-													audio.play(); // 播放聲音 
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (22 == step) {
-															$("#demo21").hide();
-															$("#demo22").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (23 == step) {
-																$("#demo22").hide();
-																$("#demo23").show();// 跳下一題
-																step++;
-
-																response.push(0);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (19 == step) {
@@ -778,33 +595,6 @@
 									$("#demo20").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (21 == step) {
-										$("#demo20").hide();
-										$("#demo21").show();// 顯示凝視點
-										audio.play(); // 播放聲音 
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (22 == step) {
-												$("#demo21").hide();
-												$("#demo22").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (23 == step) {
-													$("#demo22").hide();
-													$("#demo23").show();// 跳下一題
-													step++;
-
-													response.push(0);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (21 == step) {
@@ -849,86 +639,6 @@
 								$("#demo24").hide(); // 2秒後關閉凝視點
 								$("#demo25").show(); // 顯示 示範一第一題   ppt17 白色三角形
 								step++;
-
-								setTimeout(function() {
-									if (26 == step) {
-										$("#demo25").hide();
-										$("#demo26").show(); //顯示凝視點
-										step++;
-
-										response.push(0);
-									}
-									setTimeout(function() {
-										if (27 == step) {
-											$("#demo26").hide();
-											$("#demo27").show();
-											step++;
-										}
-										setTimeout(function() {
-											if (28 == step) {
-												$("#demo27").hide();
-												$("#demo28").show();// 顯示凝視點
-												step++;
-
-												response.push(0);
-												
-												setTimeout(function() {
-													if (29 == step) {
-														$("#demo28").hide();
-														$("#demo29").show();
-														step++;
-													}
-													setTimeout(function() {
-														if (30 == step) {
-															$("#demo29").hide();
-															$("#demo30").show();// 顯示凝視點
-															step++;
-
-															response.push(0);
-															
-															setTimeout(function() {
-																if (31 == step) {
-																	$("#demo30").hide();
-																	$("#demo31").show();
-																	step++;
-																}
-																setTimeout(function() {
-																	if (32 == step) {
-																		$("#demo31").hide();
-																		$("#demo32").show();// 顯示凝視點
-																		audio.play(); // 播放聲音 
-																		step++;
-
-																		response.push(0);
-																		
-																		setTimeout(function() {
-																			if (33 == step) {
-																				$("#demo32").hide();
-																				$("#demo33").show();
-																				step++;
-																			}
-																			setTimeout(function() {
-																				if (34 == step) {
-																					$("#demo33").hide();
-																					
-																					$("#titleDiv").show();
-																					$("#btnDiv").show();
-																					step++;
-
-																					response.push(0);
-																				}
-																			}, 2000);
-																		}, 1000);
-																	}
-																}, 2000);
-															}, 1000);
-														}
-													}, 2000);
-												}, 1000);
-											}
-										}, 2000);
-									}, 1000);
-								}, 2000);
 							}, 1000);
 							
 						} else if (26 == step) {
@@ -945,68 +655,6 @@
 									$("#demo27").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (28 == step) {
-										$("#demo27").hide();
-										$("#demo28").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (29 == step) {
-												$("#demo28").hide();
-												$("#demo29").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (30 == step) {
-													$("#demo29").hide();
-													$("#demo30").show();// 顯示凝視點
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (31 == step) {
-															$("#demo30").hide();
-															$("#demo31").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (32 == step) {
-																$("#demo31").hide();
-																$("#demo32").show();// 顯示凝視點
-																audio.play(); // 播放聲音 
-																step++;
-
-																response.push(0);
-																
-																setTimeout(function() {
-																	if (33 == step) {
-																		$("#demo32").hide();
-																		$("#demo33").show();
-																		step++;
-																	}
-																	setTimeout(function() {
-																		if (34 == step) {
-																			$("#demo33").hide();
-																			$("#titleDiv").show();
-																			$("#btnDiv").show();
-																			step++;
-
-																			response.push(0);
-																		}
-																	}, 2000);
-																}, 1000);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (28 == step) {
@@ -1023,51 +671,6 @@
 									$("#demo29").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (30 == step) {
-										$("#demo29").hide();
-										$("#demo30").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (31 == step) {
-												$("#demo30").hide();
-												$("#demo31").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (32 == step) {
-													$("#demo31").hide();
-													$("#demo32").show();// 顯示凝視點
-													audio.play(); // 播放聲音 
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (33 == step) {
-															$("#demo32").hide();
-															$("#demo33").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (34 == step) {
-																$("#demo33").hide();
-																$("#titleDiv").show();
-																$("#btnDiv").show();
-																step++;
-
-																response.push(0);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (30 == step) {
@@ -1083,34 +686,6 @@
 									$("#demo31").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (32 == step) {
-										$("#demo31").hide();
-										$("#demo32").show();// 顯示凝視點
-										audio.play(); // 播放聲音 
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (33 == step) {
-												$("#demo32").hide();
-												$("#demo33").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (34 == step) {
-													$("#demo33").hide();
-													$("#titleDiv").show();
-													$("#btnDiv").show();
-													step++;
-
-													response.push(0);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (32 == step) {
@@ -1199,67 +774,6 @@
 									$("#demo16").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (17 == step) {
-										$("#demo16").hide();
-										$("#demo17").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (18 == step) {
-												$("#demo17").hide();
-												$("#demo18").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (19 == step) {
-													$("#demo18").hide();
-													$("#demo19").show();// 顯示凝視點
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (20 == step) {
-															$("#demo19").hide();
-															$("#demo20").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (21 == step) {
-																$("#demo20").hide();
-																$("#demo21").show();// 顯示凝視點
-																audio.play(); // 播放聲音 
-																step++;
-
-																response.push(0);
-																
-																setTimeout(function() {
-																	if (22 == step) {
-																		$("#demo21").hide();
-																		$("#demo22").show();
-																		step++;
-																	}
-																	setTimeout(function() {
-																		if (23 == step) {
-																			$("#demo22").hide();
-																			$("#demo23").show();// 跳下一題
-																			step++;
-
-																			response.push(0);
-																		}
-																	}, 2000);
-																}, 1000);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (17 == step) {
@@ -1276,50 +790,6 @@
 									$("#demo18").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (19 == step) {
-										$("#demo18").hide();
-										$("#demo19").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (20 == step) {
-												$("#demo19").hide();
-												$("#demo20").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (21 == step) {
-													$("#demo20").hide();
-													$("#demo21").show();// 顯示凝視點
-													audio.play(); // 播放聲音 
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (22 == step) {
-															$("#demo21").hide();
-															$("#demo22").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (23 == step) {
-																$("#demo22").hide();
-																$("#demo23").show();// 跳下一題
-																step++;
-
-																response.push(0);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (19 == step) {
@@ -1335,33 +805,6 @@
 									$("#demo20").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (21 == step) {
-										$("#demo20").hide();
-										$("#demo21").show();// 顯示凝視點
-										audio.play(); // 播放聲音 
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (22 == step) {
-												$("#demo21").hide();
-												$("#demo22").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (23 == step) {
-													$("#demo22").hide();
-													$("#demo23").show();// 跳下一題
-													step++;
-
-													response.push(0);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (21 == step) {
@@ -1403,68 +846,6 @@
 									$("#demo27").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (28 == step) {
-										$("#demo27").hide();
-										$("#demo28").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (29 == step) {
-												$("#demo28").hide();
-												$("#demo29").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (30 == step) {
-													$("#demo29").hide();
-													$("#demo30").show();// 顯示凝視點
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (31 == step) {
-															$("#demo30").hide();
-															$("#demo31").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (32 == step) {
-																$("#demo31").hide();
-																$("#demo32").show();// 顯示凝視點
-																audio.play(); // 播放聲音 
-																step++;
-
-																response.push(0);
-																
-																setTimeout(function() {
-																	if (33 == step) {
-																		$("#demo32").hide();
-																		$("#demo33").show();
-																		step++;
-																	}
-																	setTimeout(function() {
-																		if (34 == step) {
-																			$("#demo33").hide();
-																			$("#titleDiv").show();
-																			$("#btnDiv").show();
-																			step++;
-
-																			response.push(0);
-																		}
-																	}, 2000);
-																}, 1000);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (28 == step) {
@@ -1481,51 +862,6 @@
 									$("#demo29").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (30 == step) {
-										$("#demo29").hide();
-										$("#demo30").show();// 顯示凝視點
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (31 == step) {
-												$("#demo30").hide();
-												$("#demo31").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (32 == step) {
-													$("#demo31").hide();
-													$("#demo32").show();// 顯示凝視點
-													audio.play(); // 播放聲音 
-													step++;
-
-													response.push(0);
-													
-													setTimeout(function() {
-														if (33 == step) {
-															$("#demo32").hide();
-															$("#demo33").show();
-															step++;
-														}
-														setTimeout(function() {
-															if (34 == step) {
-																$("#demo33").hide();
-																$("#titleDiv").show();
-																$("#btnDiv").show();
-																step++;
-
-																response.push(0);
-															}
-														}, 2000);
-													}, 1000);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (30 == step) {
@@ -1541,34 +877,6 @@
 									$("#demo31").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (32 == step) {
-										$("#demo31").hide();
-										$("#demo32").show();// 顯示凝視點
-										audio.play(); // 播放聲音 
-										step++;
-
-										response.push(0);
-										
-										setTimeout(function() {
-											if (33 == step) {
-												$("#demo32").hide();
-												$("#demo33").show();
-												step++;
-											}
-											setTimeout(function() {
-												if (34 == step) {
-													$("#demo33").hide();
-													$("#titleDiv").show();
-													$("#btnDiv").show();
-													step++;
-
-													response.push(0);
-												}
-											}, 2000);
-										}, 1000);
-									}
-								}, 2000);
 							}, 1000);
 							
 						} else if (32 == step) {
@@ -1610,7 +918,7 @@
 // 							var practiceUrl = "/CAA/test02/showPractice.do?recordId=" + recordId;
 // 							document.location.href = practiceUrl;
 
-							alert("回到示範頁");
+// 							alert("回到示範頁");
 							$("#title1").show();
 							$("#title2").hide();
 							$("#titleDiv").show();
