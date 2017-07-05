@@ -14,6 +14,9 @@
 <!-- Bootstrap Core CSS -->
 <link href="/CAA/resources/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- font-awesone CSS -->
+<link href="/CAA/resources/css/bootstrap.min.css" rel="stylesheet">
+
 <!-- Custom CSS -->
 <link href="/CAA/resources/css/heroic-features.css" rel="stylesheet">
 
@@ -44,6 +47,17 @@
 
 <body>
 	<div id="container">
+		<div id="pointer" style="display:none;font-size:80px;position:absolute;top:680px;left:690px;z-index:9999999;">
+			<i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+		</div>
+		<script>
+		//showPointer()
+		function showPointer() {
+			setInterval(function(){
+				$("#pointer").effect( "bounce", { times: 3 }, "slow" );
+			},3000)	
+		} 
+		</script>
 		<div id="titleDiv">
 			<div class="wrapper" id="title1">
 				<p class="text">操作示範</p>

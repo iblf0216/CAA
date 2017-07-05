@@ -1465,7 +1465,7 @@
 
 						itemTimer2 = setTimeout(function() {
 							if ((step - beginStep1) == 4) {
-								$("#" + item_2).show();
+								$("#" + item_2).hide();
 
 								$("#confirm").show();
 								$("#confirmButton").show()
@@ -1574,7 +1574,7 @@
 
 								$("#titleDiv").hide();
 								$("#btnDiv").hide();
-								$("#" + item2).hide();
+								$("#" + item_2).hide();
 								$("#practiceResult").show();
 								step++;
 
