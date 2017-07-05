@@ -342,7 +342,7 @@
 								// 題目一 start 
 								else if (2 == step) {
 									showItem01("practice01-1", "practice01-2",
-											1000, 2000, 2000, 2000);
+											1000, 5000, 2000, 2000);
 								} else if (4 == step) {
 									selectItem1("practice01-1", "practice01-2",
 											2000, 2000, 8);
@@ -354,7 +354,7 @@
 								// 題目二
 								else if (7 == step) {
 									showItem01("practice02-1", "practice02-2",
-											1000, 2000, 1750, 1750);
+											1000, 5000, 1750, 1750);
 								} else if (9 == step) {
 									selectItem1("practice02-1", "practice02-2",
 											1750, 1750, 8);
@@ -365,7 +365,7 @@
 								// 題目三
 								else if (12 == step) {
 									showItem01("practice03-1", "practice03-2",
-											1000, 2000, 1500, 1500);
+											1000, 5000, 1500, 1500);
 								} else if (14 == step) {
 									selectItem1("practice03-1", "practice03-2",
 											1500, 1500, 8);
@@ -376,7 +376,7 @@
 								// 題目四
 								else if (17 == step) {
 									showItem01("practice04-1", "practice04-2",
-											1000, 2000, 1000, 1000);
+											1000, 5000, 1000, 1000);
 								} else if (19 == step) {
 									selectItem1("practice04-1", "practice04-2",
 											1000, 1000, 8);
@@ -387,7 +387,7 @@
 								// 題目五
 								else if (22 == step) {
 									showItem01("practice05-1", "practice05-2",
-											1000, 2000, 500, 2000);
+											1000, 5000, 500, 2000);
 								} else if (24 == step) {
 									selectItem1("practice05-1", "practice05-2",
 											500, 2000, 8);
@@ -398,7 +398,7 @@
 								// 題目六
 								else if (27 == step) {
 									showItem01("practice06-1", "practice06-2",
-											1000, 2000, 750, 1750);
+											1000, 5000, 750, 1750);
 								} else if (29 == step) {
 									selectItem1("practice06-1", "practice06-2",
 											750, 1750, 8);
@@ -409,7 +409,7 @@
 								// 題目七
 								else if (32 == step) {
 									showItem01("practice07-1", "practice07-2",
-											1000, 2000, 1000, 750);
+											1000, 5000, 1000, 750);
 								} else if (34 == step) {
 									selectItem1("practice07-1", "practice07-2",
 											1000, 750, 8);
@@ -420,7 +420,7 @@
 								// 題目八
 								else if (37 == step) {
 									showItem01("practice08-1", "practice08-2",
-											1000, 2000, 1000, 1500);
+											1000, 5000, 1000, 1500);
 								} else if (39 == step) {
 									selectItem1("practice08-1", "practice08-2",
 											1000, 1500, 8);
@@ -431,7 +431,7 @@
 								// 題目九
 								else if (42 == step) {
 									showItem01("practice09-1", "practice09-2",
-											1000, 2000, 1000, 500);
+											1000, 5000, 1000, 500);
 								} else if (44 == step) {
 									selectItem1("practice09-1", "practice09-2",
 											1000, 500, 8);
@@ -442,7 +442,7 @@
 								// 題目十
 								else if (47 == step) {
 									showLastItem("practice10-1",
-											"practice10-2", 1000, 2000, 2000,
+											"practice10-2", 1000, 5000, 2000,
 											500);
 								} else if (49 == step) {
 									selectLastItem1("practice10-1",
