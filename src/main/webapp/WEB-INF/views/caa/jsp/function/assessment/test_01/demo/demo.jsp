@@ -249,14 +249,14 @@
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						結束示範
-						<p class="red_border">✘</p>
+						<p class="red_border">✔</p>
 					</div>
 				</div>
 
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						再次示範
-						<p class="red_border">✔</p>
+						<p class="red_border">✘</p>
 					</div>
 				</div>
 				<div class="col-md-3"></div>
@@ -314,32 +314,6 @@
 								$("#demo7").hide();
 								$("#demo8").show();
 								step++;
-
-								setTimeout(function() {
-									if (9 == step) {
-										$("#demo8").hide();
-										$("#demo9").show();
-										step++;
-
-										response.push(0);
-									}
-									setTimeout(function() {
-										if (10 == step) {
-											$("#demo9").hide();
-											$("#demo10").show();
-											step++;
-										}
-										setTimeout(function() {
-											if (11 == step) {
-												$("#demo10").hide();
-												$("#demo11").show();
-												step++;
-
-												response.push(0);
-											}
-										}, 1750);
-									}, 1750);
-								}, 2000);
 							}, 1000);
 						} else if (9 == step) {
 							$("#demo8").hide();
@@ -353,15 +327,6 @@
 									$("#demo10").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (11 == step) {
-										$("#demo10").hide();
-										$("#demo11").show();
-										step++;
-
-										response.push(0);
-									}
-								}, 1750);
 							}, 1750);
 							/* 作答Pattern End*/
 						} else if (12 == step) {
@@ -373,33 +338,6 @@
 								$("#demo12").hide();
 								$("#demo13").show();
 								step++;
-
-								setTimeout(function() {
-									if (14 == step) {
-										$("#demo13").hide();
-										$("#demo14").show();
-										step++;
-
-										response.push(0);
-									}
-									setTimeout(function() {
-										if (15 == step) {
-											$("#demo14").hide();
-											$("#demo15").show();
-											step++;
-										}
-										setTimeout(function() {
-											if (16 == step) {
-												$("#demo15").hide();
-												$("#titleDiv").show();
-												$("#btnDiv").show();
-												step = 1;
-
-												response.push(0);
-											}
-										}, 1000);
-									}, 750);
-								}, 2000);
 							}, 1000);
 						} else if (16 == step) {
 							$("#demo15").hide();
@@ -451,16 +389,6 @@
 									$("#demo15").show();
 									step++;
 								}
-								setTimeout(function() {
-									if (16 == step) {
-										$("#demo15").hide();
-										$("#titleDiv").show();
-										$("#btnDiv").show();
-										step = 1;
-
-										response.push(0);
-									}
-								}, 1000);
 							}, 750);
 						} else if (17 == step) {
 							$("#titleDiv").hide();
