@@ -418,14 +418,18 @@
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						開始
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						略過
-						<p class="red_border">✘</p>
+						<p class="red_border">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-3"></div>
@@ -435,14 +439,18 @@
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						結束示範
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						再次示範
-						<p class="red_border">✘</p>
+						<p class="red_border">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-3"></div>

@@ -58,16 +58,12 @@
 				<div class="col-md-4">
 					<div class="blue_bg_btn">
 						開始測驗
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 
-<!-- 				<div class="col-md-3"> -->
-<!-- 					<div class="blue_bg_btn"> -->
-<!-- 						略過 -->
-<!-- 						<p class="red_border">✘</p> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
 				<div class="col-md-4"></div>
 			</div>
 		</div>
@@ -86,7 +82,9 @@
 				<div class="col-md-4">
 					<div class="blue_bg_btn">
 						開始
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-4"></div>
