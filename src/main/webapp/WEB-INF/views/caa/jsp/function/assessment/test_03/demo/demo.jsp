@@ -46,18 +46,10 @@
 </head>
 
 <body>
+  <div id="pointer" style="display:none;font-size:80px;position:absolute;z-index:9999999;">
+    <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+  </div>
 	<div id="container">
-		<div id="pointer" style="display:none;font-size:80px;position:absolute;top:680px;left:690px;z-index:9999999;">
-			<i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
-		</div>
-		<script>
-		//showPointer()
-		function showPointer() {
-			setInterval(function(){
-				$("#pointer").effect( "bounce", { times: 3 }, "slow" );
-			},3000)	
-		} 
-		</script>
 		<div id="titleDiv">
 			<div class="wrapper" id="title1">
 				<p class="text">操作示範</p>
@@ -257,6 +249,7 @@
 		</div>
 		<script>
 			var recordId = ${recordId};
+			var pointerTimer;
 		
 			var step = 1;
 			var response = [];
@@ -302,6 +295,8 @@
 							// 出現白色三角形
 							$("#demo3").hide();
 							$("#demo4").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
 						} else if (5 == step) {
 							//(P8) (demo5)
@@ -309,6 +304,8 @@
 							// 出現白色菱形
 							$("#demo4").hide();
 							$("#demo5").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
 						} else if (6 == step) {
 							//(P9) (demo6)
@@ -316,6 +313,8 @@
 							// 出現紅色三角形
 							$("#demo5").hide();
 							$("#demo6").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
 						} else if (7 == step) {
 							//(P10) (demo7)
@@ -323,6 +322,8 @@
 							// 出現黃色圓形
 							$("#demo6").hide();
 							$("#demo7").show();
+							hidePointer();
+							showPointer(675,690);
 							step++;
 // 						} else if (8 == step) {  //這邊要移到按2才有反應
 // 							//(P11) (demo8)
@@ -338,17 +339,22 @@
 							$("#demo8").hide();//示範1  請判斷以下圖形
 							$("#demo9").show();//凝視點
 							step++; //show 凝視點時，step 為10，所以不該有  10 == step 的判斷 (因為凝視點不做反應)
-
+							hidePointer();
+							
 							setTimeout(function() {
 								$("#demo9").hide();//2秒後 關閉  凝視點
 								$("#demo10").show();// 緊接者，顯示白色三角形   (P13) (demo10)
-								step++;// 此時為作答狀態，step為11   
+								step++;// 此時為作答狀態，step為11
+								hidePointer();
+								showPointer(560,690);
 							}, 2000);
 							
 						} else if (11 == step) {
 							$("#demo10").hide();// 關閉白色三角形
 							$("#demo11").show();// 顯示   示範2  請判斷以下圖形
 							step++;
+							hidePointer();
+							showPointer(560,690);
 							response.push(8);
 							/* 示範一 End*/
 
@@ -360,11 +366,14 @@
 							$("#demo11").hide();//示範2  請判斷以下圖形
 							$("#demo12").show();//凝視點
 							step++; //show 凝視點時，step 為13，所以不該有  13 == step 的判斷 (因為凝視點不做反應)
-
+							hidePointer();
+							
 							setTimeout(function() {
 								$("#demo12").hide();//2秒後 關閉  凝視點
 								$("#demo13").show();// 緊接者，顯示紅色菱形   (P16) (demo13)
-								step++;// 此時為作答狀態，step為14   
+								step++;// 此時為作答狀態，step為14
+								hidePointer();
+								showPointer(675,690);
 							}, 2000);
 							
 						} else if (14 == step) {
@@ -372,6 +381,7 @@
 							$("#titleDiv").show(); //顯示   是否再次示範
 							$("#btnDiv").show();
 							step++;
+							hidePointer();
 							response.push(8);
 							/* 示範二 End*/
 
@@ -402,13 +412,15 @@
 							// 示範1  請判斷以下圖形
 							$("#demo7").hide();
 							$("#demo8").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
-					
 						} else if (14 == step) {
 							$("#demo13").hide();// 關閉紅色菱形
 							$("#titleDiv").show(); //顯示   是否再次示範
 							$("#btnDiv").show();
 							step++;
+							hidePointer();
 							response.push(2);
 
 						} else if (15 == step) {
@@ -428,6 +440,21 @@
 					}
 				});
 			});
+			
+			function showPointer(positionX, positionY) {
+				$("#pointer").css('left', positionX + 'px');
+				$("#pointer").css('top', positionY + 'px');
+				$("#pointer").show();
+				pointerTimer = setInterval(function(){
+					$("#pointer").effect( "bounce", { times: 2 }, "slow" );
+				},2000)	
+			} 
+			
+			function hidePointer() {
+				clearInterval(pointerTimer);
+				$("#pointer").stop(true,true);
+				$("#pointer").hide();
+			}
 		</script>
 	</div>
 </body>

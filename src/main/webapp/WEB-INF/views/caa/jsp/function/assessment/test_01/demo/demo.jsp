@@ -46,18 +46,10 @@
 </head>
 
 <body>
+  <div id="pointer" style="display:none;font-size:80px;position:absolute;z-index:9999999;">
+    <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+  </div>
 	<div id="container">
-		<div id="pointer" style="display:none;font-size:80px;position:absolute;top:680px;left:690px;z-index:9999999;">
-			<i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
-		</div>
-		<script>
-		//showPointer()
-		function showPointer() {
-			setInterval(function(){
-				$("#pointer").effect( "bounce", { times: 3 }, "slow" );
-			},3000)	
-		} 
-		</script>
 		<div id="titleDiv">
 			<div class="wrapper" id="title1">
 				<p class="text">操作示範</p>
@@ -70,7 +62,7 @@
 		<div id="demo1" style="display: none;">
 			<div class="text-center">
 				<h3>任務 :判斷您所看到的圖形是不是白色</h3>
-				<h3 style="color: red;">看到白色的圖形按✔，不是白色的圖形按✘</h3>
+				<h3 style="color: red;">看到白色的圖形按<i class="fa fa-check" aria-hidden="true"></i>，不是白色的圖形按<i class="fa fa-times" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test01/demo_pic/04.JPG"
@@ -232,14 +224,18 @@
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						開始
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						略過
-						<p class="red_border">✘</p>
+						<p class="red_border">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-3"></div>
@@ -249,22 +245,27 @@
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						結束示範
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 
 				<div class="col-md-3">
 					<div class="blue_bg_btn">
 						再次示範
-						<p class="red_border">✘</p>
+						<p class="red_border">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
 		</div>
 		<script>
-		var recordId = ${recordId};
-		
+			var recordId = ${recordId};
+			var pointerTimer;
+				
 			var step = 1;
 			var response = [];
 			$(document).ready(function() {
@@ -298,10 +299,14 @@
 						} else if (4 == step) {
 							$("#demo3").hide();
 							$("#demo4").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
 						} else if (5 == step) {
 							$("#demo4").hide();
 							$("#demo5").show();
+							hidePointer();
+							showPointer(675,690);
 							step++;
 
 							/* 作答Pattern Start*/
@@ -309,23 +314,31 @@
 							$("#demo6").hide();
 							$("#demo7").show();
 							step++;
-
+							hidePointer();
+							
 							setTimeout(function() {
 								$("#demo7").hide();
 								$("#demo8").show();
 								step++;
+								hidePointer();
+								showPointer(560,690);
+								
 							}, 1000);
 						} else if (9 == step) {
 							$("#demo8").hide();
 							$("#demo9").show();
 							step++;
 							response.push(8);
-
+							hidePointer();
+							
 							setTimeout(function() {
 								if (10 == step) {
 									$("#demo9").hide();
 									$("#demo10").show();
 									step++;
+									hidePointer();
+									showPointer(675,690);
+									
 								}
 							}, 1750);
 							/* 作答Pattern End*/
@@ -333,18 +346,23 @@
 							$("#demo11").hide();
 							$("#demo12").show();
 							step++;
-
+							hidePointer();
+							
 							setTimeout(function() {
 								$("#demo12").hide();
 								$("#demo13").show();
 								step++;
+								hidePointer();
+								showPointer(675,690);
+								
 							}, 1000);
 						} else if (16 == step) {
 							$("#demo15").hide();
 							$("#titleDiv").show();
 							$("#btnDiv").show();
 							step ++;
-
+							hidePointer();
+							
 							response.push(8);
 						} else if (17 == step) {
 							console.log("接續下一段(練習)");
@@ -368,13 +386,17 @@
 						else if (6 == step) {
 							$("#demo5").hide();
 							$("#demo6").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
 							/* 作答Pattern Start*/
 						} else if (11 == step) {
 							$("#demo10").hide();
 							$("#demo11").show();
 							step++;
-
+							hidePointer();
+							showPointer(560,690);
+							
 							response.push(2);
 							/* 作答Pattern End*/
 						} else if (14 == step) {
@@ -382,19 +404,23 @@
 							$("#demo14").show();
 							step++;
 							response.push(2);
+							hidePointer();
 
 							setTimeout(function() {
 								if (15 == step) {
 									$("#demo14").hide();
 									$("#demo15").show();
 									step++;
+									hidePointer();
+									showPointer(560,690);
 								}
 							}, 750);
 						} else if (17 == step) {
 							$("#titleDiv").hide();
 							$("#btnDiv").hide();
 							$("#demo1").show();
-
+							hidePointer();
+							
 							// 重置紀錄反應
 							response = []
 							step = 2;
@@ -407,6 +433,21 @@
 					}
 				});
 			});
+			
+			function showPointer(positionX, positionY) {
+				$("#pointer").css('left', positionX + 'px');
+				$("#pointer").css('top', positionY + 'px');
+				$("#pointer").show();
+				pointerTimer = setInterval(function(){
+					$("#pointer").effect( "bounce", { times: 2 }, "slow" );
+				},2000)	
+			} 
+			
+			function hidePointer() {
+				clearInterval(pointerTimer);
+				$("#pointer").stop(true,true);
+				$("#pointer").hide();
+			}
 		</script>
 	</div>
 </body>
