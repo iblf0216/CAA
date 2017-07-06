@@ -606,13 +606,16 @@
 					</tr>
 				</table>
 			</div>
+			
 			<div id="resultButton">
 				<div class="row">
 					<div class="col-md-4"></div>
 					<div class="col-md-4">
 						<div class="blue_bg_btn text-center">
 							我瞭解了
-							<p class="red_border">✔</p>
+							<p class="red_border">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</p>
 						</div>
 					</div>
 					<div class="col-md-4"></div>
@@ -629,7 +632,7 @@
 	var recordId = ${recordId};
 	
 	var whichTest = "2";
-
+	var isSelectable = true;
 	var step = 1;
 	var beginTime;
 	var response = [];
@@ -662,10 +665,15 @@
 				//step = 51;
 				$('body').keydown(
 						function(event) {
+							if (!isSelectable) {
+								console.log("作答間隔。");
+								return;
+							}
+							
 							console.log("response : " + response);
 							console.log("reactionTime : " + reactionTime);
 							console.log("current step :  " + step + "; currentItem : " + currentItem);
-
+							
 							if (event.which == 56) { // 數字8 換下一頁
 								console.log("按下8,step : " + step);
 
@@ -685,9 +693,9 @@
 									currentItem++;
 									
 									// 測試用
-									//currentItem = 10; //(可指定開始測試點)
-									//$("#practice10-S").show(); // (換成指定的開始圖)
-									//$("#practice01-S").hide();
+									currentItem = 10; //(可指定開始測試點)
+									$("#practice10-S").show(); // (換成指定的開始圖)
+									$("#practice01-S").hide();
 								}
 
 								// 題目一 (5) 
@@ -1283,7 +1291,8 @@
 																	$("#" + item_next).show();
 																	currentItem++;
 																	step = 2;
-	
+																	autoSwitchSelectable(1000);
+																	
 																	response.push(0);
 																	reactionTime.push(-1);
 																} else {
@@ -1378,7 +1387,7 @@
 											
 											setTimeout(function() {
 												$("#materialDiv").hide();
-												$("#" + item5).show()
+												$("#" + item5).show();
 												beginTime = new Date();
 												step++;
 
@@ -1388,7 +1397,8 @@
 														$("#" + next).show();
 														currentItem++;
 														step = 2;
-
+														autoSwitchSelectable(1000);
+														
 														response.push(0);
 														reactionTime.push(-1);
 													} else {
@@ -1472,6 +1482,7 @@
 											$("#" + item_next).show();
 											currentItem++;
 											step = 2;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -1535,6 +1546,7 @@
 								$("#" + item_next).show();
 								currentItem++;
 								step = 2;
+								autoSwitchSelectable(1000);
 								
 								response.push(0);
 								reactionTime.push(-1);
@@ -1577,6 +1589,7 @@
 					$("#" + item_next).show();
 					currentItem++;
 					step = 2;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -1594,6 +1607,7 @@
 		$("#" + item_next).show();
 		currentItem++;
 		step = 2;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -1717,6 +1731,7 @@
 																							$("#" + item_next).show();
 																							currentItem++;
 																							step = 2;
+																							autoSwitchSelectable(1000);
 
 																							response.push(0);
 																							reactionTime.push(-1);
@@ -1864,6 +1879,7 @@
 																				$("#" + item_next).show();
 																				currentItem++;
 																				step = 2;
+																				autoSwitchSelectable(1000);
 
 																				response.push(0);
 																				reactionTime.push(-1);
@@ -1991,6 +2007,7 @@
 																	$("#" + item_next).show();
 																	currentItem++;
 																	step = 2;
+																	autoSwitchSelectable(1000);
 
 																	response.push(0);
 																	reactionTime.push(-1);
@@ -2097,6 +2114,7 @@
 														$("#" + item_next).show();
 														currentItem++;
 														step = 2;
+														autoSwitchSelectable(1000);
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -2182,6 +2200,7 @@
 											$("#" + item_next).show();
 											currentItem++;
 											step = 2;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -2246,6 +2265,7 @@
 								$("#" + item_next).show();
 								currentItem++;
 								step = 2;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -2288,6 +2308,7 @@
 					$("#" + item_next).show();
 					currentItem++;
 					step = 2;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -2305,6 +2326,7 @@
 		$("#" + item_next).show();
 		currentItem++;
 		step = 2;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -2458,6 +2480,7 @@
 																													$("#" + item_next).show();
 																													currentItem++;
 																													step = 2;
+																													autoSwitchSelectable(1000);
 
 																													response.push(0);
 																													reactionTime.push(-1);
@@ -2649,6 +2672,7 @@
 																										$("#" + item_next).show();
 																										currentItem++;
 																										step = 2;
+																										autoSwitchSelectable(1000);
 
 																										response.push(0);
 																										reactionTime.push(-1);
@@ -2818,6 +2842,7 @@
 																							$("#" + item_next).show();
 																							currentItem++;
 																							step = 2;
+																							autoSwitchSelectable(1000);
 
 																							response.push(0);
 																							reactionTime.push(-1);
@@ -2966,6 +2991,7 @@
 																				$("#" + item_next).show();
 																				currentItem++;
 																				step = 2;
+																				autoSwitchSelectable(1000);
 
 																				response.push(0);
 																				reactionTime.push(-1);
@@ -3093,6 +3119,7 @@
 																	$("#" + item_next).show();
 																	currentItem++;
 																	step = 2;
+																	autoSwitchSelectable(1000);
 
 																	response.push(0);
 																	reactionTime.push(-1);
@@ -3199,6 +3226,7 @@
 														$("#" + item_next).show();
 														currentItem++;
 														step = 2;
+														autoSwitchSelectable(1000);
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -3284,6 +3312,7 @@
 											$("#" + item_next).show();
 											currentItem++;
 											step = 2;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -3348,6 +3377,7 @@
 								$("#" + item_next).show();
 								currentItem++;
 								step = 2;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -3391,6 +3421,7 @@
 					$("#" + item_next).show();
 					currentItem++;
 					step = 2;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -3408,6 +3439,7 @@
 		$("#" + item_next).show();
 		currentItem++;
 		step = 2;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -3501,6 +3533,7 @@
 																	$("#" + item_5).hide();
 																	$("#practiceResult").show();
 																	step = 0;
+																	autoSwitchSelectable(1000);
 
 																	response.push(0);
 																	reactionTime.push(-1);
@@ -3609,6 +3642,7 @@
 														$("#" + item5).hide();
 														$("#practiceResult").show();
 														step = 0;
+														autoSwitchSelectable(1000);
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -3696,6 +3730,7 @@
 											$("#" + item5).hide();
 											$("#practiceResult").show();
 											step = 0;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -3762,6 +3797,7 @@
 								$("#" + item5).hide();
 								$("#practiceResult").show();
 								step = 0;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -3807,6 +3843,7 @@
 					$("#" + item5).hide();
 					$("#practiceResult").show();
 					step = 0;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -3827,7 +3864,9 @@
 		$("#" + item5).hide();
 		$("#practiceResult").show();
 		step = 0;
+		autoSwitchSelectable(1000);
 
+		
 		response.push(selection);
 		var delta = new Date() - beginTime;
 		reactionTime.push(delta);
@@ -3863,11 +3902,27 @@
 		var wrong = 66 - correct;
 
 		$("#sumOfCorrect").html(correct);
-		$("#sumOfWrong").html(wrong);
+		if (wrong > 23) {
+			var wrongMessage = '<div style="color:red;">' + wrong + '</div>';
+			wrongMessage += '<div style="color:red;">答對率未滿80%，請重新練習！</div>';
+			
+			$("#sumOfWrong").html(wrongMessage);
+		} else {
+			$("#sumOfWrong").html(wrong);			
+		}
+		
 		
 		if (correct > 0) {
 			$("#averageTime").html(totalAnswerCorrectTime/correct);
 		}
+	}
+	
+	function autoSwitchSelectable(delayTime) {
+		isSelectable = false;
+		
+		setTimeout(function() {
+			isSelectable = true;
+		}, delayTime);
 	}
 </script>
 </html>

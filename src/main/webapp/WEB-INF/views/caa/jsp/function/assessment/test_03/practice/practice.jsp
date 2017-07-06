@@ -239,7 +239,9 @@
 					<div class="col-md-4">
 						<div class="blue_bg_btn text-center">
 							我瞭解了
-							<p class="red_border">✔</p>
+							<p class="red_border">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</p>
 						</div>
 					</div>
 					<div class="col-md-4"></div>
@@ -269,7 +271,7 @@
 	var recordId = ${recordId};
 	
 	var whichTest = "3";
-
+	var isSelectable = true;
 	var step = 1;
 	var beginTime;
 	var response = [];
@@ -280,13 +282,14 @@
 
 	$(document).ready(
 			function() {
-				
 // 				step = 31;
-				
-				
-				
 				$('body').keydown(
 						function(event) {
+							if (!isSelectable) {
+								console.log("作答間隔。");
+								return;
+							}
+							
 							console.log("response : " + response);
 							console.log("reactionTime : " + reactionTime);
 							console.log("current step :  " + step);
@@ -509,7 +512,6 @@
 									$("#btn2").hide();
 									
 									$("#btnDiv").show();
-									
 								}
 							}
 
@@ -541,17 +543,14 @@
 				console.log("");
 				if ((step - beginStep1) == 2) {
 					$("#" + item_1).hide();
-					
-					//$("#materialDiv").show();//顯示凝視點
 					$("#confirm").show();
 					$("#confirmButton").show();
 					
 					step++;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
-
-
 				} else {
 					clearTimeout(itemTimer1);
 				}
@@ -567,6 +566,7 @@
 		$("#confirm").show();
 		$("#confirmButton").show()
 		step++;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -593,19 +593,14 @@
 				console.log("Step : " + step);
 				if ((step - beginStep1) == 2) {
 					$("#" + item_1).hide();
-// 					$("#materialDiv").show();
-					
-// 					$("#confirm").show();
-// 					$("#confirmButton").show()
+					$("#practiceResult").show();
+					step++;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
 
 					calculateResult();
-					
-					$("#practiceResult").show();
-					
-					step++;
 				} else {
 					clearTimeout(itemTimer1);
 				}
@@ -620,6 +615,7 @@
 		$("#" + item).hide();
 		$("#practiceResult").show();
 		step++;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -644,11 +640,27 @@
 		var wrong = 10 - correct;
 		
 		$("#sumOfCorrect").html(correct);
-		$("#sumOfWrong").html(wrong);
+		
+		if (wrong > 2) {
+			var wrongMessage = '<div style="color:red;">' + wrong + '</div>';
+			wrongMessage += '<div style="color:red;">答對率未滿80%，請重新練習！</div>';
+			
+			$("#sumOfWrong").html(wrongMessage);
+		} else {
+			$("#sumOfWrong").html(wrong);			
+		}
 		
 		if (correct > 0) {
 			$("#averageTime").html(totalAnswerCorrectTime/correct);
 		}
+	}
+	
+	function autoSwitchSelectable(delayTime) {
+		isSelectable = false;
+		
+		setTimeout(function() {
+			isSelectable = true;
+		}, delayTime);
 	}
 </script>
 </html>
