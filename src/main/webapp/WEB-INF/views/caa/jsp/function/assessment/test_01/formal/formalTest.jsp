@@ -58,16 +58,11 @@
 				<div class="col-md-4">
 					<div class="blue_bg_btn">
 						開始測驗
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
-
-<!-- 				<div class="col-md-3"> -->
-<!-- 					<div class="blue_bg_btn"> -->
-<!-- 						略過 -->
-<!-- 						<p class="red_border">✘</p> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
 				<div class="col-md-4"></div>
 			</div>
 		</div>
@@ -86,7 +81,9 @@
 				<div class="col-md-4">
 					<div class="blue_bg_btn">
 						開始
-						<p class="red_border">✔</p>
+						<p class="red_border">
+							<i class="fa fa-check" aria-hidden="true"></i>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-4"></div>
@@ -631,7 +628,9 @@
 					<div class="col-md-4">
 						<div class="blue_bg_btn text-center">
 							我瞭解了
-							<p class="red_border">✔</p>
+							<p class="red_border">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</p>
 						</div>
 					</div>
 					<div class="col-md-4"></div>
@@ -645,10 +644,9 @@
 </body>
 
 <script>
-
 	var recordId = ${recordId};
 	var whichTest = "1";
-
+	var isSelectable = true;
 	var step = 1;
 	var beginTime;
 	var response = [];
@@ -662,6 +660,11 @@
 				//step = 51;
 				$('body').keydown(
 						function(event) {
+							if (!isSelectable) {
+								console.log("作答間隔。");
+								return;
+							}
+							
 							console.log("response : " + response);
 							console.log("reactionTime : " + reactionTime);
 							console.log("current step :  " + step);
@@ -1475,6 +1478,7 @@
 								$("#confirm").show();
 								$("#confirmButton").show()
 								step++;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -1516,6 +1520,7 @@
 					$("#confirm").show();
 					$("#confirmButton").show()
 					step++;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -1534,6 +1539,7 @@
 		$("#confirm").show();
 		$("#confirmButton").show()
 		step++;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -1582,6 +1588,7 @@
 								$("#" + item_2).hide();
 								$("#practiceResult").show();
 								step++;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -1628,6 +1635,7 @@
 					$("#" + item2).hide();
 					$("#practiceResult").show();
 					step++;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -1648,6 +1656,7 @@
 		$("#" + item).hide();
 		$("#practiceResult").show();
 		step++;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -1716,6 +1725,14 @@
 			}
 		});
 		
+	}
+	
+	function autoSwitchSelectable(delayTime) {
+		isSelectable = false;
+		
+		setTimeout(function() {
+			isSelectable = true;
+		}, delayTime);
 	}
 </script>
 </html>

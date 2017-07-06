@@ -1902,7 +1902,9 @@
 					<div class="col-md-4">
 						<div class="blue_bg_btn text-center">
 							我瞭解了
-							<p class="red_border">✔</p>
+							<p class="red_border">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</p>
 						</div>
 					</div>
 					<div class="col-md-4"></div>
@@ -1917,9 +1919,8 @@
 
 <script>
 	var recordId = ${recordId};
-	
 	var whichTest = "2";
-
+	var isSelectable = true;
 	var step = 1;
 	var beginTime;
 	var response = [];
@@ -1949,9 +1950,13 @@
 	
 	$(document).ready(
 			function() {
-				//step = 51;
 				$('body').keydown(
 						function(event) {
+							if (!isSelectable) {
+								console.log("作答間隔。");
+								return;
+							}
+							
 							console.log("response : " + response);
 							console.log("reactionTime : " + reactionTime);
 							console.log("current step :  " + step + "; currentItem : " + currentItem);
@@ -3920,6 +3925,7 @@
 																	$("#" + item_next).show();
 																	currentItem++;
 																	step = 2;
+																	autoSwitchSelectable(1000);
 	
 																	response.push(0);
 																	reactionTime.push(-1);
@@ -4025,6 +4031,7 @@
 														$("#" + next).show();
 														currentItem++;
 														step = 2;
+														autoSwitchSelectable(1000);
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -4109,6 +4116,7 @@
 											$("#" + item_next).show();
 											currentItem++;
 											step = 2;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -4172,6 +4180,7 @@
 								$("#" + item_next).show();
 								currentItem++;
 								step = 2;
+								autoSwitchSelectable(1000);
 								
 								response.push(0);
 								reactionTime.push(-1);
@@ -4214,6 +4223,7 @@
 					$("#" + item_next).show();
 					currentItem++;
 					step = 2;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -4231,6 +4241,7 @@
 		$("#" + item_next).show();
 		currentItem++;
 		step = 2;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -4354,6 +4365,7 @@
 																							$("#" + item_next).show();
 																							currentItem++;
 																							step = 2;
+																							autoSwitchSelectable(1000);
 
 																							response.push(0);
 																							reactionTime.push(-1);
@@ -4501,6 +4513,7 @@
 																				$("#" + item_next).show();
 																				currentItem++;
 																				step = 2;
+																				autoSwitchSelectable(1000);
 
 																				response.push(0);
 																				reactionTime.push(-1);
@@ -4628,6 +4641,7 @@
 																	$("#" + item_next).show();
 																	currentItem++;
 																	step = 2;
+																	autoSwitchSelectable(1000);
 
 																	response.push(0);
 																	reactionTime.push(-1);
@@ -4734,6 +4748,7 @@
 														$("#" + item_next).show();
 														currentItem++;
 														step = 2;
+														autoSwitchSelectable(1000);
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -4819,6 +4834,7 @@
 											$("#" + item_next).show();
 											currentItem++;
 											step = 2;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -4883,6 +4899,7 @@
 								$("#" + item_next).show();
 								currentItem++;
 								step = 2;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -4925,6 +4942,7 @@
 					$("#" + item_next).show();
 					currentItem++;
 					step = 2;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -4942,6 +4960,7 @@
 		$("#" + item_next).show();
 		currentItem++;
 		step = 2;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -5095,6 +5114,7 @@
 																													$("#" + item_next).show();
 																													currentItem++;
 																													step = 2;
+																													autoSwitchSelectable(1000);
 
 																													response.push(0);
 																													reactionTime.push(-1);
@@ -5286,6 +5306,7 @@
 																										$("#" + item_next).show();
 																										currentItem++;
 																										step = 2;
+																										autoSwitchSelectable(1000);
 
 																										response.push(0);
 																										reactionTime.push(-1);
@@ -5455,6 +5476,7 @@
 																							$("#" + item_next).show();
 																							currentItem++;
 																							step = 2;
+																							autoSwitchSelectable(1000);
 
 																							response.push(0);
 																							reactionTime.push(-1);
@@ -5603,6 +5625,7 @@
 																				$("#" + item_next).show();
 																				currentItem++;
 																				step = 2;
+																				autoSwitchSelectable(1000);
 
 																				response.push(0);
 																				reactionTime.push(-1);
@@ -5730,6 +5753,7 @@
 																	$("#" + item_next).show();
 																	currentItem++;
 																	step = 2;
+																	autoSwitchSelectable(1000);
 
 																	response.push(0);
 																	reactionTime.push(-1);
@@ -5836,6 +5860,7 @@
 														$("#" + item_next).show();
 														currentItem++;
 														step = 2;
+														autoSwitchSelectable(1000);
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -5921,6 +5946,7 @@
 											$("#" + item_next).show();
 											currentItem++;
 											step = 2;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -5985,6 +6011,7 @@
 								$("#" + item_next).show();
 								currentItem++;
 								step = 2;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -6028,6 +6055,7 @@
 					$("#" + item_next).show();
 					currentItem++;
 					step = 2;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -6045,6 +6073,7 @@
 		$("#" + item_next).show();
 		currentItem++;
 		step = 2;
+		autoSwitchSelectable(1000);
 
 		response.push(selection);
 		var delta = new Date() - beginTime;
@@ -6202,6 +6231,7 @@
 																													$("#practiceResult").show();
 																													currentItem++;
 																													step = 0;
+																													autoSwitchSelectable(1000);
 
 																													response.push(0);
 																													reactionTime.push(-1);
@@ -6396,6 +6426,7 @@
 																										$("#" + item9).hide();
 																										$("#practiceResult").show();
 																										step = 0;
+																										autoSwitchSelectable(1000);
 
 																										response.push(0);
 																										reactionTime.push(-1);
@@ -6568,6 +6599,7 @@
 																							$("#" + item9).hide();
 																							$("#practiceResult").show();
 																							step = 0;
+																							autoSwitchSelectable(1000);
 
 																							response.push(0);
 																							reactionTime.push(-1);
@@ -6719,6 +6751,7 @@
 																				$("#" + item9).hide();
 																				$("#practiceResult").show();
 																				step = 0;
+																				autoSwitchSelectable(1000);
 
 																				response.push(0);
 																				reactionTime.push(-1);
@@ -6849,6 +6882,7 @@
 																	$("#" + item9).hide();
 																	$("#practiceResult").show();
 																	step = 0;
+																	autoSwitchSelectable(1000);
 
 																	response.push(0);
 																	reactionTime.push(-1);
@@ -6958,6 +6992,7 @@
 														$("#" + item9).hide();
 														$("#practiceResult").show();
 														step = 0;
+														autoSwitchSelectable(1000);
 
 														response.push(0);
 														reactionTime.push(-1);
@@ -7046,6 +7081,7 @@
 											$("#" + item9).hide();
 											$("#practiceResult").show();
 											step = 0;
+											autoSwitchSelectable(1000);
 
 											response.push(0);
 											reactionTime.push(-1);
@@ -7113,6 +7149,7 @@
 								$("#" + item9).hide();
 								$("#practiceResult").show();
 								step = 0;
+								autoSwitchSelectable(1000);
 
 								response.push(0);
 								reactionTime.push(-1);
@@ -7159,6 +7196,7 @@
 					$("#" + item9).hide();
 					$("#practiceResult").show();
 					step = 0;
+					autoSwitchSelectable(1000);
 
 					response.push(0);
 					reactionTime.push(-1);
@@ -7179,7 +7217,8 @@
 		$("#" + item9).hide();
 		$("#practiceResult").show();
 		step = 0;
-
+		autoSwitchSelectable(1000);
+		
 		response.push(selection);
 		var delta = new Date() - beginTime;
 		reactionTime.push(delta);
@@ -7284,6 +7323,14 @@
 			}
 		});
 		
+	}
+	
+	function autoSwitchSelectable(delayTime) {
+		isSelectable = false;
+		
+		setTimeout(function() {
+			isSelectable = true;
+		}, delayTime);
 	}
 </script>
 </html>
