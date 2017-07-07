@@ -36,24 +36,28 @@
 <script src="/CAA/resources/js/bootbox.min.js"></script>
 
 <style>
-.highlight_kpi {
-	
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("/CAA/resources/images/test03/practice_pic/takeABreak.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 </style>
 </head>
 
-<body>
-	<div id="container">
-		
-		<div id="takeABreakDiv" style="display: ; height: 100%">
-			<div class="text-center" style="height: 100%">
-				<img src="/CAA/resources/images/test03/practice_pic/takeABreak.jpg"
-					style="height: 100%; weight: 100%;">
-			</div>
-		</div>
-
-	</div>
-
+<body style="padding-top : 0px;">
+	<div class="bg"></div>
 </body>
 
 <script>
