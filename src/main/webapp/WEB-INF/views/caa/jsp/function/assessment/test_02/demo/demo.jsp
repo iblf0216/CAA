@@ -46,18 +46,10 @@
 </head>
 
 <body>
+  <div id="pointer" style="display:none;font-size:80px;position:absolute;top:680px;left:690px;z-index:9999999;">
+    <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+  </div>
 	<div id="container">
-		<div id="pointer" style="display:none;font-size:80px;position:absolute;top:680px;left:690px;z-index:9999999;">
-			<i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
-		</div>
-		<script>
-		//showPointer()
-		function showPointer() {
-			setInterval(function(){
-				$("#pointer").effect( "bounce", { times: 3 }, "slow" );
-			},3000)	
-		} 
-		</script>
 		<div id="titleDiv">
 			<div class="wrapper" id="title1">
 				<p class="text">操作示範</p>
@@ -68,7 +60,7 @@
 		</div>
 
 		<div id="demo1" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-80px;">
 				<h3>任務 :測驗中有兩種判斷規則</h3>
 				<h3>1. 判斷您所看到的<label style="color: red;">白色圖形是不是三角形</lebel></h3>
 				<h3>2. 判斷<label  style="color: red;">彩色的圖形是不是藍色</label></h3>
@@ -81,7 +73,7 @@
 
 		<div id="demo2" style="display: none;">
 			<div class="text-center">
-				<h3 style="color: red;">如果白色的圖形是三角形，請按✔</h3>
+				<h3 style="color: red;">如果白色的圖形是三角形，請按<i class="fa fa-check" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test02/demo_pic/05.JPG"
@@ -91,7 +83,7 @@
 		
 		<div id="demo3" style="display: none;">
 			<div class="text-center">
-				<h3 style="color: red;">如果白色的圖形不是三角形，請按✘</h3>
+				<h3 style="color: red;">如果白色的圖形不是三角形，請按<i class="fa fa-times" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test02/demo_pic/06.JPG"
@@ -101,7 +93,7 @@
 
 		<div id="demo4" style="display: none;">
 			<div class="text-center">
-				<h3 style="color: red;">如果彩色的圖形是藍色，請按✔</h3>
+				<h3 style="color: red;">如果彩色的圖形是藍色，請按<i class="fa fa-check" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test02/demo_pic/07.JPG"
@@ -111,7 +103,7 @@
 		
 		<div id="demo5" style="display: none;">
 			<div class="text-center">
-				<h3 style="color: red;">如果彩色的圖形不是藍色，請按✘</h3>
+				<h3 style="color: red;">如果彩色的圖形不是藍色，請按<i class="fa fa-times" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test02/demo_pic/08.JPG"
@@ -131,8 +123,7 @@
 
 		<div id="demo7" style="display: none;">
 			<div class="text-center">
-				<h3>接著，會先出現黑色十字，</h3>
-				<h3>提醒您注意看螢幕</h3>
+				<h3>接著，會先出現黑色十字，提醒您注意看螢幕</h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test02/demo_pic/10.JPG"
@@ -142,10 +133,7 @@
 
 		<div id="demo8" style="display: none;">
 			<div class="text-center">
-				<h3>接著，電腦螢幕上會呈現一個圖形</h3>
-				<h3>
-					注意：<label style="color: red;">圖形呈現的時間長短不一定，請在圖形消失前正確作答</lable>
-				</h3>
+				<h3>接著，電腦螢幕上會呈現一個圖形，注意：<label style="color: red;">圖形呈現的時間長短不一定，請在圖形消失前正確作答</lable></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test02/demo_pic/11.JPG"
@@ -156,7 +144,7 @@
 		<div id="demo9" style="display: none;">
 			<div class="text-center">
 				<h3>
-					<label style="color: red;">如果白色的圖形是三角形，請按✔</lable>
+					<label style="color: red;">如果白色的圖形是三角形，請按<i class="fa fa-check" aria-hidden="true"></i></lable>
 				</h3>
 			</div>
 			<div class="text-center">
@@ -169,8 +157,8 @@
 			<div class="text-center">
 				<h3>
 					但是，當您看到黑色十字而且<label style="color: red;">聽到提示音</lable>「逼～」之後，
+					<span style="color: red;">下一題的判斷規則將會轉換</span>
 				</h3>
-				<h3 style="color: red;">下一題的判斷規則將會轉換</h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test02/demo_pic/13.JPG"
@@ -181,7 +169,7 @@
 		<div id="demo11" style="display: none;">
 			<div class="text-center">
 				<h3>
-					<label style="color: red;">如果彩色的圖形是藍色，請按✔</lable>
+					<label style="color: red;">如果彩色的圖形是藍色，請按<i class="fa fa-check" aria-hidden="true"></i></lable>
 				</h3>
 			</div>
 			<div class="text-center">
@@ -457,8 +445,8 @@
 			</div>
 		</div>
 		<script>
-		var recordId = ${recordId};
-		
+			var recordId = ${recordId};
+			var pointerTimer;
 			var step = 1; //1
 			var response = [];
 			
@@ -495,23 +483,21 @@
 						} else if (2 == step) {// ppt5
 							$("#demo1").hide();
 							$("#demo2").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
 						} else if (3 == step) {// ppt6  (應該按2才有反應!!!)
 							$("#demo2").hide();
 							$("#demo3").show();
+							hidePointer();
+							showPointer(675,690);
 							step++;
-// 						} else if (4 == step) {// ppt7
-// 							$("#demo3").hide();
-// 							$("#demo4").show();
-// 							step++;
 						} else if (5 == step) {// ppt8  (應該按2才有反應!!!)
 							$("#demo4").hide();
 							$("#demo5").show();
+							hidePointer();
+							showPointer(675,690);
 							step++;
-// 						} else if (6 == step) {// ppt9
-// 							$("#demo5").hide();
-// 							$("#demo6").show();
-// 							step++;
 						} else if (7 == step) {// ppt10 
 							$("#demo6").hide();
 							$("#demo7").show();
@@ -542,18 +528,21 @@
 						} else if (13 == step) {// ppt16
 							$("#demo12").hide();
 							$("#demo13").show(); //顯示 凝視點
+							hidePointer();
 							step++;
 							
 							setTimeout(function() {  //此時step=14   當step=14 不得反應
 								$("#demo13").hide(); // 2秒後關閉凝視點
 								$("#demo14").show(); // 顯示 示範一第一題   ppt17 白色三角形
+								hidePointer();
+								showPointer(560,690);
 								step++;
 							}, 1000);
 							
 						} else if (15 == step) {
-
 							$("#demo14").hide();
 							$("#demo15").show(); //顯示凝視點
+							hidePointer();
 							step++;
 
 							response.push(8);
@@ -562,14 +551,16 @@
 								if (16 == step) {
 									$("#demo15").hide();
 									$("#demo16").show();
+									hidePointer();
+									showPointer(560,690);
 									step++;
 								}
 							}, 1000);
 							
 						} else if (17 == step) {
-
 							$("#demo16").hide();
 							$("#demo17").show();// 顯示凝視點
+							hidePointer();
 							step++;
 
 							response.push(8);
@@ -578,73 +569,30 @@
 								if (18 == step) {
 									$("#demo17").hide();
 									$("#demo18").show();
+									hidePointer();
+									showPointer(675,690);
 									step++;
 								}
 							}, 1000);
-							
-						} else if (19 == step) {
-							$("#demo18").hide();
-							$("#demo19").show();// 顯示凝視點
-							step++;
-
-							response.push(8);
-							
-							setTimeout(function() {
-								if (20 == step) {
-									$("#demo19").hide();
-									$("#demo20").show();
-									step++;
-								}
-							}, 1000);
-							
-						} else if (21 == step) {
-							$("#demo20").hide();
-							$("#demo21").show();// 顯示凝視點
-							audio.play(); // 播放聲音 
-							step++;
-
-							response.push(8);
-							
-							setTimeout(function() {
-								if (22 == step) {
-									$("#demo21").hide();
-									$("#demo22").show();
-									step++;
-								}
-								setTimeout(function() {
-									if (23 == step) {
-										$("#demo22").hide();
-										$("#demo23").show();// 跳下一題
-										step++;
-
-										response.push(0);
-									}
-								}, 2000);
-							}, 1000);
-							
-						} else if (23 == step) {
-							
-							$("#demo22").hide();
-							$("#demo23").show();// 跳下一題
-							step++;
-
-							response.push(8);
 							
 						} else if (24 == step) {// ppt16
 							$("#demo23").hide();
 							$("#demo24").show(); //顯示 凝視點
+							hidePointer();
 							step++;
 							
 							setTimeout(function() {  //此時step=14   當step=14 不得反應
 								$("#demo24").hide(); // 2秒後關閉凝視點
 								$("#demo25").show(); // 顯示 示範一第一題   ppt17 白色三角形
+								hidePointer();
+								showPointer(560,690);
 								step++;
 							}, 1000);
 							
 						} else if (26 == step) {
-
 							$("#demo25").hide();
 							$("#demo26").show(); //顯示凝視點
+							hidePointer();
 							step++;
 
 							response.push(8);
@@ -653,14 +601,16 @@
 								if (27 == step) {
 									$("#demo26").hide();
 									$("#demo27").show();
+									hidePointer();
+									showPointer(560,690);
 									step++;
 								}
 							}, 1000);
 							
 						} else if (28 == step) {
-
 							$("#demo27").hide();
 							$("#demo28").show();// 顯示凝視點
+							hidePointer();
 							step++;
 
 							response.push(8);
@@ -669,58 +619,11 @@
 								if (29 == step) {
 									$("#demo28").hide();
 									$("#demo29").show();
+									hidePointer();
+									showPointer(675,690);
 									step++;
 								}
 							}, 1000);
-							
-						} else if (30 == step) {
-							$("#demo29").hide();
-							$("#demo30").show();// 顯示凝視點
-							step++;
-
-							response.push(8);
-							
-							setTimeout(function() {
-								if (31 == step) {
-									$("#demo30").hide();
-									$("#demo31").show();
-									step++;
-								}
-							}, 1000);
-							
-						} else if (32 == step) {
-							$("#demo31").hide();
-							$("#demo32").show();// 顯示凝視點
-							audio.play(); // 播放聲音 
-							step++;
-
-							response.push(8);
-							
-							setTimeout(function() {
-								if (33 == step) {
-									$("#demo32").hide();
-									$("#demo33").show();
-									step++;
-								}
-								setTimeout(function() {
-									if (34 == step) {
-										$("#demo33").hide();
-										$("#titleDiv").show();
-										$("#btnDiv").show();
-										step++;
-
-										response.push(0);
-									}
-								}, 2000);
-							}, 1000);						
-
-						} else if (34 == step) {
-							$("#demo33").hide();
-							$("#titleDiv").show();
-							$("#btnDiv").show();
-							step ++;
-
-							response.push(8);
 						} else if (35 == step) {
 							console.log("接續下一段(練習)");
 							
@@ -738,63 +641,22 @@
 							console.log("接練習頁");
 							var practiceUrl = "/CAA/test02/showPractice.do?recordId=" + recordId;
 							document.location.href = practiceUrl;
-
-// 						} else if (2 == step) {// ppt5
-// 							$("#demo1").hide();
-// 							$("#demo2").show();
-// 							step++;
-// 						} else if (3 == step) {// ppt6  (應該按2才有反應!!!)
-// 							$("#demo2").hide();
-// 							$("#demo3").show();
-// 							step++;
 						} else if (4 == step) {// ppt7
 							$("#demo3").hide();
 							$("#demo4").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
-// 						} else if (5 == step) {// ppt8  (應該按2才有反應!!!)
-// 							$("#demo4").hide();
-// 							$("#demo5").show();
-// 							step++;
 						} else if (6 == step) {// ppt9
 							$("#demo5").hide();
 							$("#demo6").show();
+							hidePointer();
+							showPointer(560,690);
 							step++;
-							
-						} else if (15 == step) {
-
-							$("#demo14").hide();
-							$("#demo15").show(); //顯示凝視點
-							step++;
-
-							response.push(8);
-							
-							setTimeout(function() {
-								if (16 == step) {
-									$("#demo15").hide();
-									$("#demo16").show();
-									step++;
-								}
-							}, 1000);
-							
-						} else if (17 == step) {
-
-							$("#demo16").hide();
-							$("#demo17").show();// 顯示凝視點
-							step++;
-
-							response.push(8);
-							
-							setTimeout(function() {
-								if (18 == step) {
-									$("#demo17").hide();
-									$("#demo18").show();
-									step++;
-								}
-							}, 1000);
-							
 						} else if (19 == step) {
 							$("#demo18").hide();
 							$("#demo19").show();// 顯示凝視點
+							hidePointer();
 							step++;
 
 							response.push(8);
@@ -803,14 +665,16 @@
 								if (20 == step) {
 									$("#demo19").hide();
 									$("#demo20").show();
+									hidePointer();
+									showPointer(675,690);
 									step++;
 								}
 							}, 1000);
-							
 						} else if (21 == step) {
 							$("#demo20").hide();
 							$("#demo21").show();// 顯示凝視點
 							audio.play(); // 播放聲音 
+							hidePointer();
 							step++;
 
 							response.push(8);
@@ -819,12 +683,16 @@
 								if (22 == step) {
 									$("#demo21").hide();
 									$("#demo22").show();
+									hidePointer();
+									showPointer(675,690);
 									step++;
 								}
 								setTimeout(function() {
 									if (23 == step) {
 										$("#demo22").hide();
 										$("#demo23").show();// 跳下一題
+										hidePointer();
+										showPointer(560,690);
 										step++;
 
 										response.push(0);
@@ -832,41 +700,18 @@
 								}, 2000);
 							}, 1000);
 							
-						} else if (26 == step) {
-
-							$("#demo25").hide();
-							$("#demo26").show(); //顯示凝視點
+						} else if (23 == step) {
+							$("#demo22").hide();
+							$("#demo23").show();// 跳下一題
+							hidePointer();
+							showPointer(560,690);
 							step++;
 
-							response.push(8);
-							
-							setTimeout(function() {
-								if (27 == step) {
-									$("#demo26").hide();
-									$("#demo27").show();
-									step++;
-								}
-							}, 1000);
-							
-						} else if (28 == step) {
-
-							$("#demo27").hide();
-							$("#demo28").show();// 顯示凝視點
-							step++;
-
-							response.push(8);
-							
-							setTimeout(function() {
-								if (29 == step) {
-									$("#demo28").hide();
-									$("#demo29").show();
-									step++;
-								}
-							}, 1000);
-							
+							response.push(0);
 						} else if (30 == step) {
 							$("#demo29").hide();
 							$("#demo30").show();// 顯示凝視點
+							hidePointer();
 							step++;
 
 							response.push(8);
@@ -875,15 +720,17 @@
 								if (31 == step) {
 									$("#demo30").hide();
 									$("#demo31").show();
+									hidePointer();
+									showPointer(675,690);
 									step++;
 								}
 							}, 1000);
-							
 						} else if (32 == step) {
 							$("#demo31").hide();
 							$("#demo32").show();// 顯示凝視點
 							audio.play(); // 播放聲音 
 							step++;
+							hidePointer();
 
 							response.push(8);
 							
@@ -891,6 +738,8 @@
 								if (33 == step) {
 									$("#demo32").hide();
 									$("#demo33").show();
+									hidePointer();
+									showPointer(675,690);
 									step++;
 								}
 								setTimeout(function() {
@@ -898,27 +747,22 @@
 										$("#demo33").hide();
 										$("#titleDiv").show();
 										$("#btnDiv").show();
+										hidePointer();
 										step++;
 
 										response.push(0);
 									}
 								}, 2000);
 							}, 1000);						
-
 						} else if (34 == step) {
 							$("#demo33").hide();
 							$("#titleDiv").show();
 							$("#btnDiv").show();
+							hidePointer();
 							step ++;
 
 							response.push(8);
 						} else if (35 == step) {
-// 							console.log("接續下一段(練習)");
-							
-// 							var practiceUrl = "/CAA/test02/showPractice.do?recordId=" + recordId;
-// 							document.location.href = practiceUrl;
-
-// 							alert("回到示範頁");
 							$("#title1").show();
 							$("#title2").hide();
 							$("#titleDiv").show();
@@ -942,6 +786,21 @@
 					}
 				});
 			});
+			
+			function showPointer(positionX, positionY) {
+				$("#pointer").css('left', positionX + 'px');
+				$("#pointer").css('top', positionY + 'px');
+				$("#pointer").show();
+				pointerTimer = setInterval(function(){
+					$("#pointer").effect( "bounce", { times: 2 }, "slow" );
+				},2000)	
+			} 
+			
+			function hidePointer() {
+				clearInterval(pointerTimer);
+				$("#pointer").stop(true,true);
+				$("#pointer").hide();
+			}
 		</script>
 	</div>
 </body>

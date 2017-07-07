@@ -60,7 +60,7 @@
 		</div>
 
 		<div id="demo1" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:40px;">
 				<h3>任務 :判斷您所看到的圖形是不是白色</h3>
 				<h3 style="color: red;">看到白色的圖形按<i class="fa fa-check" aria-hidden="true"></i>，不是白色的圖形按<i class="fa fa-times" aria-hidden="true"></i></h3>
 			</div>
@@ -82,7 +82,7 @@
 		</div>
 
 		<div id="demo3" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>接著，電腦螢幕上會呈現一個圖形</h3>
 				<h3>
 					注意：<label style="color: red;">圖形呈現的時間長短不一定，請在圖形消失前正確作答</lable>
@@ -95,9 +95,9 @@
 		</div>
 
 		<div id="demo4" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>示範</h3>
-				<h3 style="color: red;">如果您看到白色的圖形，則按O</h3>
+				<h3 style="color: red;">如果您看到白色的圖形，則按<i class="fa fa-check" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test01/demo_pic/07.JPG"
@@ -106,9 +106,9 @@
 		</div>
 
 		<div id="demo5" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>示範</h3>
-				<h3 style="color: red;">如果您看到其它顏色的圖形，則按✘</h3>
+				<h3 style="color: red;">如果您看到其它顏色的圖形，則按<i class="fa fa-times" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test01/demo_pic/08.JPG"

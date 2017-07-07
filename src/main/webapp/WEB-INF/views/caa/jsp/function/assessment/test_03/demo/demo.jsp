@@ -60,9 +60,9 @@
 		</div>
 
 		<div id="demo1" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>任務 :判斷您所看到的圖形是否為白色，同時也判斷圖形是否為三角形</h3>
-				<h3 style="color: red;">看到白色或三角形的圖形按✔，其餘按✘</h3>
+				<h3 style="color: red;">看到白色或三角形的圖形按<i class="fa fa-check" aria-hidden="true"></i>，其餘按<i class="fa fa-times" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test03/demo_pic/04.JPG"
@@ -71,7 +71,7 @@
 		</div>
 
 		<div id="demo2" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>圖形播放前會出現黑色十字</h3>
 				<h3>提醒您注意看螢幕</h3>
 			</div>
@@ -82,7 +82,7 @@
 		</div>
 
 		<div id="demo3" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>接著，電腦螢幕上會呈現一個圖形</h3>
 				<h3>
 					注意：<label style="color: red;">圖形呈現的時間長短不一定，請在圖形消失前正確作答</lable>
@@ -95,9 +95,9 @@
 		</div>
 
 		<div id="demo4" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>示範</h3>
-				<h3 style="color: red;">如果您看到白色或三角形的圖形，則按O</h3>
+				<h3 style="color: red;">如果您看到白色或三角形的圖形，則按<i class="fa fa-check" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test03/demo_pic/07.JPG"
@@ -106,9 +106,9 @@
 		</div>
 
 		<div id="demo5" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>示範</h3>
-				<h3 style="color: red;">如果您看到白色或三角形的圖形，則按O</h3>
+				<h3 style="color: red;">如果您看到白色或三角形的圖形，則按<i class="fa fa-check" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test03/demo_pic/08.JPG"
@@ -117,9 +117,9 @@
 		</div>
 
 		<div id="demo6" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>示範</h3>
-				<h3 style="color: red;">如果您看到白色或三角形的圖形，則按O</h3>
+				<h3 style="color: red;">如果您看到白色或三角形的圖形，則按<i class="fa fa-check" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test03/demo_pic/09.JPG"
@@ -128,9 +128,9 @@
 		</div>
 
 		<div id="demo7" style="display: none;">
-			<div class="text-center">
+			<div class="text-center" style="margin-top:-40px;">
 				<h3>示範</h3>
-				<h3 style="color: red;">如果您看到不是白色而且三角形的圖形，則按✘</h3>
+				<h3 style="color: red;">如果您看到不是白色而且三角形的圖形，則按<i class="fa fa-times" aria-hidden="true"></i></h3>
 			</div>
 			<div class="text-center">
 				<img src="/CAA/resources/images/test03/demo_pic/10.JPG"
