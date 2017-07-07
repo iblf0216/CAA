@@ -30,6 +30,9 @@
 
 <!-- Bootbox -->
 <script src="resources/js/bootbox.min.js"></script>
+
+<!-- ajaxfileupload.js -->
+<script src="resources/js/jquery.fn.filedownload.js"></script>
         
     <style>
         .highlight_kpi {

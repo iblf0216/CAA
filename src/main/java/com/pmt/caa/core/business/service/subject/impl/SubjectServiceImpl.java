@@ -3,6 +3,7 @@ package com.pmt.caa.core.business.service.subject.impl;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -388,6 +389,144 @@ public class SubjectServiceImpl implements ISubjectService {
 		}
 
 		return subjectDetailVo;
+	}
+
+	@Override
+	public List<SubjectDetailVo> getSubjectResultByMedicalNo(String medical_no) {
+		
+		List<Map<String, Object>> dataList = null;
+		List<SubjectDetailVo> subjectDetailVoList = new ArrayList<SubjectDetailVo>();
+
+		if (medical_no != null && !medical_no.equals("")) {
+	        String sqltext = "select * from subject_detail where medical_no = '" + medical_no + "' and status = 'Y' ORDER BY id ASC";
+	        
+	        System.out.println("getSubjectResultByMedicalNo sql = " + sqltext);
+
+	        dataList = iaJdbcDAO.queryForList(sqltext);
+	        System.out.println("dataList = " + dataList);
+	        
+	        for (Map<String, Object> dataMap : dataList) {
+	        	SubjectDetailVo subjectDetailVo = new SubjectDetailVo();
+	        	
+		        String id = MapUtils.getString(dataMap, "id", "");
+//		        String medical_no = MapUtils.getString(dataMap, "medical_no", "");
+		        String createDate = MapUtils.getString(dataMap, "createdate", "");
+		        String status = MapUtils.getString(dataMap, "status", "");
+		        
+		        String response1 = MapUtils.getString(dataMap, "response1", "");
+		        String responseTime1 = MapUtils.getString(dataMap, "responsetime1", "");
+		        String rightNum1 = MapUtils.getString(dataMap, "rightnum1", "");
+		        String wrongNum1 = MapUtils.getString(dataMap, "wrongnum1", "");
+		        String averageTime1 = MapUtils.getString(dataMap, "averagetime1", "");
+		        
+		        String response2 = MapUtils.getString(dataMap, "response2", "");
+		        String responseTime2 = MapUtils.getString(dataMap, "responsetime2", "");
+		        String rightNum2 = MapUtils.getString(dataMap, "rightnum2", "");
+		        String wrongNum2 = MapUtils.getString(dataMap, "wrongnum2", "");
+		        String averageTime2 = MapUtils.getString(dataMap, "averagetime2", "");
+		        
+		        String response3 = MapUtils.getString(dataMap, "response3", "");
+		        String responseTime3 = MapUtils.getString(dataMap, "responsetime3", "");
+		        String rightNum3 = MapUtils.getString(dataMap, "rightnum3", "");
+		        String wrongNum3 = MapUtils.getString(dataMap, "wrongnum3", "");
+		        String averageTime3 = MapUtils.getString(dataMap, "averagetime3", "");
+		        
+		        subjectDetailVo.setId(id);
+		        subjectDetailVo.setMedical_no(medical_no);
+		        subjectDetailVo.setCreateDate(createDate);
+		        subjectDetailVo.setStatus(status);
+		        
+		        subjectDetailVo.setResponse1(response1);
+		        subjectDetailVo.setResponseTime1(responseTime1);
+		        subjectDetailVo.setRightNum1(rightNum1);
+		        subjectDetailVo.setWrongNum1(wrongNum1);
+		        subjectDetailVo.setAverageTime1(averageTime1);
+		        
+		        subjectDetailVo.setResponse2(response2);
+		        subjectDetailVo.setResponseTime2(responseTime2);
+		        subjectDetailVo.setRightNum2(rightNum2);
+		        subjectDetailVo.setWrongNum2(wrongNum2);
+		        subjectDetailVo.setAverageTime2(averageTime2);
+		        
+		        subjectDetailVo.setResponse3(response3);
+		        subjectDetailVo.setResponseTime3(responseTime3);
+		        subjectDetailVo.setRightNum3(rightNum3);
+		        subjectDetailVo.setWrongNum3(wrongNum3);
+		        subjectDetailVo.setAverageTime3(averageTime3);
+		        
+		        subjectDetailVoList.add(subjectDetailVo);
+	        }
+	        
+		}
+		
+		return subjectDetailVoList;
+	}
+
+	@Override
+	public List<SubjectDetailVo> getAllSubjectResult() {
+		List<Map<String, Object>> dataList = null;
+		List<SubjectDetailVo> subjectDetailVoList = new ArrayList<SubjectDetailVo>();
+
+	        String sqltext = "select * from subject_detail where status = 'Y' ORDER BY medical_no ASC, id DESC";
+	        
+	        System.out.println("getAllSubjectResult sql = " + sqltext);
+
+	        dataList = iaJdbcDAO.queryForList(sqltext);
+	        System.out.println("dataList = " + dataList);
+	        
+	        for (Map<String, Object> dataMap : dataList) {
+	        	SubjectDetailVo subjectDetailVo = new SubjectDetailVo();
+	        	
+		        String id = MapUtils.getString(dataMap, "id", "");
+		        String medical_no = MapUtils.getString(dataMap, "medical_no", "");
+		        String createDate = MapUtils.getString(dataMap, "createdate", "");
+		        String status = MapUtils.getString(dataMap, "status", "");
+		        
+		        String response1 = MapUtils.getString(dataMap, "response1", "");
+		        String responseTime1 = MapUtils.getString(dataMap, "responsetime1", "");
+		        String rightNum1 = MapUtils.getString(dataMap, "rightnum1", "");
+		        String wrongNum1 = MapUtils.getString(dataMap, "wrongnum1", "");
+		        String averageTime1 = MapUtils.getString(dataMap, "averagetime1", "");
+		        
+		        String response2 = MapUtils.getString(dataMap, "response2", "");
+		        String responseTime2 = MapUtils.getString(dataMap, "responsetime2", "");
+		        String rightNum2 = MapUtils.getString(dataMap, "rightnum2", "");
+		        String wrongNum2 = MapUtils.getString(dataMap, "wrongnum2", "");
+		        String averageTime2 = MapUtils.getString(dataMap, "averagetime2", "");
+		        
+		        String response3 = MapUtils.getString(dataMap, "response3", "");
+		        String responseTime3 = MapUtils.getString(dataMap, "responsetime3", "");
+		        String rightNum3 = MapUtils.getString(dataMap, "rightnum3", "");
+		        String wrongNum3 = MapUtils.getString(dataMap, "wrongnum3", "");
+		        String averageTime3 = MapUtils.getString(dataMap, "averagetime3", "");
+		        
+		        subjectDetailVo.setId(id);
+		        subjectDetailVo.setMedical_no(medical_no);
+		        subjectDetailVo.setCreateDate(createDate);
+		        subjectDetailVo.setStatus(status);
+		        
+		        subjectDetailVo.setResponse1(response1);
+		        subjectDetailVo.setResponseTime1(responseTime1);
+		        subjectDetailVo.setRightNum1(rightNum1);
+		        subjectDetailVo.setWrongNum1(wrongNum1);
+		        subjectDetailVo.setAverageTime1(averageTime1);
+		        
+		        subjectDetailVo.setResponse2(response2);
+		        subjectDetailVo.setResponseTime2(responseTime2);
+		        subjectDetailVo.setRightNum2(rightNum2);
+		        subjectDetailVo.setWrongNum2(wrongNum2);
+		        subjectDetailVo.setAverageTime2(averageTime2);
+		        
+		        subjectDetailVo.setResponse3(response3);
+		        subjectDetailVo.setResponseTime3(responseTime3);
+		        subjectDetailVo.setRightNum3(rightNum3);
+		        subjectDetailVo.setWrongNum3(wrongNum3);
+		        subjectDetailVo.setAverageTime3(averageTime3);
+		        
+		        subjectDetailVoList.add(subjectDetailVo);
+	        }
+		
+		return subjectDetailVoList;
 	}
 
 }

@@ -5,8 +5,8 @@
 <div id="subjectTitle" style="text-align:center;font-size:30px;"></div>
 <a href="javascript:void(0);" onclick="doAgain();" class="btn btn-large btn-primary">再做一次</a>
 
-<!-- TODO 待實作匯出excel -->
-<a href="result.xls" download="result.xls" class="btn btn-large btn-info">資料匯出</a>
+<a href="javascript:void(0);" onclick="doDownloadExcelByMedicalNo();" class="btn btn-large btn-info">資料匯出</a>
+
 <hr>
 
 <table id="subjectPersonalView" class="table table-bordered table-hover dataTable">
@@ -51,12 +51,6 @@ $(document).ready(function(){
  				var isTest1Finished = obj.response1;
  				var isTest2Finished = obj.response2;
  				var isTest3Finished = obj.response3;
-//  				var isTest1Finished = "";
-//  				var isTest2Finished = "done";
-//  				var isTest3Finished = "";
-//  				isTest1Finished = obj.response1;
-//  				isTest2Finished = obj.response2;
-//  				isTest3Finished = obj.response3;
  				
  				var template1 = "<input id='test1' class='btn btn-small btn-success' type='button' value='專注性測驗' onclick='openTest1(" + recordid + ");'>";
  				var template2 = "&nbsp;<input id='test2' class='btn btn-small btn-success' type='button' value='轉換性測驗' onclick='openTest2(" + recordid + ");'>";
@@ -153,20 +147,14 @@ $(document).ready(function(){
 
 // 執行測驗1(專注性測驗)
 function openTest1(recordId) {
-// 	alert(recordId);
-	
 	var screenHeight = screen.height;
 	var screenWidth = screen.width;
 	
-// 	window.open(openUrl, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
-
 	window.open('test01/showIntro.do?recordId=' + recordId, '', 'status=no, menubar=no, scrollbars=no, resizable=yes, top=0, left=0, width=' + screenWidth + ', height=' + screenHeight + ', fullscreen=yes ,location=no');
 }
 
 //執行測驗2
 function openTest2(recordId) {
-// 	alert(recordId);
-
 	var screenHeight = screen.height;
 	var screenWidth = screen.width;
 	
@@ -175,8 +163,6 @@ function openTest2(recordId) {
 
 //執行測驗3
 function openTest3(recordId) {
-// 	alert(recordId);
-	
 	var screenHeight = screen.height;
 	var screenWidth = screen.width;
 	
@@ -185,14 +171,9 @@ function openTest3(recordId) {
 
 // 再做一次  傳入病歷號碼  查詢目前已有筆數，再新增一筆(+1)測驗記錄  [即新增一筆明細]
 function doAgain(){
-	
 	var medical_no = $('#subjectPersonalView').find('td:eq(1)').text();
 	
-	alert(medical_no);
-	
 	medical_no = $.trim(medical_no);
-	
-	console.log("@@@ medical_no = " + medical_no);
 	
 	var params = {};
 	params.medical_no = medical_no;
@@ -254,8 +235,6 @@ function showResult(recordId){
 		dataType : 'html',
 		success : function(data) {
 			
-			console.log(data);
-			
 			if (data) {
 				$("#testResultDiv").empty().html(data);
 				
@@ -270,11 +249,6 @@ function showResult(recordId){
 		}
 	});
 	
-	
-// 	bootbox.alert({
-// 	    message: result,
-// 	    backdrop: true
-// 	});
 }
 
 //根據 recordid 刪除 該筆測驗紀錄 (刪除detail檔)
@@ -283,7 +257,9 @@ function deleteSubjectRecord(id) {
 // 	params.medical_no = medical_no;
 	params.id = id;
 	
-	var medical_no = $('#subjectPersonalView').find('td:first').text();
+	var medical_no = $('#subjectPersonalView').find('td:eq(1)').text();
+	
+	console.log("deleteSubjectRecord   medical_no = " + medical_no);
 
 	bootbox.confirm({
 		message : "是否確定刪除這筆測驗紀錄?",
@@ -318,6 +294,22 @@ function deleteSubjectRecord(id) {
 		}
 	});
 
+}
+
+function doDownloadExcelByMedicalNo() {
+	
+	var medical_no = $('#subjectPersonalView').find('td:eq(1)').text();
+	
+	var fileUrl = 'exportExcel.do?medical_no=' + medical_no;
+	
+	$.fileDownload(fileUrl, {
+		 successCallback: function (fileUrl) {
+// 			 alert('success');
+	    },
+	    failCallback: function (responseHtml, url) {
+	    	alert('下載失敗!');
+	    }
+	});
 }
 
 </script>

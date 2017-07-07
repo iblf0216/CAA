@@ -6,7 +6,7 @@
 <a href="javascript:void(0);" onclick="openmenu('menu/showAddSubjectView.do');" class="btn btn-large btn-primary">新增受測者</a>
 
 <!-- TODO 待實作匯出excel -->
-<a href="result.xls" download="result.xls" class="btn btn-large btn-info">資料匯出</a>
+<a href="javascript:void(0);" onclick="doDownloadExcel();" class="btn btn-large btn-info">資料匯出</a>
 <hr>
 
 <table id="subjectView" class="table table-bordered table-hover dataTable">
@@ -177,6 +177,20 @@ function deleteSubject(medical_no) {
 		}
 	});
 
+}
+
+function doDownloadExcel() {
+	
+	var fileUrl = 'exportAllExcel.do';
+	
+	$.fileDownload(fileUrl, {
+		 successCallback: function (fileUrl) {
+// 			 alert('success');
+	    },
+	    failCallback: function (responseHtml, url) {
+	    	alert('下載失敗!');
+	    }
+	});
 }
 
 </script>

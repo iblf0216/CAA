@@ -212,6 +212,21 @@
 <!-- 			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp -->
 <!-- 			</result> -->
 		</action>
+		
+		<!-- 匯出excel -->
+		<action name="exportExcel" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="exportExcel">
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
+		</action>
+
+		<!-- 匯出全部excel -->
+		<action name="exportAllExcel" class="com.pmt.caa.web.webapp.action.ServiceAction"
+			method="exportAllExcel">
+			<result name="success">/WEB-INF/views/caa/jsp/wrapper/result.jsp
+			</result>
+		</action>		
+		
 		<!-- =============== 受試者 end =============== -->
 
 

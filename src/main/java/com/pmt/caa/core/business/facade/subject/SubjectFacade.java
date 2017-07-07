@@ -57,6 +57,14 @@ public class SubjectFacade {
 		return subjectService.getSubjectResultByRecordId(recordId);
 	}
 	
+	public List<SubjectDetailVo> getSubjectResultByMedicalNo(String medical_no) {
+		return subjectService.getSubjectResultByMedicalNo(medical_no);
+	}
+	
+	public List<SubjectDetailVo> getAllSubjectResult() {
+		return subjectService.getAllSubjectResult();
+	}
+	
 	@Transactional(propagation = Propagation.REQUIRED)
 	public boolean deleteSubjectRecord2() {
 		

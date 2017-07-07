@@ -101,4 +101,20 @@ public class SubjectServiceImplTest extends SpringTest {
 		System.out.println("查詢 [" + recordId + " ] 的測驗結果紀錄 : " + result);
 	}
 	
+	@Test
+	public void testGetSubjectResultByMedicalNo() {
+		String medical_no = "B001";
+		List<SubjectDetailVo> result = subjectService.getSubjectResultByMedicalNo(medical_no);
+		
+		System.out.println("result = " + result);
+	}
+	
+	@Test
+	public void testGetAllSubjectResult() {
+		List<SubjectDetailVo> result = subjectService.getAllSubjectResult();
+		
+		System.out.println("result = " + result);
+		System.out.println("size = " + result.size());
+	}
+	
 }

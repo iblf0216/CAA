@@ -100,4 +100,19 @@ public interface ISubjectService {
 	 * @return
 	 */
 	SubjectDetailVo getSubjectResultByRecordId(String recordId);
+	
+	/**
+	 * 查詢受試者歷史紀錄
+	 * 
+	 * @param medical_no
+	 * @return
+	 */
+	List<SubjectDetailVo> getSubjectResultByMedicalNo(String medical_no);
+	
+	/**
+	 * 查詢全部受試者歷史紀錄
+	 * 
+	 * @return
+	 */
+	List<SubjectDetailVo> getAllSubjectResult();
 }
