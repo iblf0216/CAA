@@ -407,8 +407,6 @@
 									
 									step++; // step =34 不做任何反應
 									
-									alert("待實作  休息片刻頁");
-									
 									
 // 									$("#titleDiv").hide();
 // 									$("#btnDiv").hide();

@@ -489,7 +489,6 @@
 								else if (53 == step) {
 									step++; // step =54 不做任何反應
 									
-									alert("待實作  休息片刻頁");
 									var formalUrl = "/CAA/test01/showPreFormalTest.do?recordId=" + recordId;
 									document.location.href = formalUrl;
 								}

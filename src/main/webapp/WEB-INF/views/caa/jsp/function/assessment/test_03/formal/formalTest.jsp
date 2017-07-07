@@ -729,7 +729,6 @@
 								
 								// 於結果頁 按下8 關閉此視窗
 								else if (110 == step) {
-									alert("關閉測驗結果頁");
 									
 									window.close();
 								}

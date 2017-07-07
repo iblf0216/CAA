@@ -959,7 +959,6 @@
 								else if (currentItem == 10 && 1 == step) {
 									step = 999;
 									
-									alert("待實作  休息片刻頁");
 									var formalUrl = "/CAA/test02/showPreFormalTest.do?recordId=" + recordId;
 									document.location.href = formalUrl;
 								}

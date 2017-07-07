@@ -1128,7 +1128,6 @@
 								
 								
 								else if (182 == step) {
-									alert("關閉測驗結果頁");
 									
 									window.close();
 								}

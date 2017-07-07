@@ -2958,7 +2958,6 @@
 								// 題目36(9)end OK
 								
 								else if (currentItem == 36 && 0 == step) {
-									alert("關閉此頁面!!!");
 									
 									window.close();
 								}
