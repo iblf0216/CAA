@@ -74,7 +74,6 @@ $( document ).ready(function() {
 
 // 儲存受試者
 function updateSubject() {
-	alert("更新 受試者");
 	var medical_no = $("input[name = 'medical_no']").val();
 	var name = $("input[name = 'name']").val();
 	

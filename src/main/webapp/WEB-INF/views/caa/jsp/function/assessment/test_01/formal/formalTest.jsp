@@ -1699,7 +1699,7 @@
 			averageTime = 0;
 		}
 		
-		$("#averageTime").html(totalAnswerCorrectTime/correct);
+		$("#averageTime").html(averageTime.toFixed(3));
 		
 		var params = {
 				"recordId" : recordId,

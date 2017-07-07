@@ -3913,7 +3913,7 @@
 		
 		
 		if (correct > 0) {
-			$("#averageTime").html(totalAnswerCorrectTime/correct);
+			$("#averageTime").html((totalAnswerCorrectTime/correct).toFixed(3));
 		}
 	}
 	

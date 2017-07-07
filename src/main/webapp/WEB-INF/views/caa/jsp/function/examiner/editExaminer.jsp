@@ -169,7 +169,6 @@ function updateExaminer() {
 					success : function(data) {
 						
 						console.log("editExaminer : @@" + $.trim(data) + "@@");
-						alert($.trim(data));
 						
 						if($.trim(data) !== "true") {
 							alert("更新失敗!");

@@ -29,9 +29,9 @@ $(document).ready(function(){
          },{
              "sTitle" : "姓名",
              "mData" : "subjectname"
-         },{
-        	 "sTitle" : "出生年月日",
-             "mData" : "birthday"
+//          },{
+//         	 "sTitle" : "出生年月日",
+//              "mData" : "birthday"
          },{
 			"sTitle" : "編輯",
 			"mRender" : function(obj) {
