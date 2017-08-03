@@ -693,9 +693,9 @@
 									currentItem++;
 									
 									// 測試用
-									currentItem = 10; //(可指定開始測試點)
-									$("#practice10-S").show(); // (換成指定的開始圖)
-									$("#practice01-S").hide();
+									//currentItem = 10; //(可指定開始測試點)
+									//$("#practice10-S").show(); // (換成指定的開始圖)
+									//$("#practice01-S").hide();
 								}
 
 								// 題目一 (5) 
