@@ -104,7 +104,7 @@
 
 			$(document).ready(function() {
 				$('body').keydown(function(event) {
-					if (event.which == 50) { // 數字2  回到受測者資料管理
+					if (event.which == 50 || event.which == 98) { // 數字2  回到受測者資料管理
 						
 						if (0 == step) {
 							console.log("press 2 關閉此頁!");
@@ -122,7 +122,7 @@
 						
 					}
 
-					if (event.which == 56) { // 數字8 換下一頁
+					if (event.which == 56 || event.which == 104) { // 數字8 換下一頁
 						console.log("press 8");
 						if (0 == step) {
 							$("#titleDiv").hide();

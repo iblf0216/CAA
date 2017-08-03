@@ -296,7 +296,7 @@
 							console.log("recordId = " + recordId);
 							console.log("");
 
-							if (event.which == 56) { // 數字8 換下一頁
+							if (event.which == 56 || event.which == 104) { // 數字8 換下一頁
 								console.log("按下8,step : " + step);
 
 								if (1 == step) {
@@ -441,7 +441,7 @@
 								
 							}
 
-							if (event.which == 50) { // 數字8 換下一頁
+							if (event.which == 50 || event.which == 98) { // 數字8 換下一頁
 								console.log("按下2,step : " + step);
 								
 								if (1 == step) {

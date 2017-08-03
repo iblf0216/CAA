@@ -89,12 +89,12 @@ $(document).ready(function(){
 				"next" : next
 			};
     	    
-   	    if( event.which == 50 ) { // 數字2  回到受測者資料管理
+   	    if( event.which == 50 || event.which == 98 ) { // 數字2  回到受測者資料管理
    	    	alert("按下2");
    	        window.close();
    	    }
    	    
-   	    if( event.which == 56 ) { // 數字8 換下一頁
+   	    if( event.which == 56 || event.which == 104 ) { // 數字8 換下一頁
 
 			$.ajax({
 				type : "POST",

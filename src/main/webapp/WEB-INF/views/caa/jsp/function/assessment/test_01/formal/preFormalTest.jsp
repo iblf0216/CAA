@@ -78,7 +78,7 @@ $(document).ready(function() {
 	
 	$('body').keydown(function(event) {
 
-		if (event.which == 56) { // 數字8 換下一頁
+		if (event.which == 56 || event.which == 104) { // 數字8 換下一頁
 			console.log("由休息頁  跳正式測驗");
 		
 			step++; //1

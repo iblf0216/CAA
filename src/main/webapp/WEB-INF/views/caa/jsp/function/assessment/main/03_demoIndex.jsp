@@ -86,7 +86,7 @@ $(document).ready(function(){
 				"next" : next
 			};
     	
-   	    if( event.which == 56 ) { // 數字8 換下一頁
+   	    if( event.which == 56 || event.which == 104 ) { // 數字8 換下一頁
 			var durationTime = 1500; // 凝視點顯示時間 (毫秒)
    	    	
 			document.location.href="showFocus.do?next=" + next + "&durationTime=" + durationTime;

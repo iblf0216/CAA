@@ -89,7 +89,7 @@ $(document).ready(function(){
    	        window.close();
    	    }
    	    
-   	    if( event.which == 56 ) { // 數字8 換下一頁
+   	    if( event.which == 56 || event.which == 104 ) { // 數字8 換下一頁
 
 			$.ajax({
 				type : "POST",

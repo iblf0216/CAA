@@ -463,7 +463,7 @@
 			$(document).ready(function() {
 				$('body').keydown(function(event) {
 					console.log("response : " + response);
-					if (event.which == 56) { // 數字8 換下一頁
+					if (event.which == 56 || event.which == 104) { // 數字8 換下一頁
 						console.log("按下8,step : " + step);
 
 						if (1 == step) {
@@ -634,7 +634,7 @@
 
 
 					/* -------------------------------- 按下數字2的反應 Start -------------------------------- */	
-					if (event.which == 50) { // 數字2 換下一頁
+					if (event.which == 50 || event.which == 98) { // 數字2 換下一頁
 						console.log("按下2,step : " + step);
 
 						if (1 == step) {
