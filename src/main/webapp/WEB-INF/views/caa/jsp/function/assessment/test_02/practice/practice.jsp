@@ -707,7 +707,7 @@
 										5000, 5000, 5000, 2000, 8);
 								} else if (currentItem == 1 && 6 == step) {
 									selectItem5_2("practice01-2", "practice01-3", "practice01-4", "practice01-5", "practice02-S", 
-										5000, 5000, 8);
+										5000, 5000, 5000, 8);
 								} else if (currentItem == 1 && 8 == step) {
 									selectItem5_3("practice01-3", "practice01-4", "practice01-5", "practice02-S", 
 										5000, 2000, 8);
@@ -2733,8 +2733,9 @@
 		$("#materialDiv").show();
 		step++;
 
-		response.push(0);
-		reactionTime.push(-1);
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
 		
 		setTimeout(function() {
 			$("#materialDiv").hide();

@@ -5367,8 +5367,9 @@
 		$("#materialDiv").show();
 		step++;
 
-		response.push(0);
-		reactionTime.push(-1);
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
 		
 		setTimeout(function() {
 			$("#materialDiv").hide();
