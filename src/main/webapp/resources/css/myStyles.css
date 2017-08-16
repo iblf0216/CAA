@@ -2,7 +2,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: hidden;
 	/* 	FIXME 暫時先關起來 */
-	/* 	cursor: none; */
+		cursor: none;
 }
 
 #container {

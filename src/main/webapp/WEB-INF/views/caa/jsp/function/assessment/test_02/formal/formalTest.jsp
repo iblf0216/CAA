@@ -2951,7 +2951,7 @@
 										5000, 1500, 8);
 								} else if (currentItem == 36 && 18 == step) {
 									selectLastItem9_8("practice36-8", "practice36-9",
-										750, 8);
+										1500, 8);
 								} else if (currentItem == 36 && 20 == step) {
 									selectLastItem9_9("practice36-9", 8);
 								}								
@@ -6490,8 +6490,9 @@
 		$("#materialDiv").show();
 		step++;
 
-		response.push(0);
-		reactionTime.push(-1);
+		response.push(selection);
+		var delta = new Date() - beginTime;
+		reactionTime.push(delta);
 		
 		setTimeout(function() {
 			$("#materialDiv").hide();
